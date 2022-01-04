@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class SchoolsTableViewCell: UITableViewCell {
+    
+        let db = Firestore.firestore()
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class MapsVC: UIViewController {
+    
+        let db = Firestore.firestore()
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -6,24 +6,34 @@
 //
 
 import UIKit
+import Firebase
 
 class SettingVC: UIViewController {
-
+    
+        let db = Firestore.firestore()
+    
+    @IBOutlet weak var darkLightModeSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        darkLightModeSwitch.isOn = false
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func darkLightModeSwitchAction(_ sender: Any) {
+        
+        if darkLightModeSwitch.isOn == true {
+            overrideUserInterfaceStyle = .dark
+        }else{
+            overrideUserInterfaceStyle = .light
+        }
     }
-    */
-
+    
+    @IBAction func changePasswordButton(_ sender: Any) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ForgotPassword") as! ForgotPasswordVC
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
 }

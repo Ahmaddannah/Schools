@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class FilterVC: UIViewController {
+    
+        let db = Firestore.firestore()
 
     @IBOutlet weak var schoolTypeSegment: UISegmentedControl!
     @IBOutlet weak var schoolStageSegment: UISegmentedControl!

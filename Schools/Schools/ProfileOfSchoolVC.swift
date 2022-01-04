@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileOfSchoolVC: UIViewController {
 
+        let db = Firestore.firestore()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
