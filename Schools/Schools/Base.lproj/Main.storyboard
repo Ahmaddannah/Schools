@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="3088" y="-554"/>
         </scene>
-        <!--Profile Of School-->
+        <!--Profile Of SchoolVC-->
         <scene sceneID="HzA-ht-Qgc">
             <objects>
-                <viewController storyboardIdentifier="ProfileOfSchool" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qaj-7E-cxk" customClass="ProfileOfSchool" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileOfSchoolVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qaj-7E-cxk" customClass="ProfileOfSchoolVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLL-Re-Y0D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,9 +56,117 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-DA-iaH">
-                                <rect key="frame" x="266" y="132" width="128" height="102"/>
+                                <rect key="frame" x="143" y="144.5" width="128" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نوع المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="woY-DY-qwz">
+                                <rect key="frame" x="222" y="315" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اهلية" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjF-N1-fVO">
+                                <rect key="frame" x="92" y="315" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مرحلة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO9-ZF-se5">
+                                <rect key="frame" x="222" y="369" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="فئة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xh-L5-MOM">
+                                <rect key="frame" x="222" y="425" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="السعة الاستيعابية " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh7-IU-Zml">
+                                <rect key="frame" x="222" y="479" width="122" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="حالة التسجيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gq-qC-Rez">
+                                <rect key="frame" x="207" y="527" width="153" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الحد الاقصى لعدد الطلاب بالفصل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU8-cc-jNa">
+                                <rect key="frame" x="155" y="589" width="228" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="بنين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8G8-IZ-Dkx">
+                                <rect key="frame" x="92" y="425" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="٤٠٠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljc-XV-g3s">
+                                <rect key="frame" x="92" y="479" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="متاح " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-Pl-oGq">
+                                <rect key="frame" x="82" y="533" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="١٥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tz7-1F-uoQ">
+                                <rect key="frame" x="52" y="589" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="متوسط" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szu-8x-hrc">
+                                <rect key="frame" x="92" y="369" width="122" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip1-qE-PlT">
+                                <rect key="frame" x="207" y="720" width="85" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="الموقع"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpc-uW-T82">
+                                <rect key="frame" x="111" y="720" width="84" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="رقم الجوال"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftk-9t-PRt">
+                                <rect key="frame" x="20" y="720" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="التعليقات"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCd-or-AmZ">
+                                <rect key="frame" x="306" y="720" width="88" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="الصور"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FDg-b3-gCu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEp-SZ-uxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4158" y="-971"/>
+            <point key="canvasLocation" x="4157.971014492754" y="-971.65178571428567"/>
         </scene>
         <!--الرئيسية-->
         <scene sceneID="ygY-2c-iDe">
@@ -154,7 +262,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="الرئيسية" id="zz4-yb-ibT">
-                        <barButtonItem key="backBarButtonItem" title="الرجوع" id="7zp-9F-9z1"/>
+                        <barButtonItem key="backBarButtonItem" title="الرئيسية" id="7zp-9F-9z1"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableViewOfSchools" destination="Zpi-CJ-cTJ" id="9GA-eg-5Ar"/>
@@ -179,11 +287,44 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebN-C4-jKU">
+                                <rect key="frame" x="59" y="179" width="296" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نوع المدرسة " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNi-m5-oid">
+                                <rect key="frame" x="232" y="141" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-2m-WR7">
+                                <rect key="frame" x="59" y="278" width="296" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="ثانوي"/>
+                                    <segment title="متوسط"/>
+                                    <segment title="ابتدائي"/>
+                                    <segment title="روضة"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مرحلة المدرسة " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8M-Gj-oq1">
+                                <rect key="frame" x="232" y="249" width="123" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="831-Jj-txS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="TfJ-dM-ZSj"/>
+                    <connections>
+                        <outlet property="textF" destination="ebN-C4-jKU" id="wh0-A6-wvW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEA-m4-wvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +339,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الملف الشخصي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjA-45-Mps">
-                                <rect key="frame" x="123" y="84" width="169" height="47"/>
+                                <rect key="frame" x="123" y="85" width="169" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="169" id="FQN-HS-Snq"/>
                                     <constraint firstAttribute="height" constant="47" id="csi-iE-5IQ"/>
@@ -207,20 +348,75 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاسم : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItC-HB-hz8">
+                                <rect key="frame" x="251" y="310" width="114" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="KCv-Z7-cJU"/>
+                                    <constraint firstAttribute="height" constant="59" id="wgk-1g-yrE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الايميل : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-zz-Mnx">
+                                <rect key="frame" x="251" y="444" width="114" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="3wd-Gd-xVP"/>
+                                    <constraint firstAttribute="height" constant="59" id="PtS-Rf-sLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم الجوال : " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3dH-Tt-kfL">
+                                <rect key="frame" x="251" y="377" width="114" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="A2B-FE-Ah0"/>
+                                    <constraint firstAttribute="width" constant="114" id="zep-4a-ouP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8z3-JA-wXK">
+                                <rect key="frame" x="20" y="85" width="87" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تعديل"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="NMG-gD-a7Q">
+                                <rect key="frame" x="149" y="141.5" width="117" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88.5" id="Pan-Rp-gKg"/>
+                                    <constraint firstAttribute="width" constant="117" id="yGc-IR-45T"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UPK-Fh-4f3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="hjA-45-Mps" secondAttribute="trailing" constant="122" id="0b5-wD-Jh2"/>
-                            <constraint firstItem="hjA-45-Mps" firstAttribute="top" secondItem="UPK-Fh-4f3" secondAttribute="top" constant="40" id="Hyg-hf-KsA"/>
+                            <constraint firstItem="Hgj-zz-Mnx" firstAttribute="top" secondItem="3dH-Tt-kfL" secondAttribute="bottom" constant="8" symbolic="YES" id="24B-Lx-lhe"/>
+                            <constraint firstItem="NMG-gD-a7Q" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="149" id="5Ye-1T-EIG"/>
+                            <constraint firstItem="3dH-Tt-kfL" firstAttribute="top" secondItem="ItC-HB-hz8" secondAttribute="bottom" constant="8" symbolic="YES" id="6iD-da-q6R"/>
+                            <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="NMG-gD-a7Q" secondAttribute="trailing" constant="148" id="8AF-at-EtM"/>
+                            <constraint firstItem="ItC-HB-hz8" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="251" id="Dbn-Ke-0wi"/>
+                            <constraint firstItem="hjA-45-Mps" firstAttribute="top" secondItem="UPK-Fh-4f3" secondAttribute="top" constant="41" id="Hyg-hf-KsA"/>
+                            <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="ItC-HB-hz8" secondAttribute="trailing" constant="49" id="PDT-Aw-W9h"/>
+                            <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="Hgj-zz-Mnx" secondAttribute="trailing" constant="49" id="Q1v-5k-odc"/>
+                            <constraint firstItem="Hgj-zz-Mnx" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="251" id="Woe-8o-lAm"/>
+                            <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="3dH-Tt-kfL" secondAttribute="trailing" constant="49" id="Xaz-hu-q4S"/>
+                            <constraint firstItem="3dH-Tt-kfL" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="251" id="btf-La-YRs"/>
                             <constraint firstItem="hjA-45-Mps" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="123" id="fRZ-D3-CBT"/>
+                            <constraint firstItem="NMG-gD-a7Q" firstAttribute="top" secondItem="hjA-45-Mps" secondAttribute="bottom" constant="8" symbolic="YES" id="oY4-Os-t8m"/>
+                            <constraint firstItem="ItC-HB-hz8" firstAttribute="top" secondItem="NMG-gD-a7Q" secondAttribute="bottom" constant="81.5" id="s0e-zm-vpr"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="حسابي" image="person.fill" catalog="system" id="iaB-oP-XYJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rs9-Hl-1BP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3088" y="131"/>
+            <point key="canvasLocation" x="3086.9565217391305" y="130.58035714285714"/>
         </scene>
         <!--الاعدادات-->
         <scene sceneID="Gbq-66-0m6">
@@ -471,6 +667,7 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.2" catalog="system" width="128" height="81"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="scribble" catalog="system" width="128" height="118"/>

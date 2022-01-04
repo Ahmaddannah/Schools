@@ -47,7 +47,7 @@ extension SchoolsVC : UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileOfSchool") as? ProfileOfSchool
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileOfSchoolVC") as? ProfileOfSchoolVC
         
         vc!.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc!, animated: true)

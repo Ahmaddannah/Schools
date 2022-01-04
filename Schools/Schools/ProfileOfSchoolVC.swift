@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileOfSchool: UIViewController {
+class ProfileOfSchoolVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
