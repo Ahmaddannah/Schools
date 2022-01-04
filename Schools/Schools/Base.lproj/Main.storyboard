@@ -333,7 +333,7 @@
                                     <action selector="filterButton:" destination="TJ8-N7-iCG" eventType="touchUpInside" id="FSO-97-kOc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث بأسم المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
                                 <rect key="frame" x="20" y="93" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -469,7 +469,7 @@
         <!--ProfileVC-->
         <scene sceneID="MxF-MZ-Tcg">
             <objects>
-                <viewController id="eSP-09-kDu" customClass="ProfileVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eSP-09-kDu" customClass="ProfileVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Du1-lN-cio">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -544,7 +544,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="wmT-5D-SJL">
                         <barButtonItem key="backBarButtonItem" title="الملف الشخصي" id="Jbb-zr-KTj"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="cgp-rb-s9O">
+                        <barButtonItem key="leftBarButtonItem" title="gear" image="gear" catalog="system" style="plain" id="cgp-rb-s9O">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
                                 <rect key="frame" x="20" y="5" width="91" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -672,10 +672,10 @@
             </objects>
             <point key="canvasLocation" x="4105.7971014492759" y="1997.5446428571427"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar-->
         <scene sceneID="MTr-lk-vIY">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6zw-sL-qpR" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6zw-sL-qpR" customClass="MainTabBar" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="anl-ni-1vy"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbf-6M-kwf">
@@ -684,9 +684,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <outlet property="mainTabBar" destination="lbf-6M-kwf" id="x0k-wm-gvO"/>
                         <segue destination="1jk-fe-eEa" kind="relationship" relationship="viewControllers" id="68W-iQ-YYc"/>
                         <segue destination="rFC-GY-yru" kind="relationship" relationship="viewControllers" id="E4v-ZG-efW"/>
-                        <segue destination="w96-sT-wDb" kind="relationship" relationship="viewControllers" id="NC6-w0-ESh"/>
+                        <segue destination="yLv-2H-rY6" kind="relationship" relationship="viewControllers" id="ae8-8a-CFr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQT-gN-RIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -696,7 +697,7 @@
         <!--Log InVC-->
         <scene sceneID="Fqq-uB-74g">
             <objects>
-                <viewController id="vgj-ZO-iiE" customClass="LogInVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vgj-ZO-iiE" customClass="LogInVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Pe-m8-Blq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -826,9 +827,6 @@
                                     <segment title="مسؤول المدرسة"/>
                                     <segment title="ولي الامر"/>
                                 </segments>
-                                <connections>
-                                    <action selector="segmentAction:" destination="9kQ-yV-gh7" eventType="valueChanged" id="KNL-iB-OCV"/>
-                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laN-Lf-Vj6">
                                 <rect key="frame" x="133" y="646" width="147" height="31"/>
@@ -853,18 +851,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jGs-oU-lPO"/>
-                    <connections>
-                        <outlet property="segmentTypeOfUsers" destination="lrO-uq-5uC" id="7Ac-CB-PdL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfZ-Hf-S4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6657" y="2107"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Navigation Controller-->
         <scene sceneID="dsS-Ex-8vO">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iEp-vS-NLM" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="loginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iEp-vS-NLM" customClass="loginNavigationController" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UdD-t3-WVf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -899,32 +894,32 @@
             <point key="canvasLocation" x="3093" y="-579"/>
         </scene>
         <!--الملف الشخصي-->
-        <scene sceneID="vEl-K0-puk">
+        <scene sceneID="EIO-cz-Lt1">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w96-sT-wDb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="الملف الشخصي" image="person.fill" catalog="system" id="iaB-oP-XYJ"/>
+                <navigationController storyboardIdentifier="profileNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yLv-2H-rY6" customClass="profileNavigation" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الملف الشخصي" image="person" catalog="system" id="Kou-lN-OKK"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1OA-FT-6gI">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YM8-bq-Iaz">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="eSP-09-kDu" kind="relationship" relationship="rootViewController" id="ZiW-yG-BHr"/>
+                        <segue destination="eSP-09-kDu" kind="relationship" relationship="rootViewController" id="zC8-hX-fye"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LZj-gw-7FZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KS0-CN-isg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3228" y="1262"/>
+            <point key="canvasLocation" x="3196" y="1262"/>
         </scene>
     </scenes>
     <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

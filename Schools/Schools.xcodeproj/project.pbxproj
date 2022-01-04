@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
+		E0681E562784A8BC00DEF94B /* profileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E552784A8BC00DEF94B /* profileNavigation.swift */; };
+		E0681E582784AB0800DEF94B /* loginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E572784AB0800DEF94B /* loginNavigationController.swift */; };
 		E0C81AAF27841CE000C532B9 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */; };
 		E0C81AB127841CFF00C532B9 /* NewAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C81AB027841CFE00C532B9 /* NewAccountVC.swift */; };
 		E0C81AB327841D1000C532B9 /* SchoolsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C81AB227841D1000C532B9 /* SchoolsVC.swift */; };
@@ -29,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		E0681E552784A8BC00DEF94B /* profileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileNavigation.swift; sourceTree = "<group>"; };
+		E0681E572784AB0800DEF94B /* loginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginNavigationController.swift; sourceTree = "<group>"; };
 		E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		E0C81AB027841CFE00C532B9 /* NewAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountVC.swift; sourceTree = "<group>"; };
 		E0C81AB227841D1000C532B9 /* SchoolsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolsVC.swift; sourceTree = "<group>"; };
@@ -85,6 +91,9 @@
 				E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */,
 				E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */,
 				E0D8E0A72783689B00CC1EDB /* Main.storyboard */,
+				E0681E572784AB0800DEF94B /* loginNavigationController.swift */,
+				E0681E552784A8BC00DEF94B /* profileNavigation.swift */,
+				E0681E512784A31600DEF94B /* MainTabBar.swift */,
 				E0C81AB227841D1000C532B9 /* SchoolsVC.swift */,
 				E0C81ABA27841DB300C532B9 /* SchoolsTableViewCell.swift */,
 				E0D6287D27842FD100B31875 /* FilterVC.swift */,
@@ -187,14 +196,17 @@
 				E0C81AB327841D1000C532B9 /* SchoolsVC.swift in Sources */,
 				E0C81ABB27841DB300C532B9 /* SchoolsTableViewCell.swift in Sources */,
 				E0C81AB927841D4200C532B9 /* SettingVC.swift in Sources */,
+				E0681E582784AB0800DEF94B /* loginNavigationController.swift in Sources */,
 				E0C81AB727841D3000C532B9 /* MapsVC.swift in Sources */,
 				E0D8E0A62783689B00CC1EDB /* LogInVC.swift in Sources */,
 				E0C81AB527841D1E00C532B9 /* ProfileVC.swift in Sources */,
+				E0681E562784A8BC00DEF94B /* profileNavigation.swift in Sources */,
 				E0D8E0A22783689B00CC1EDB /* AppDelegate.swift in Sources */,
 				E0C81AB127841CFF00C532B9 /* NewAccountVC.swift in Sources */,
 				E0D6287C27842B9000B31875 /* ProfileOfSchoolVC.swift in Sources */,
 				E0C81AAF27841CE000C532B9 /* ForgotPasswordVC.swift in Sources */,
 				E0D8E0A42783689B00CC1EDB /* SceneDelegate.swift in Sources */,
+				E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
