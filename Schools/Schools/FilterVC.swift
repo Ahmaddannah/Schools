@@ -9,50 +9,36 @@ import UIKit
 
 class FilterVC: UIViewController {
 
-    var arr : [String] = ["حكومي","اهلي","عالمي"]
+    @IBOutlet weak var schoolTypeSegment: UISegmentedControl!
+    @IBOutlet weak var schoolStageSegment: UISegmentedControl!
+    @IBOutlet weak var schoolGenderSegment: UISegmentedControl!
     
-    @IBOutlet weak var textF: UITextField!
-        
-    var pickerView = UIPickerView()
+    @IBOutlet weak var applyButtonOutlet: UIButton!
+    
+    @IBOutlet weak var cancelButtonOutlet: UIButton!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        schoolTypeSegment.selectedSegmentIndex = 3
+        schoolStageSegment.selectedSegmentIndex = 4
+        
+        schoolGenderSegment.selectedSegmentIndex = 1
+        
+        applyButtonOutlet.layer.cornerRadius = 10
+        cancelButtonOutlet.layer.cornerRadius = 10
+    }
+    
+    @IBAction func applyFilterButton(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func cancelButton(_ sender: Any) {
+        
 
-        pickerView.delegate = self
-        pickerView.dataSource = self
-        textF.inputView = pickerView
-        textF.textAlignment = .right
+        navigationController?.popViewController(animated: true)
         
     }
     
-
-
-}
-
-extension FilterVC : UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
-        return arr.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
-        return arr[row]
-
-    }
-    
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
-        textF.text = arr[row]
-        textF.resignFirstResponder()
-
-    }
-}
-
+}//end of class
