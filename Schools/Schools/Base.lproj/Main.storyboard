@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6zw-sL-qpR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--الخريطة-->
+        <scene sceneID="G06-3D-lg1">
+            <objects>
+                <viewController id="rFC-GY-yru" customClass="MapsVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XCn-q9-Qkx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-v8-cOH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="813" id="2vQ-T9-y8l"/>
+                                    <constraint firstAttribute="width" constant="414" id="sGq-cG-6hB"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vr7-9O-tsW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="bottom" secondItem="vr7-9O-tsW" secondAttribute="bottom" id="LhC-A6-vAQ"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="top" secondItem="XCn-q9-Qkx" secondAttribute="top" id="M68-u3-SSy"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="leading" secondItem="vr7-9O-tsW" secondAttribute="leading" id="rfr-7h-QoJ"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="trailing" secondItem="vr7-9O-tsW" secondAttribute="trailing" id="xy0-BO-gR1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الخريطة" image="map" catalog="system" id="V5o-N7-6ih"/>
+                    <navigationItem key="navigationItem" id="iy8-bm-53a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcn-SU-8Ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3088" y="-554"/>
+        </scene>
+        <!--Profile Of School-->
+        <scene sceneID="HzA-ht-Qgc">
+            <objects>
+                <viewController storyboardIdentifier="ProfileOfSchool" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qaj-7E-cxk" customClass="ProfileOfSchool" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mLL-Re-Y0D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYp-zL-8Qz">
+                                <rect key="frame" x="146" y="84" width="123" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.2" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-DA-iaH">
+                                <rect key="frame" x="266" y="132" width="128" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FDg-b3-gCu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nEp-SZ-uxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4158" y="-971"/>
+        </scene>
+        <!--الرئيسية-->
+        <scene sceneID="ygY-2c-iDe">
+            <objects>
+                <viewController id="TJ8-N7-iCG" customClass="SchoolsVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hQ-9f-NWT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zpi-CJ-cTJ">
+                                <rect key="frame" x="0.0" y="177" width="414" height="636"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="636" id="gYb-tS-RZS"/>
+                                    <constraint firstAttribute="width" constant="414" id="xOA-QW-Tvm"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="173" id="aZB-Zf-L90" customClass="SchoolsTableViewCell" customModule="Schools" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="173"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aZB-Zf-L90" id="GEG-xd-20I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="مدرسة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRA-I8-XNh">
+                                                    <rect key="frame" x="275" y="34" width="119" height="46"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scribble" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GzQ-VA-dr3">
+                                                    <rect key="frame" x="20" y="36" width="128" height="102"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="التقييم  ٤.٥/٥ " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVx-Ku-Ehh">
+                                                    <rect key="frame" x="226" y="88" width="168" height="36"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="١٢ كيلو" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3TE-cy-WuH">
+                                                    <rect key="frame" x="317" y="132" width="77" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-PV-kFV">
+                                <rect key="frame" x="20" y="135" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="i9W-qe-UQ7"/>
+                                    <constraint firstAttribute="width" constant="374" id="j8F-a0-FuV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="تصفية"/>
+                                <connections>
+                                    <action selector="filterButton:" destination="TJ8-N7-iCG" eventType="touchUpInside" id="FSO-97-kOc"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
+                                <rect key="frame" x="20" y="93" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p47-cj-rN1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="top" secondItem="1hQ-9f-NWT" secondAttribute="top" constant="135" id="1vD-qY-Xus"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="AMB-r6-LGw" secondAttribute="leading" id="4Xa-33-k52"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="9ho-U7-a7t"/>
+                            <constraint firstItem="p47-cj-rN1" firstAttribute="trailing" secondItem="h7i-PV-kFV" secondAttribute="trailing" constant="20" id="RF6-fv-i5r"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="W7s-Ai-4I3"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="trailing" secondItem="AMB-r6-LGw" secondAttribute="trailing" id="dk0-VW-UOP"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" constant="20" id="elY-Dx-HGK"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="trailing" secondItem="p47-cj-rN1" secondAttribute="trailing" id="fNz-Br-pHe"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="top" secondItem="AMB-r6-LGw" secondAttribute="bottom" constant="8" symbolic="YES" id="xsp-Tc-0I6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="الرئيسية" id="zz4-yb-ibT">
+                        <barButtonItem key="backBarButtonItem" title="الرجوع" id="7zp-9F-9z1"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableViewOfSchools" destination="Zpi-CJ-cTJ" id="9GA-eg-5Ar"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ocV-Vy-xNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3086.9565217391305" y="-1272.3214285714284"/>
+        </scene>
+        <!--FilterVC-->
+        <scene sceneID="aDd-wm-jIR">
+            <objects>
+                <viewController storyboardIdentifier="FilterVC" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BRZ-ah-7Yr" customClass="FilterVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIh-cB-hWl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="التصفية حسب " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUs-8n-H5B">
+                                <rect key="frame" x="109" y="80" width="197" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="831-Jj-txS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TfJ-dM-ZSj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MEA-m4-wvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4157.971014492754" y="-1647.3214285714284"/>
+        </scene>
+        <!--حسابي-->
+        <scene sceneID="MxF-MZ-Tcg">
+            <objects>
+                <viewController id="eSP-09-kDu" customClass="ProfileVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Du1-lN-cio">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الملف الشخصي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjA-45-Mps">
+                                <rect key="frame" x="123" y="84" width="169" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="169" id="FQN-HS-Snq"/>
+                                    <constraint firstAttribute="height" constant="47" id="csi-iE-5IQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UPK-Fh-4f3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="hjA-45-Mps" secondAttribute="trailing" constant="122" id="0b5-wD-Jh2"/>
+                            <constraint firstItem="hjA-45-Mps" firstAttribute="top" secondItem="UPK-Fh-4f3" secondAttribute="top" constant="40" id="Hyg-hf-KsA"/>
+                            <constraint firstItem="hjA-45-Mps" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="123" id="fRZ-D3-CBT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="حسابي" image="person.fill" catalog="system" id="iaB-oP-XYJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rs9-Hl-1BP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3088" y="131"/>
+        </scene>
+        <!--الاعدادات-->
+        <scene sceneID="Gbq-66-0m6">
+            <objects>
+                <viewController id="upj-TJ-KPm" customClass="SettingVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZO-4D-1k5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HG7-2x-po8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="الاعدادات" image="gearshape.fill" catalog="system" id="WAe-2y-fIy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-YZ-0fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3088" y="849"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="MTr-lk-vIY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="6zw-sL-qpR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="anl-ni-1vy"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lbf-6M-kwf">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="1jk-fe-eEa" kind="relationship" relationship="viewControllers" id="68W-iQ-YYc"/>
+                        <segue destination="rFC-GY-yru" kind="relationship" relationship="viewControllers" id="E4v-ZG-efW"/>
+                        <segue destination="eSP-09-kDu" kind="relationship" relationship="viewControllers" id="NC6-w0-ESh"/>
+                        <segue destination="upj-TJ-KPm" kind="relationship" relationship="viewControllers" id="j7J-Dv-hyJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hQT-gN-RIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="305"/>
+        </scene>
+        <!--Log InVC-->
+        <scene sceneID="Fqq-uB-74g">
+            <objects>
+                <viewController id="vgj-ZO-iiE" customClass="LogInVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Pe-m8-Blq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QE1-aS-67H">
+                                <rect key="frame" x="81" y="298" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6J-1Q-bgo">
+                                <rect key="frame" x="81" y="402" width="164" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="نسيت كلمة المرور؟"/>
+                                <connections>
+                                    <segue destination="3rp-2i-KfM" kind="show" id="6BQ-lr-ZwI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRH-LK-mD8">
+                                <rect key="frame" x="134" y="514" width="147" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="تسجيل الدخول "/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-n0-I8U">
+                                <rect key="frame" x="134" y="678" width="147" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="انشاء حساب جديد"/>
+                                <connections>
+                                    <segue destination="9kQ-yV-gh7" kind="show" id="jXd-ed-rEO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oEd-k2-mBv">
+                                <rect key="frame" x="81" y="350" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b8O-Kv-raI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGo-Zv-bCx">
+                        <barButtonItem key="backBarButtonItem" title="الرجوع" id="hEl-Ug-GRW"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZWi-1o-pHQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5129" y="459"/>
+        </scene>
+        <!--Forgot PasswordVC-->
+        <scene sceneID="yZ3-2x-Ie4">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="3rp-2i-KfM" customClass="ForgotPasswordVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Laq-ez-3VQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-xx-iEG">
+                                <rect key="frame" x="81" y="323" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNQ-4u-LdG">
+                                <rect key="frame" x="107" y="534" width="200" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="استعادة كلمة المرور"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نسيت كلمة المرور " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-P8-f9C">
+                                <rect key="frame" x="107" y="124" width="200" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tfN-Hf-bGh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S9T-bb-YEL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rzf-k9-Xxu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4707" y="1239"/>
+        </scene>
+        <!--New AccountVC-->
+        <scene sceneID="Ibg-Uu-7KQ">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kQ-yV-gh7" customClass="NewAccountVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kYt-OG-cn3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="انشاء حساب جديد " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWA-gh-Lrm">
+                                <rect key="frame" x="82" y="88" width="250" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OLw-qQ-kO6">
+                                <rect key="frame" x="80" y="378" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H9B-Qs-1ON">
+                                <rect key="frame" x="80" y="431" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXj-Gl-Afl">
+                                <rect key="frame" x="81" y="324" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lrO-uq-5uC">
+                                <rect key="frame" x="104" y="204" width="207" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="مسؤول المدرسة"/>
+                                    <segment title="ولي الامر"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="9kQ-yV-gh7" eventType="valueChanged" id="KNL-iB-OCV"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laN-Lf-Vj6">
+                                <rect key="frame" x="133" y="646" width="147" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="انشاء حساب"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-Ix-Vym">
+                                <rect key="frame" x="81" y="484" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="تاكيد كلمة المرور " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNY-3X-bFx">
+                                <rect key="frame" x="80" y="543" width="253" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="me9-FM-a7V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGs-oU-lPO"/>
+                    <connections>
+                        <outlet property="segmentTypeOfUsers" destination="lrO-uq-5uC" id="7Ac-CB-PdL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FfZ-Hf-S4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5745" y="1239"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dsS-Ex-8vO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iEp-vS-NLM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UdD-t3-WVf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vgj-ZO-iiE" kind="relationship" relationship="rootViewController" id="tJu-h0-sYs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhK-16-djW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4219" y="459"/>
+        </scene>
+        <!--الرئيسية-->
+        <scene sceneID="7me-tQ-bga">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1jk-fe-eEa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="house" catalog="system" selectedImage="house.fill" id="jr1-UI-wNO"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BcJ-9R-xNd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TJ8-N7-iCG" kind="relationship" relationship="rootViewController" id="9cA-rg-nWj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxS-34-1Cz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-1272"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="person.2" catalog="system" width="128" height="81"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
