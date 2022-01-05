@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Firebase
 
 class MainTabBar: UITabBarController , UITabBarControllerDelegate {
+    
+        let db = Firestore.firestore()
     
     @IBOutlet weak var mainTabBar: UITabBar!
     
@@ -21,11 +24,16 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
         
         if viewController is profileNavigation {
             
-            let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
-            
-//            login.modalPresentationStyle = .fullScreen
-            
-            self.present(login, animated: true, completion: nil)
+            if Auth.auth().currentUser?.phoneNumber! == nil {
+                
+                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
+                
+                login.modalPresentationStyle = .fullScreen
+                self.present(login, animated: true, completion: nil)
+                
+            }else {
+                print("Already logged in")
+            }
             
         }else {
             

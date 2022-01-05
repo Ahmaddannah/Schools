@@ -15,6 +15,5 @@ class LogInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-print("Hello")
     }
 }

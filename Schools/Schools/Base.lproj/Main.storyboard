@@ -545,7 +545,7 @@
                     <navigationItem key="navigationItem" id="wmT-5D-SJL">
                         <barButtonItem key="backBarButtonItem" title="الملف الشخصي" id="Jbb-zr-KTj"/>
                         <barButtonItem key="leftBarButtonItem" title="gear" image="gear" catalog="system" style="plain" id="cgp-rb-s9O">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
                                 <rect key="frame" x="20" y="5" width="91" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -694,6 +694,51 @@
             </objects>
             <point key="canvasLocation" x="1396" y="305"/>
         </scene>
+        <!--WaysVC-->
+        <scene sceneID="NQk-Bh-QgQ">
+            <objects>
+                <viewController storyboardIdentifier="WaysVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yhZ-d5-6iD" customClass="WaysVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Stb-9b-Pnu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لم تقم بتسجيل الدخول بعد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-gO-Sp3">
+                                <rect key="frame" x="116" y="234" width="182" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NO-ab-xYl">
+                                <rect key="frame" x="72" y="350" width="271" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تسجيل الدخول او انشاء حساب"/>
+                                <connections>
+                                    <action selector="toSignInButton:" destination="yhZ-d5-6iD" eventType="touchUpInside" id="8NW-4N-MmL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glk-xi-tpg">
+                                <rect key="frame" x="152" y="486" width="110" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="الرجوع"/>
+                                <connections>
+                                    <action selector="backToMainButton:" destination="yhZ-d5-6iD" eventType="touchUpInside" id="X5D-rI-uL2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2RG-6k-Pcj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8ed-dd-zw7">
+                        <barButtonItem key="backBarButtonItem" title="الرجوع" id="4Ly-8h-MWr"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wj1-N6-DoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5969.5652173913049" y="1261.6071428571429"/>
+        </scene>
         <!--Log InVC-->
         <scene sceneID="Fqq-uB-74g">
             <objects>
@@ -748,7 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWi-1o-pHQ" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6657" y="1262"/>
+            <point key="canvasLocation" x="6752" y="1262"/>
         </scene>
         <!--Forgot PasswordVC-->
         <scene sceneID="yZ3-2x-Ie4">
@@ -758,7 +803,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-xx-iEG">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-xx-iEG">
                                 <rect key="frame" x="81" y="323" width="253" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -827,12 +872,18 @@
                                     <segment title="مسؤول المدرسة"/>
                                     <segment title="ولي الامر"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentTypeOfUsersAction:" destination="9kQ-yV-gh7" eventType="valueChanged" id="T6d-IF-9HD"/>
+                                </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laN-Lf-Vj6">
                                 <rect key="frame" x="133" y="646" width="147" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="انشاء حساب"/>
+                                <connections>
+                                    <action selector="newAccountButton:" destination="9kQ-yV-gh7" eventType="touchUpInside" id="Pqe-HF-shE"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NYg-Ix-Vym">
                                 <rect key="frame" x="81" y="484" width="253" height="34"/>
@@ -851,6 +902,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jGs-oU-lPO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="H9B-Qs-1ON" id="oe4-7L-a4Q"/>
+                        <outlet property="nameTextField" destination="fXj-Gl-Afl" id="7Ng-4q-nDZ"/>
+                        <outlet property="newAccountOutlet" destination="laN-Lf-Vj6" id="A3d-mx-YHo"/>
+                        <outlet property="password1TextField" destination="NYg-Ix-Vym" id="WYl-sF-wfU"/>
+                        <outlet property="password2TextField" destination="nNY-3X-bFx" id="Xxd-Wn-ZZH"/>
+                        <outlet property="phoneTextField" destination="OLw-qQ-kO6" id="j5q-qB-fh5"/>
+                        <outlet property="typeOfUsersSegment" destination="lrO-uq-5uC" id="59a-Xe-C5e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfZ-Hf-S4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -867,12 +927,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vgj-ZO-iiE" kind="relationship" relationship="rootViewController" id="tJu-h0-sYs"/>
+                        <segue destination="yhZ-d5-6iD" kind="relationship" relationship="rootViewController" id="Ots-J3-Fwp"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhK-16-djW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5851" y="1262"/>
+            <point key="canvasLocation" x="5219" y="1262"/>
         </scene>
         <!--الرئيسية-->
         <scene sceneID="7me-tQ-bga">
