@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class SchoolsVC: UIViewController {
+class SchoolsTableViewVC: UIViewController {
     
     let db = Firestore.firestore()
     
@@ -35,7 +35,7 @@ class SchoolsVC: UIViewController {
     
 }// end of the class
 
-extension SchoolsVC : UITableViewDataSource , UITableViewDelegate {
+extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

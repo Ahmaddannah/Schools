@@ -10,23 +10,51 @@ import Firebase
 
 class ProfileOfSchoolVC: UIViewController {
 
-        let db = Firestore.firestore()
+    @IBOutlet weak var schoolType: UILabel!
+    
+    @IBOutlet weak var schoolStage: UILabel!
+    
+    @IBOutlet weak var schoolCategory: UILabel!
+    
+    @IBOutlet weak var schoolCapacity: UILabel!
+    
+    @IBOutlet weak var schoolAvailability: UILabel!
+    
+    @IBOutlet weak var schoolMaximumNumberInClass: UILabel!
+    
+    
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    
+    
+    @IBAction func schoolPhotoButton(_ sender: Any) {
+        
     }
-    */
-
+    
+    
+    @IBAction func schoolPhoneButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func schoolLocationButton(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func schoolCommentButton(_ sender: Any) {
+        
+//        let comment = storyboard?.instantiateViewController(withIdentifier: "CommentOfSchoolVC") as! CommentOfSchoolVC
+//
+//        comment.modalPresentationStyle = .fullScreen
+//
+//        self.present(comment, animated: true, completion: nil)
+    }
+    
+    
 }

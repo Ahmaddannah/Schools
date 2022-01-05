@@ -28,6 +28,15 @@ class WaysVC: UIViewController {
         
         dismiss(animated: true, completion: .none)
         
+    }
+    
+    @IBAction func toNewAccountForSchool(_ sender: Any) {
+        
+        let toSchool = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccountVC") as! NewSchoolAccountVC
+        
+        navigationController?.pushViewController(toSchool, animated: true)
         
     }
+    
 }
+

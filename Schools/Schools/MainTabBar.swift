@@ -24,7 +24,7 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
         
         if viewController is profileNavigation {
             
-            if Auth.auth().currentUser?.phoneNumber! == nil {
+            if Auth.auth().currentUser?.uid == nil {
                 
                 let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
                 
@@ -32,7 +32,13 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
                 self.present(login, animated: true, completion: nil)
                 
             }else {
+                
                 print("Already logged in")
+                
+//                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
+//
+//                login.modalPresentationStyle = .fullScreen
+//                self.present(login, animated: true, completion: nil)
             }
             
         }else {
