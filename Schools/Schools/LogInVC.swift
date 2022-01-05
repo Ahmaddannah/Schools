@@ -21,6 +21,8 @@ class LogInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
+        numberTextField.keyboardType = .numberPad
 
     }
     
@@ -34,4 +36,16 @@ class LogInVC: UIViewController {
         
         
     }
+    
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
 }

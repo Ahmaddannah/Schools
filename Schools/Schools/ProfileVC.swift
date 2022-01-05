@@ -27,6 +27,7 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         
     }
     @IBAction func settingButton(_ sender: Any) {
@@ -36,5 +37,16 @@ class ProfileVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
     
 }

@@ -23,6 +23,9 @@ class FilterVC: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        hideKeyboardWhenTappedAround()
+        
         schoolTypeSegment.selectedSegmentIndex = 3
         schoolStageSegment.selectedSegmentIndex = 4
         
@@ -43,5 +46,16 @@ class FilterVC: UIViewController {
         navigationController?.popViewController(animated: true)
         
     }
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
     
 }//end of class

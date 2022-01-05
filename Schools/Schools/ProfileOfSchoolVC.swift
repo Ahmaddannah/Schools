@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 
+
 class ProfileOfSchoolVC: UIViewController {
 
     @IBOutlet weak var schoolType: UILabel!
@@ -28,8 +29,9 @@ class ProfileOfSchoolVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        hideKeyboardWhenTappedAround()
+        
     }
-    
     
     
     
@@ -40,7 +42,11 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolPhoneButton(_ sender: Any) {
         
+        if let phoneURL = NSURL(string: ("tel://" + "0532955544")) {
+                           UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+        }
     }
+    
     
     @IBAction func schoolLocationButton(_ sender: Any) {
         
@@ -48,13 +54,21 @@ class ProfileOfSchoolVC: UIViewController {
     
     
     @IBAction func schoolCommentButton(_ sender: Any) {
+//
         
-//        let comment = storyboard?.instantiateViewController(withIdentifier: "CommentOfSchoolVC") as! CommentOfSchoolVC
-//
-//        comment.modalPresentationStyle = .fullScreen
-//
-//        self.present(comment, animated: true, completion: nil)
     }
+    
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
     
     
 }

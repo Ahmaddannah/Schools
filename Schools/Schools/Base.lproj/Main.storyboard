@@ -176,7 +176,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="التعليقات"/>
                                         <connections>
-                                            <action selector="commentButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="5LX-Xg-DbB"/>
+                                            <action selector="schoolCommentButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="M9p-v4-IQ6"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="بنين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2c-RA-EjX">
@@ -307,6 +307,7 @@
                         <viewLayoutGuide key="safeArea" id="cnm-1a-UdL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="I2i-9x-V3x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJU-KQ-eTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -342,7 +343,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GzQ-VA-dr3">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gearshape.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GzQ-VA-dr3">
                                                     <rect key="frame" x="20" y="34.5" width="128" height="102"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -546,7 +547,7 @@
                     <navigationItem key="navigationItem" id="wmT-5D-SJL">
                         <barButtonItem key="backBarButtonItem" title="الملف الشخصي" id="Jbb-zr-KTj"/>
                         <barButtonItem key="leftBarButtonItem" title="gear" image="gear" catalog="system" style="plain" id="cgp-rb-s9O">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
                                 <rect key="frame" x="20" y="5" width="91" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -869,6 +870,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="استعادة كلمة المرور"/>
+                                <connections>
+                                    <action selector="resetPassword:" destination="3rp-2i-KfM" eventType="touchUpInside" id="aoN-qG-pq0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="نسيت كلمة المرور " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-P8-f9C">
                                 <rect key="frame" x="107" y="124" width="200" height="54"/>
@@ -877,6 +881,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVL-Sw-DES">
+                                <rect key="frame" x="107" y="230" width="217" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="callllll:" destination="3rp-2i-KfM" eventType="touchUpInside" id="nAZ-5A-no0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tfN-Hf-bGh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -885,7 +898,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rzf-k9-Xxu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8388" y="2063"/>
+            <point key="canvasLocation" x="7308.6956521739139" y="2035.7142857142856"/>
         </scene>
         <!--New School AccountVC-->
         <scene sceneID="Ibg-Uu-7KQ">
@@ -981,6 +994,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jGs-oU-lPO"/>
+                    <connections>
+                        <outlet property="emailSchool" destination="TdQ-rO-anq" id="mSp-nx-Fpv"/>
+                        <outlet property="nameSchool" destination="JEn-bF-UsT" id="Ljf-U1-zQU"/>
+                        <outlet property="passwordSchool" destination="cIC-u6-Oh4" id="eiF-0f-YXY"/>
+                        <outlet property="passwordSchool2" destination="fIj-q6-17q" id="Anl-AK-mGO"/>
+                        <outlet property="phoneSchool" destination="bd0-Qb-gI5" id="Ybm-vJ-SvH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FfZ-Hf-S4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1092,6 +1112,9 @@
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="انشاء حساب "/>
+                                <connections>
+                                    <action selector="createAccountSchoolButton:" destination="6jm-Zc-GYg" eventType="touchUpInside" id="doA-no-XcK"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="٢٠" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thx-Is-oHO">
                                 <rect key="frame" x="30" y="598" width="70" height="34"/>
@@ -1103,6 +1126,15 @@
                         <viewLayoutGuide key="safeArea" id="0tR-gD-YWz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="schoolCapacity" destination="DIc-AR-nBA" id="RnI-Wh-jJZ"/>
+                        <outlet property="schoolCategory" destination="JdT-QR-6H8" id="sex-jS-3N5"/>
+                        <outlet property="schoolLocation" destination="K7l-Fp-w0B" id="XsX-K3-LQR"/>
+                        <outlet property="schoolMaximumNum" destination="thx-Is-oHO" id="daH-Vb-cGX"/>
+                        <outlet property="schoolStage" destination="GXD-5N-uKH" id="LGJ-dt-F1T"/>
+                        <outlet property="schoolStatus" destination="usY-Iq-pyl" id="SZ3-OX-EJc"/>
+                        <outlet property="schoolType" destination="Qjt-f3-fpF" id="gQ6-gD-hUj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IeJ-Yk-dhv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1167,12 +1199,12 @@
     </scenes>
     <resources>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gearshape.2.fill" catalog="system" width="128" height="100"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

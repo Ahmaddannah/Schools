@@ -12,11 +12,26 @@ class NewSchoolAccountVC: UIViewController {
     
     let db = Firestore.firestore()
 
+    @IBOutlet weak var nameSchool: UITextField!
+    
+    @IBOutlet weak var phoneSchool: UITextField!
+    
+    @IBOutlet weak var emailSchool: UITextField!
+    
+    @IBOutlet weak var passwordSchool: UITextField!
+    
+    @IBOutlet weak var passwordSchool2: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.backButtonTitle = "الرجوع"
         
+        hideKeyboardWhenTappedAround()
+        
+        passwordSchool.isSecureTextEntry = true
+        passwordSchool2.isSecureTextEntry = true
     }
             
     
@@ -44,28 +59,4 @@ class NewSchoolAccountVC: UIViewController {
 
     
 }
-
-
-
-
-//    func checkData(){
-//
-//
-//        if nameTextField.text!.isEmpty {
-//
-//        }else if phoneTextField.text!.isEmpty {
-//
-//        }else if emailTextField.text!.isEmpty {
-//
-//        }else if password1TextField.text!.isEmpty {
-//
-//        }else if password2TextField.text!.isEmpty {
-//
-//        }else if password1TextField.text != password2TextField.text {
-//
-//        }
-//
-//    }
-    
-    
 

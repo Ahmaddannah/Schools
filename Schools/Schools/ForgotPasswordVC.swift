@@ -14,19 +14,31 @@ class ForgotPasswordVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
 
-        // Do any additional setup after loading the view.
     }
     
+    @IBAction func callllll(_ sender: Any) {
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+    
+    @IBAction func resetPassword(_ sender: Any) {
+       
 
-}
+        }
+    
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
+    }
+
+

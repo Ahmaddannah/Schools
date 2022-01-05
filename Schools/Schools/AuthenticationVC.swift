@@ -22,6 +22,7 @@ class AuthenticationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         action()
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(action), userInfo: nil, repeats: true)
@@ -43,5 +44,18 @@ class AuthenticationVC: UIViewController {
         
 //        PhoneAuthProvider().verifyPhoneNumber(<#T##phoneNumber: String##String#>, uiDelegate: <#T##AuthUIDelegate?#>, completion: <#T##VerificationResultCallback?##VerificationResultCallback?##(String?, Error?) -> Void#>)
     }
+    
+    
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
     
 }

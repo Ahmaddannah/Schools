@@ -9,20 +9,42 @@ import UIKit
 
 class NewSchoolAccount2VC: UIViewController {
 
+    @IBOutlet weak var schoolType: UITextField!
+    
+    @IBOutlet weak var schoolStage: UITextField!
+    
+    @IBOutlet weak var schoolCategory: UITextField!
+    
+    @IBOutlet weak var schoolCapacity: UITextField!
+    
+    @IBOutlet weak var schoolStatus: UITextField!
+    
+    @IBOutlet weak var schoolLocation: UITextField!
+    
+    @IBOutlet weak var schoolMaximumNum: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        hideKeyboardWhenTappedAround()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func createAccountSchoolButton(_ sender: Any) {
+        
     }
-    */
+    
+    
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
 
+    
+    
 }
