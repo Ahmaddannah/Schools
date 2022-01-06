@@ -45,6 +45,9 @@ class NewSchoolAccount2VC: UIViewController {
         check()
         uploadData()
         
+        dismiss(animated: false, completion: .none)
+        dismiss(animated: false, completion: .none)
+        
     }
     
     func uploadData(){

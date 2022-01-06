@@ -12,8 +12,7 @@ class SchoolsTableViewVC: UIViewController {
     
     let db = Firestore.firestore()
     
-    var arr : [Int] = [1,2,3,4,5,6,7,8,9]
-    
+    var arraySchool : [String] = [""]
     
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
@@ -34,18 +33,33 @@ class SchoolsTableViewVC: UIViewController {
     }
     
     
+    func hideKeyboardWhenTappedAround() {
+       
+      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+      tap.cancelsTouchesInView = false
+      view.addGestureRecognizer(tap)
+     }
+      
+     @objc func dismissKeyboard() {
+      view.endEditing(true)
+     }
+
+    
 }// end of the class
 
 extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return arr.count
+        return arraySchool.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+//        cell.schoolName.text = arraySchool[indexPath.row].schoolName.text
+        
         return cell
         
     }
@@ -62,15 +76,5 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
         return 200
     }
     
-    func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
 }
 

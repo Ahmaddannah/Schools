@@ -11,7 +11,11 @@ import Firebase
 class SchoolsTableViewCell: UITableViewCell {
     
         let db = Firestore.firestore()
-
+    
+    
+    @IBOutlet weak var schoolName: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
