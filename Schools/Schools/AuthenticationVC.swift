@@ -14,7 +14,6 @@ class AuthenticationVC: UIViewController {
     
     var time = 59
     var miuntes = 2
-
     
     var timer: Timer? = nil
     
@@ -44,7 +43,6 @@ class AuthenticationVC: UIViewController {
         
 //        PhoneAuthProvider().verifyPhoneNumber(<#T##phoneNumber: String##String#>, uiDelegate: <#T##AuthUIDelegate?#>, completion: <#T##VerificationResultCallback?##VerificationResultCallback?##(String?, Error?) -> Void#>)
     }
-    
     
     
     func hideKeyboardWhenTappedAround() {

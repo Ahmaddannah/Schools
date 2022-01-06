@@ -11,8 +11,6 @@ class WaysVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
         
     }
     
@@ -24,7 +22,7 @@ class WaysVC: UIViewController {
         
     }
     
-    @IBAction func backToMainButton(_ sender: Any) {
+    @IBAction func skipButton(_ sender: Any) {
         
         dismiss(animated: true, completion: .none)
         

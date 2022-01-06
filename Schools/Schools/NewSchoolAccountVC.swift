@@ -11,7 +11,7 @@ import Firebase
 class NewSchoolAccountVC: UIViewController {
     
     let db = Firestore.firestore()
-
+    
     @IBOutlet weak var nameSchool: UITextField!
     
     @IBOutlet weak var phoneSchool: UITextField!
@@ -34,13 +34,10 @@ class NewSchoolAccountVC: UIViewController {
         passwordSchool2.isSecureTextEntry = true
         
     }
-            
     
-
     @IBAction func nextPageForNewSchool(_ sender: Any) {
         
         Check()
-        
         
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccount2VC") as! NewSchoolAccount2VC
         
@@ -57,20 +54,20 @@ class NewSchoolAccountVC: UIViewController {
         
         if nameSchool.text!.isEmpty {
             
-        myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال اسم المدرسة", isAdd: true )
+            myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال اسم المدرسة", isAdd: true )
             
         }else if phoneSchool.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال رقم المدرسة", isAdd: true )
-
+            
         }else if emailSchool.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال البريد للمدرسة", isAdd: true )
-
+            
         }else if passwordSchool.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال كلمة المرور ", isAdd: true )
-
+            
         }else if passwordSchool2.text!.isEmpty{
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال التحقق من كلمة المرور", isAdd: true )
@@ -84,21 +81,21 @@ class NewSchoolAccountVC: UIViewController {
     
     
     func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
     
-
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
+    
     func myCustomAlert(title :String , message : String , isAdd: Bool) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
+        
         if isAdd{
             
             let action = UIAlertAction(title: "نعم", style: .default) { action in
@@ -108,9 +105,6 @@ class NewSchoolAccountVC: UIViewController {
         }
         
         self.present(alert, animated: true, completion: nil)
-        
     }
-    
-
 }
 

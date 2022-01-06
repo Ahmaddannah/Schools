@@ -9,36 +9,36 @@ import UIKit
 import Firebase
 
 class ForgotPasswordVC: UIViewController {
-
-        let db = Firestore.firestore()
+    
+    let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-
+        
     }
     
     @IBAction func callllll(_ sender: Any) {
-
-
+        
+        
     }
     
     @IBAction func resetPassword(_ sender: Any) {
-       
-
-        }
+        
+        
+    }
     
     
     func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
 
 

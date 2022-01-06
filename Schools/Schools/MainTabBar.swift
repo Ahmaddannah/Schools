@@ -22,11 +22,11 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
-        if viewController is profileNavigation {
+        if viewController is ProfileNavigation {
             
             if Auth.auth().currentUser?.uid == nil {
                 
-                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
+                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! LoginNavigationController
                 
                 login.modalPresentationStyle = .fullScreen
                 self.present(login, animated: true, completion: nil)

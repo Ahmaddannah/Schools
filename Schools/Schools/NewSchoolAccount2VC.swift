@@ -12,8 +12,6 @@ class NewSchoolAccount2VC: UIViewController {
     
     let db = Firestore.firestore()
     
-    
-    
     var nameSchool: String = ""
     
     var phoneSchool: String = ""
@@ -43,8 +41,14 @@ class NewSchoolAccount2VC: UIViewController {
     }
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {
+        
         check()
-                
+        uploadData()
+        
+    }
+    
+    func uploadData(){
+        
         db.collection("School").addDocument(data: [
             
             "schoolName" : nameSchool ,
@@ -61,14 +65,12 @@ class NewSchoolAccount2VC: UIViewController {
             
         ]){error in
             if error == nil {
-                print("is added succ in data base ")
+                
+                self.myCustomAlert(title: "تنبيه", message: "تم اضافة المدرسة بنجاح", isAdd: true )
+                
             }else {
-                print("error")
-            }
-            
+                self.myCustomAlert(title: "تنبيه", message: "حصلت مشكلة ما الرجاء المحاولة مره اخرى", isAdd: true )            }
         }
-        
-        
     }
     
     
@@ -116,9 +118,7 @@ class NewSchoolAccount2VC: UIViewController {
             
         }
     }
-    
-    
-    
+
     
     func myCustomAlert(title :String , message : String , isAdd: Bool) {
         
@@ -126,7 +126,7 @@ class NewSchoolAccount2VC: UIViewController {
         
         if isAdd{
             
-            let action = UIAlertAction(title: "نعم", style: .default) { action in
+            let action = UIAlertAction(title: "موافق", style: .default) { action in
                 
             }
             alert.addAction(action)
@@ -135,7 +135,5 @@ class NewSchoolAccount2VC: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
-    
-    
-    
 }
+

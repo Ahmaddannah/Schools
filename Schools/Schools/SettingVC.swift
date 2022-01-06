@@ -17,16 +17,21 @@ class SettingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-        darkLightModeSwitch.isOn = false
+//        darkLightModeSwitch.isOn = false
         
     }
     
     @IBAction func darkLightModeSwitchAction(_ sender: Any) {
         
         if darkLightModeSwitch.isOn == true {
-            overrideUserInterfaceStyle = .dark
+         
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .dark
+            }
         }else{
-            overrideUserInterfaceStyle = .light
+            UIApplication.shared.windows.forEach { window in
+                window.overrideUserInterfaceStyle = .light
+            }
         }
     }
     
