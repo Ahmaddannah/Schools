@@ -70,5 +70,4 @@ class ProfileOfSchoolVC: UIViewController {
       view.endEditing(true)
      }
     
-    
 }

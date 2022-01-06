@@ -32,16 +32,53 @@ class NewSchoolAccountVC: UIViewController {
         
         passwordSchool.isSecureTextEntry = true
         passwordSchool2.isSecureTextEntry = true
+        
     }
             
     
 
     @IBAction func nextPageForNewSchool(_ sender: Any) {
         
+        Check()
+        
+        
         let nextVC = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccount2VC") as! NewSchoolAccount2VC
+        
+        nextVC.nameSchool = nameSchool.text!
+        nextVC.phoneSchool = phoneSchool.text!
+        nextVC.emailSchool = emailSchool.text!
+        nextVC.passwordSchool = passwordSchool.text!
         
         navigationController?.pushViewController(nextVC, animated: true)
         
+    }
+    
+    func Check(){
+        
+        if nameSchool.text!.isEmpty {
+            
+        myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال اسم المدرسة", isAdd: true )
+            
+        }else if phoneSchool.text!.isEmpty {
+            
+            myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال رقم المدرسة", isAdd: true )
+
+        }else if emailSchool.text!.isEmpty {
+            
+            myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال البريد للمدرسة", isAdd: true )
+
+        }else if passwordSchool.text!.isEmpty {
+            
+            myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال كلمة المرور ", isAdd: true )
+
+        }else if passwordSchool2.text!.isEmpty{
+            
+            myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال التحقق من كلمة المرور", isAdd: true )
+            
+        }else if passwordSchool.text != passwordSchool2.text {
+            
+            myCustomAlert(title: "تنبيه", message: "كلمة المرور لا تشبه كلمة مرور التحقق", isAdd: true )
+        }
     }
     
     
@@ -56,7 +93,24 @@ class NewSchoolAccountVC: UIViewController {
      @objc func dismissKeyboard() {
       view.endEditing(true)
      }
-
     
+
+    func myCustomAlert(title :String , message : String , isAdd: Bool) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+
+        if isAdd{
+            
+            let action = UIAlertAction(title: "نعم", style: .default) { action in
+                
+            }
+            alert.addAction(action)
+        }
+        
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+
 }
 

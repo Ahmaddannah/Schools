@@ -547,7 +547,7 @@
                     <navigationItem key="navigationItem" id="wmT-5D-SJL">
                         <barButtonItem key="backBarButtonItem" title="الملف الشخصي" id="Jbb-zr-KTj"/>
                         <barButtonItem key="leftBarButtonItem" title="gear" image="gear" catalog="system" style="plain" id="cgp-rb-s9O">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
                                 <rect key="frame" x="20" y="5" width="91" height="34.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
