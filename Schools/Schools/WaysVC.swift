@@ -22,6 +22,7 @@ class WaysVC: UIViewController {
         
     }
     
+
     @IBAction func skipButton(_ sender: Any) {
         
         dismiss(animated: true, completion: .none)

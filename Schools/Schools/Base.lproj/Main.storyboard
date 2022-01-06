@@ -762,14 +762,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="8ed-dd-zw7">
                         <barButtonItem key="backBarButtonItem" title="الرجوع" id="4Ly-8h-MWr"/>
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="qmR-h3-enC">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="glk-xi-tpg">
-                                <rect key="frame" x="20" y="0.0" width="110" height="44"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Qo0-wa-aPt">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="umb-Qe-y72">
+                                <rect key="frame" x="22" y="88" width="88" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="تخطي"/>
                                 <connections>
-                                    <action selector="backToMainButton:" destination="yhZ-d5-6iD" eventType="touchUpInside" id="X5D-rI-uL2"/>
+                                    <action selector="skipButton:" destination="yhZ-d5-6iD" eventType="touchUpInside" id="0Jt-lP-J9O"/>
                                 </connections>
                             </button>
                         </barButtonItem>
