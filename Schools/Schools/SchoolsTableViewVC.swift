@@ -12,7 +12,7 @@ class SchoolsTableViewVC: UIViewController {
     
     let db = Firestore.firestore()
     
-    var arraySchool : [String] = [""]
+    var arraySchool : [String] = ["","","","","","","","",""]
     
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
@@ -43,6 +43,8 @@ class SchoolsTableViewVC: UIViewController {
      @objc func dismissKeyboard() {
       view.endEditing(true)
      }
+    
+    
 
     
 }// end of the class

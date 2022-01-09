@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6zw-sL-qpR">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,147 +13,166 @@
             <objects>
                 <viewController storyboardIdentifier="MapsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rFC-GY-yru" customClass="MapsVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XCn-q9-Qkx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="PDe-v8-cOH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="843"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="813" id="2vQ-T9-y8l"/>
-                                    <constraint firstAttribute="width" constant="414" id="sGq-cG-6hB"/>
+                                    <constraint firstAttribute="width" constant="428" id="RaI-Jj-S3s"/>
+                                    <constraint firstAttribute="height" constant="843" id="uJq-Ss-MqD"/>
                                 </constraints>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vr7-9O-tsW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="PDe-v8-cOH" firstAttribute="bottom" secondItem="vr7-9O-tsW" secondAttribute="bottom" id="LhC-A6-vAQ"/>
-                            <constraint firstItem="PDe-v8-cOH" firstAttribute="top" secondItem="XCn-q9-Qkx" secondAttribute="top" id="M68-u3-SSy"/>
-                            <constraint firstItem="PDe-v8-cOH" firstAttribute="leading" secondItem="vr7-9O-tsW" secondAttribute="leading" id="rfr-7h-QoJ"/>
-                            <constraint firstItem="PDe-v8-cOH" firstAttribute="trailing" secondItem="vr7-9O-tsW" secondAttribute="trailing" id="xy0-BO-gR1"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="bottom" secondItem="vr7-9O-tsW" secondAttribute="bottom" id="KWM-ms-J8p"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="top" secondItem="XCn-q9-Qkx" secondAttribute="top" id="Tvo-xF-rxG"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="leading" secondItem="vr7-9O-tsW" secondAttribute="leading" id="ddb-aG-3X0"/>
+                            <constraint firstItem="PDe-v8-cOH" firstAttribute="trailing" secondItem="vr7-9O-tsW" secondAttribute="trailing" id="hYB-JU-Vie"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الخريطة" image="map" catalog="system" id="V5o-N7-6ih"/>
                     <navigationItem key="navigationItem" id="iy8-bm-53a"/>
+                    <connections>
+                        <outlet property="map" destination="PDe-v8-cOH" id="R7f-gE-xSd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pcn-SU-8Ef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3094" y="139"/>
+            <point key="canvasLocation" x="3195" y="439"/>
         </scene>
         <!--Profile Of SchoolVC-->
         <scene sceneID="HzA-ht-Qgc">
             <objects>
                 <viewController storyboardIdentifier="ProfileOfSchoolVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qaj-7E-cxk" customClass="ProfileOfSchoolVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mLL-Re-Y0D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-YT-oqC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="مرحلة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-N5-b8o">
-                                        <rect key="frame" x="224" y="176" width="122" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="متاح " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ben-Zi-SA9">
-                                        <rect key="frame" x="64" y="279" width="150.5" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحلة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-N5-b8o">
+                                        <rect key="frame" x="8" y="276" width="412" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="C1b-cK-EXd"/>
+                                            <constraint firstAttribute="height" constant="46" id="3Ut-nn-lIF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="١٥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-fl-hyn">
-                                        <rect key="frame" x="64" y="394" width="91" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متاح " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ben-Zi-SA9">
+                                        <rect key="frame" x="8" y="579" width="408" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="Maj-65-XGM"/>
-                                            <constraint firstAttribute="width" constant="91" id="Rb4-ou-eHt"/>
+                                            <constraint firstAttribute="height" constant="46" id="htp-2g-5Rk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="اهلية و حكومي وعالمي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-Pw-ehi">
-                                        <rect key="frame" x="64" y="122" width="150.5" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="١٥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Dk-fl-hyn">
+                                        <rect key="frame" x="10" y="820" width="406" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="gSV-ks-4tg"/>
+                                            <constraint firstAttribute="height" constant="46" id="umT-vV-JAK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="اسم المدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWl-Xw-AUi">
-                                        <rect key="frame" x="146" y="8" width="123" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اهلية و حكومي وعالمي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud2-Pw-ehi">
+                                        <rect key="frame" x="8" y="180" width="412" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="123" id="EFU-Of-iMX"/>
-                                            <constraint firstAttribute="height" constant="40" id="JP8-Tx-tku"/>
+                                            <constraint firstAttribute="height" constant="46" id="ulq-qu-TQU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="بنين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2c-RA-EjX">
-                                        <rect key="frame" x="64" y="232" width="150.5" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWl-Xw-AUi">
+                                        <rect key="frame" x="8" y="59" width="412" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="ubQ-vr-At9"/>
+                                            <constraint firstAttribute="height" constant="40" id="SGj-G6-gPi"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="٤٠٠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ga-sm6">
-                                        <rect key="frame" x="44" y="333" width="150.5" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بنين" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2c-RA-EjX">
+                                        <rect key="frame" x="8" y="458" width="408" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="tvH-g2-ch9"/>
+                                            <constraint firstAttribute="height" constant="46" id="s0u-5z-VlU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="متوسط" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBI-ZT-lNh">
-                                        <rect key="frame" x="64" y="176" width="150.5" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="٤٠٠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o1-Ga-sm6">
+                                        <rect key="frame" x="8" y="701" width="412" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="mRE-Ym-pMg"/>
+                                            <constraint firstAttribute="height" constant="46" id="uud-LB-ysU"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="فئة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXJ-fW-sbC">
-                                        <rect key="frame" x="224" y="232" width="122" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="السعة الاستيعابية للطلاب بالمدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAd-6S-IHo">
-                                        <rect key="frame" x="171" y="333" width="229" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="نوع المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-ux-XbQ">
-                                        <rect key="frame" x="224" y="122" width="122" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="متوسط" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBI-ZT-lNh">
+                                        <rect key="frame" x="8" y="330" width="412" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="122" id="jHF-dS-4ig"/>
+                                            <constraint firstAttribute="height" constant="46" id="e26-lR-TOs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="الحد الاقصى لعدد الطلاب بالفصل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzS-ha-x34">
-                                        <rect key="frame" x="149" y="394" width="228" height="46"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فئة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXJ-fW-sbC">
+                                        <rect key="frame" x="8" y="404" width="412" height="46"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="228" id="ht5-R0-Z8K"/>
+                                            <constraint firstAttribute="height" constant="46" id="vMa-rC-ojR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="FDD-F8-2pL">
-                                        <rect key="frame" x="48" y="555" width="142" height="31"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعة الاستيعابية للطلاب بالمدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAd-6S-IHo">
+                                        <rect key="frame" x="10" y="647" width="408" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="ox9-yq-NwH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="نوع المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1S-ux-XbQ">
+                                        <rect key="frame" x="8" y="126" width="412" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="P4E-Ue-oSd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحد الاقصى لعدد الطلاب بالفصل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FzS-ha-x34">
+                                        <rect key="frame" x="8" y="766" width="408" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="dja-UZ-mqW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حالة التسجيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-eP-Dt8">
+                                        <rect key="frame" x="8" y="525" width="408" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="ege-uR-whx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="FDD-F8-2pL">
+                                        <rect key="frame" x="53" y="955" width="142" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyW-jq-x6A">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="31"/>
@@ -179,11 +198,11 @@
                                             <constraint firstAttribute="width" constant="142" id="kff-HS-Fc8"/>
                                         </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="pXc-ja-y6D">
-                                        <rect key="frame" x="229" y="555" width="142.5" height="31"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="pXc-ja-y6D">
+                                        <rect key="frame" x="234" y="955" width="142.66666666666663" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bR7-1m-KQg">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="31"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system"/>
@@ -192,7 +211,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-ag-oub">
-                                                <rect key="frame" x="75.5" y="0.0" width="67" height="31"/>
+                                                <rect key="frame" x="75.333333333333314" y="0.0" width="67.333333333333314" height="31"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="character.bubble.fill.zh" catalog="system"/>
@@ -206,64 +225,55 @@
                                             <constraint firstAttribute="height" constant="31" id="gfT-sz-XKh"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="حالة التسجيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KQ-eP-Dt8">
-                                        <rect key="frame" x="163" y="279" width="243" height="46"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="top" secondItem="GBI-ZT-lNh" secondAttribute="bottom" constant="10" id="42u-tq-0aR"/>
-                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="leading" secondItem="7o1-Ga-sm6" secondAttribute="leading" constant="20" id="5v1-LY-UZ4"/>
-                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="trailing" secondItem="7o1-Ga-sm6" secondAttribute="trailing" constant="20" id="70w-Cw-vES"/>
-                                    <constraint firstItem="ZXJ-fW-sbC" firstAttribute="trailing" secondItem="kAd-6S-IHo" secondAttribute="trailing" constant="-54" id="AWY-IC-4va"/>
-                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="leading" secondItem="ben-Zi-SA9" secondAttribute="leading" constant="-20" id="ArS-hJ-aXk"/>
-                                    <constraint firstItem="pbr-N5-b8o" firstAttribute="leading" secondItem="ZXJ-fW-sbC" secondAttribute="leading" id="BoN-8O-A44"/>
-                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="trailing" secondItem="ben-Zi-SA9" secondAttribute="trailing" constant="-20" id="DWt-M9-JDi"/>
-                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="top" secondItem="Z2c-RA-EjX" secondAttribute="bottom" constant="55" id="ESs-Fv-qqU"/>
-                                    <constraint firstItem="ZXJ-fW-sbC" firstAttribute="leading" secondItem="kAd-6S-IHo" secondAttribute="leading" constant="53" id="EpS-wt-BZP"/>
-                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="leading" secondItem="Z2c-RA-EjX" secondAttribute="leading" id="Ese-TH-uW1"/>
-                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="leading" secondItem="pbr-N5-b8o" secondAttribute="leading" id="HQl-hU-iQ7"/>
-                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="top" secondItem="a9V-YT-oqC" secondAttribute="top" constant="52" id="I8P-Ya-a4l"/>
-                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="firstBaseline" secondItem="kAd-6S-IHo" secondAttribute="firstBaseline" id="J4h-o3-tK3"/>
-                                    <constraint firstItem="pbr-N5-b8o" firstAttribute="trailing" secondItem="ZXJ-fW-sbC" secondAttribute="trailing" id="JRB-Zi-a8E"/>
-                                    <constraint firstAttribute="trailing" secondItem="pXc-ja-y6D" secondAttribute="trailing" constant="42.5" id="KWc-Qf-2wJ"/>
-                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="baseline" secondItem="pbr-N5-b8o" secondAttribute="baseline" id="MTe-Ph-Vb5"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="trailing" secondItem="GBI-ZT-lNh" secondAttribute="trailing" id="N8y-C0-n6R"/>
-                                    <constraint firstItem="pXc-ja-y6D" firstAttribute="top" secondItem="FzS-ha-x34" secondAttribute="bottom" constant="115" id="PoD-Vx-15n"/>
-                                    <constraint firstItem="6KQ-eP-Dt8" firstAttribute="top" secondItem="kAd-6S-IHo" secondAttribute="bottom" constant="-100" id="Pve-vM-ewX"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="top" secondItem="PWl-Xw-AUi" secondAttribute="bottom" constant="74" id="QWj-L5-tvQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="pXc-ja-y6D" secondAttribute="bottom" constant="266" id="Qjd-Zd-htp"/>
-                                    <constraint firstItem="ben-Zi-SA9" firstAttribute="firstBaseline" secondItem="6KQ-eP-Dt8" secondAttribute="firstBaseline" id="RCS-FU-ke7"/>
-                                    <constraint firstItem="FDD-F8-2pL" firstAttribute="leading" secondItem="a9V-YT-oqC" secondAttribute="leading" constant="48" id="SBb-xP-Beo"/>
-                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="firstBaseline" secondItem="pbr-N5-b8o" secondAttribute="firstBaseline" id="UwG-Ll-Ark"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="leading" secondItem="a9V-YT-oqC" secondAttribute="leadingMargin" constant="56" id="Vhu-eN-ha6"/>
-                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="centerX" secondItem="FzS-ha-x34" secondAttribute="centerX" constant="-55.5" id="VpG-59-7g1"/>
-                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="centerY" secondItem="kAd-6S-IHo" secondAttribute="centerY" id="WKX-Q2-stz"/>
-                                    <constraint firstItem="FDD-F8-2pL" firstAttribute="top" secondItem="1Dk-fl-hyn" secondAttribute="bottom" constant="115" id="X7a-xh-i2W"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="firstBaseline" secondItem="e1S-ux-XbQ" secondAttribute="firstBaseline" id="YFc-ZE-QR6"/>
-                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="trailing" secondItem="Z2c-RA-EjX" secondAttribute="trailing" id="Zw2-5V-8y3"/>
-                                    <constraint firstAttribute="bottom" secondItem="FDD-F8-2pL" secondAttribute="bottom" constant="266" id="auf-71-Rhb"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Dk-fl-hyn" secondAttribute="trailing" constant="12" id="2Xl-2N-9qB"/>
+                                    <constraint firstItem="ZXJ-fW-sbC" firstAttribute="trailing" secondItem="7o1-Ga-sm6" secondAttribute="trailing" id="3Gx-CD-kTC"/>
+                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="trailing" secondItem="ZXJ-fW-sbC" secondAttribute="trailing" id="636-e7-SJT"/>
+                                    <constraint firstItem="ZXJ-fW-sbC" firstAttribute="leading" secondItem="Z2c-RA-EjX" secondAttribute="leading" id="7kn-0g-li4"/>
+                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="trailing" secondItem="e1S-ux-XbQ" secondAttribute="trailing" id="AqE-UP-APl"/>
+                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="trailing" secondItem="pbr-N5-b8o" secondAttribute="trailing" id="GMf-kX-ArR"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="trailing" secondItem="ben-Zi-SA9" secondAttribute="trailing" id="GPq-xk-DBN"/>
+                                    <constraint firstItem="6KQ-eP-Dt8" firstAttribute="leading" secondItem="ben-Zi-SA9" secondAttribute="leading" id="I3m-xJ-xmh"/>
+                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="leading" secondItem="ZXJ-fW-sbC" secondAttribute="leading" id="I7B-Lf-2tN"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXc-ja-y6D" secondAttribute="trailing" constant="51.333333333333371" id="KWc-Qf-2wJ"/>
+                                    <constraint firstItem="pbr-N5-b8o" firstAttribute="leading" secondItem="GBI-ZT-lNh" secondAttribute="leading" id="PKb-IM-VEv"/>
+                                    <constraint firstItem="ben-Zi-SA9" firstAttribute="leading" secondItem="7o1-Ga-sm6" secondAttribute="leading" id="PLM-fv-HEm"/>
+                                    <constraint firstAttribute="bottom" secondItem="pXc-ja-y6D" secondAttribute="bottom" constant="42" id="Qjd-Zd-htp"/>
+                                    <constraint firstItem="kAd-6S-IHo" firstAttribute="centerX" secondItem="7o1-Ga-sm6" secondAttribute="centerX" id="RvQ-21-Zvn"/>
+                                    <constraint firstItem="FDD-F8-2pL" firstAttribute="leading" secondItem="a9V-YT-oqC" secondAttribute="leading" constant="53" id="SBb-xP-Beo"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="leading" secondItem="kAd-6S-IHo" secondAttribute="leading" id="SHj-Kh-Qtg"/>
+                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="leading" secondItem="FzS-ha-x34" secondAttribute="leading" id="Uug-Gv-dYm"/>
+                                    <constraint firstItem="FDD-F8-2pL" firstAttribute="top" secondItem="1Dk-fl-hyn" secondAttribute="bottom" constant="89" id="Wzn-ZF-GwT"/>
+                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="trailing" secondItem="a9V-YT-oqC" secondAttribute="trailingMargin" id="XL1-Cc-NFY"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="trailing" secondItem="FzS-ha-x34" secondAttribute="trailing" id="YpC-lV-xEE"/>
+                                    <constraint firstItem="FzS-ha-x34" firstAttribute="top" secondItem="7o1-Ga-sm6" secondAttribute="bottom" constant="19" id="Ypg-0W-i2u"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="trailing" secondItem="6KQ-eP-Dt8" secondAttribute="trailing" id="Zjf-Sk-gQj"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="leading" secondItem="a9V-YT-oqC" secondAttribute="leading" constant="10" id="Zsc-Fo-Rdk"/>
+                                    <constraint firstItem="pbr-N5-b8o" firstAttribute="trailing" secondItem="GBI-ZT-lNh" secondAttribute="trailing" id="asC-2Z-hfr"/>
+                                    <constraint firstAttribute="bottom" secondItem="FDD-F8-2pL" secondAttribute="bottom" constant="42" id="auf-71-Rhb"/>
+                                    <constraint firstItem="pbr-N5-b8o" firstAttribute="top" secondItem="ud2-Pw-ehi" secondAttribute="bottom" constant="50" id="chD-27-NHM"/>
                                     <constraint firstItem="pXc-ja-y6D" firstAttribute="leading" secondItem="FDD-F8-2pL" secondAttribute="trailing" constant="39" id="chx-oN-Crz"/>
-                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="firstBaseline" secondItem="ZXJ-fW-sbC" secondAttribute="firstBaseline" id="dUp-re-2bQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="6KQ-eP-Dt8" secondAttribute="trailing" constant="8" id="fSV-JB-jPl"/>
-                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="baseline" secondItem="ZXJ-fW-sbC" secondAttribute="baseline" id="fmg-Nb-fB3"/>
-                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="top" secondItem="ud2-Pw-ehi" secondAttribute="bottom" constant="8" symbolic="YES" id="gZj-R9-Dmy"/>
-                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="firstBaseline" secondItem="FzS-ha-x34" secondAttribute="firstBaseline" id="gqq-WC-gMD"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="baseline" secondItem="e1S-ux-XbQ" secondAttribute="baseline" id="hob-QB-2ON"/>
-                                    <constraint firstItem="FzS-ha-x34" firstAttribute="top" secondItem="6KQ-eP-Dt8" secondAttribute="bottom" constant="69" id="jDW-mf-QVa"/>
-                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="top" secondItem="a9V-YT-oqC" secondAttribute="top" constant="52" id="jop-jD-nQB"/>
-                                    <constraint firstItem="ben-Zi-SA9" firstAttribute="leading" secondItem="1Dk-fl-hyn" secondAttribute="leading" id="kbd-J5-853"/>
-                                    <constraint firstItem="kAd-6S-IHo" firstAttribute="centerX" secondItem="6KQ-eP-Dt8" secondAttribute="centerX" constant="1" id="nqW-n1-1xU"/>
-                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="leading" secondItem="GBI-ZT-lNh" secondAttribute="leading" id="nzL-MS-Rg2"/>
+                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="trailing" secondItem="ud2-Pw-ehi" secondAttribute="trailing" id="d6c-qL-kte"/>
+                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="leading" secondItem="6KQ-eP-Dt8" secondAttribute="leading" id="dF2-st-9EC"/>
+                                    <constraint firstItem="ZXJ-fW-sbC" firstAttribute="top" secondItem="GBI-ZT-lNh" secondAttribute="bottom" constant="28" id="eOs-CR-ojb"/>
+                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="top" secondItem="PWl-Xw-AUi" secondAttribute="bottom" constant="27" id="fF5-yj-l4L"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="trailing" secondItem="Z2c-RA-EjX" secondAttribute="trailing" id="fdk-mX-KTY"/>
+                                    <constraint firstItem="kAd-6S-IHo" firstAttribute="top" secondItem="ben-Zi-SA9" secondAttribute="bottom" constant="22" id="gVW-ET-YYa"/>
+                                    <constraint firstItem="ben-Zi-SA9" firstAttribute="top" secondItem="6KQ-eP-Dt8" secondAttribute="bottom" constant="8" symbolic="YES" id="hu7-lq-7WD"/>
+                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="leading" secondItem="pbr-N5-b8o" secondAttribute="leading" id="iL3-Ed-SMg"/>
+                                    <constraint firstItem="GBI-ZT-lNh" firstAttribute="top" secondItem="pbr-N5-b8o" secondAttribute="bottom" constant="8" symbolic="YES" id="jsQ-k9-Ggg"/>
+                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="top" secondItem="FzS-ha-x34" secondAttribute="bottom" constant="8" symbolic="YES" id="mEV-lv-fMh"/>
+                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="leading" secondItem="a9V-YT-oqC" secondAttribute="leadingMargin" id="o99-7S-YZl"/>
+                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="leading" secondItem="ud2-Pw-ehi" secondAttribute="leading" id="oN4-k1-w9v"/>
+                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="leading" secondItem="e1S-ux-XbQ" secondAttribute="leading" id="ol7-ZC-7em"/>
+                                    <constraint firstItem="Z2c-RA-EjX" firstAttribute="top" secondItem="ZXJ-fW-sbC" secondAttribute="bottom" constant="8" symbolic="YES" id="om7-hJ-Ki1"/>
+                                    <constraint firstItem="ud2-Pw-ehi" firstAttribute="top" secondItem="e1S-ux-XbQ" secondAttribute="bottom" constant="8" symbolic="YES" id="pkj-4n-N1q"/>
+                                    <constraint firstItem="7o1-Ga-sm6" firstAttribute="top" secondItem="kAd-6S-IHo" secondAttribute="bottom" constant="8" symbolic="YES" id="qoo-4p-rpN"/>
                                     <constraint firstItem="pXc-ja-y6D" firstAttribute="leading" secondItem="FDD-F8-2pL" secondAttribute="trailing" constant="39" id="rQe-Oz-fjQ"/>
-                                    <constraint firstItem="1Dk-fl-hyn" firstAttribute="centerY" secondItem="FzS-ha-x34" secondAttribute="centerY" id="u7b-BQ-0KX"/>
-                                    <constraint firstItem="ben-Zi-SA9" firstAttribute="centerY" secondItem="6KQ-eP-Dt8" secondAttribute="centerY" id="ujt-q2-atP"/>
-                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="trailing" secondItem="pbr-N5-b8o" secondAttribute="trailing" id="w5c-DM-Qe5"/>
-                                    <constraint firstItem="e1S-ux-XbQ" firstAttribute="leading" secondItem="ud2-Pw-ehi" secondAttribute="trailing" constant="9" id="wFR-cZ-Nfm"/>
-                                    <constraint firstItem="PWl-Xw-AUi" firstAttribute="centerX" secondItem="a9V-YT-oqC" secondAttribute="centerX" constant="0.5" id="y8J-Wp-uwG"/>
+                                    <constraint firstItem="FDD-F8-2pL" firstAttribute="top" secondItem="a9V-YT-oqC" secondAttribute="top" constant="955" id="uJt-6v-BYm"/>
+                                    <constraint firstItem="6KQ-eP-Dt8" firstAttribute="top" secondItem="Z2c-RA-EjX" secondAttribute="bottom" constant="21" id="x2N-HC-iAq"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="Qaj-7E-cxk" id="Irj-QJ-TFl"/>
@@ -280,24 +290,25 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="schoolAvailability" destination="6KQ-eP-Dt8" id="YrC-3D-rMT"/>
+                        <outlet property="schoolAvailability" destination="ben-Zi-SA9" id="KC9-V6-nEe"/>
                         <outlet property="schoolCapacity" destination="7o1-Ga-sm6" id="HFy-uf-qR8"/>
                         <outlet property="schoolCategory" destination="Z2c-RA-EjX" id="fS4-o5-2VA"/>
                         <outlet property="schoolMaximumNumberInClass" destination="1Dk-fl-hyn" id="rnM-aP-lSi"/>
+                        <outlet property="schoolName" destination="PWl-Xw-AUi" id="ppn-vL-WqF"/>
                         <outlet property="schoolStage" destination="GBI-ZT-lNh" id="WXs-Vu-OAz"/>
                         <outlet property="schoolType" destination="ud2-Pw-ehi" id="cgN-og-etP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEp-SZ-uxP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5326.0869565217399" y="-486.16071428571428"/>
+            <point key="canvasLocation" x="5278.0373831775696" y="-306.47948164146868"/>
         </scene>
         <!--Comment Of SchoolVC-->
         <scene sceneID="Xgm-9g-MV8">
             <objects>
                 <viewController storyboardIdentifier="CommentOfSchoolVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pp0-GG-tYp" customClass="CommentOfSchoolVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m2G-pX-P4b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="التعليقات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-eb-GsG">
@@ -315,29 +326,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJU-KQ-eTP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6185.507246376812" y="-486.16071428571428"/>
+            <point key="canvasLocation" x="6207" y="-306"/>
         </scene>
         <!--الرئيسية-->
         <scene sceneID="ygY-2c-iDe">
             <objects>
                 <viewController id="TJ8-N7-iCG" customClass="SchoolsTableViewVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1hQ-9f-NWT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zpi-CJ-cTJ">
-                                <rect key="frame" x="0.0" y="136" width="414" height="677"/>
+                                <rect key="frame" x="0.0" y="166" width="428" height="677"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="677" id="gYb-tS-RZS"/>
-                                    <constraint firstAttribute="width" constant="414" id="xOA-QW-Tvm"/>
+                                    <constraint firstAttribute="height" constant="677" id="6Rx-oP-qiw"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="173" id="aZB-Zf-L90" customClass="SchoolsTableViewCell" customModule="Schools" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="173"/>
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aZB-Zf-L90" id="GEG-xd-20I">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="173"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="اسم المدرسة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRA-I8-XNh">
@@ -375,7 +385,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث بأسم المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
-                                <rect key="frame" x="118" y="94" width="276" height="34"/>
+                                <rect key="frame" x="132" y="94" width="276" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="276" id="vuh-2n-cHS"/>
                                 </constraints>
@@ -386,14 +396,15 @@
                         <viewLayoutGuide key="safeArea" id="p47-cj-rN1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="9ho-U7-a7t"/>
                             <constraint firstItem="h7i-PV-kFV" firstAttribute="baseline" secondItem="AMB-r6-LGw" secondAttribute="baseline" id="Ed9-Ss-saX"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="NYt-LY-7Mf"/>
                             <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" constant="16" id="Uc2-TV-dIl"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="W7s-Ai-4I3"/>
                             <constraint firstItem="AMB-r6-LGw" firstAttribute="trailing" secondItem="1hQ-9f-NWT" secondAttribute="trailingMargin" id="a2s-U6-cyG"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="trailing" secondItem="p47-cj-rN1" secondAttribute="trailing" id="fNz-Br-pHe"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="centerX" secondItem="1hQ-9f-NWT" secondAttribute="centerX" id="cbm-h1-juh"/>
                             <constraint firstItem="AMB-r6-LGw" firstAttribute="leading" secondItem="h7i-PV-kFV" secondAttribute="trailing" constant="8" symbolic="YES" id="flT-Xl-d7P"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="kBp-ZP-nbn"/>
                             <constraint firstItem="AMB-r6-LGw" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="6" id="lNb-c6-Jvx"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="top" secondItem="h7i-PV-kFV" secondAttribute="bottom" constant="38" id="u3N-uc-Fhh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="الرئيسية" id="zz4-yb-ibT">
@@ -405,14 +416,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocV-Vy-xNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3992.753623188406" y="-579.24107142857144"/>
+            <point key="canvasLocation" x="4234" y="-306"/>
         </scene>
         <!--FilterVC-->
         <scene sceneID="aDd-wm-jIR">
             <objects>
                 <viewController storyboardIdentifier="FilterVC" modalPresentationStyle="formSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BRZ-ah-7Yr" customClass="FilterVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mIh-cB-hWl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="التصفية حسب " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUs-8n-H5B">
@@ -507,14 +518,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MEA-m4-wvb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4770" y="-1188"/>
+            <point key="canvasLocation" x="4234" y="-1022"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="MxF-MZ-Tcg">
             <objects>
                 <viewController storyboardIdentifier="ProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eSP-09-kDu" customClass="ProfileVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Du1-lN-cio">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="الايميل " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgj-zz-Mnx">
@@ -574,7 +585,7 @@
                         <barButtonItem key="backBarButtonItem" title="الملف الشخصي" id="Jbb-zr-KTj"/>
                         <barButtonItem key="leftBarButtonItem" title="gear" image="gear" catalog="system" style="plain" id="cgp-rb-s9O">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mwr-A9-ZJa">
-                                <rect key="frame" x="20" y="5" width="91" height="34.5"/>
+                                <rect key="frame" x="20" y="4.6666666666666679" width="91" height="34.666666666666657"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="91" id="v1s-9m-Sgn"/>
@@ -601,11 +612,11 @@
             <objects>
                 <viewController storyboardIdentifier="SettingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="upj-TJ-KPm" customClass="SettingVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MZO-4D-1k5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cer-W6-GxT">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <rect key="frame" x="0.0" y="0.0" width="454" height="813"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="تفعيل الوضع الليلي " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-YL-SpX">
@@ -703,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-YZ-0fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4105.7971014492759" y="1997.5446428571427"/>
+            <point key="canvasLocation" x="4104.6728971962611" y="1996.9762419006481"/>
         </scene>
         <!--Main Tab Bar-->
         <scene sceneID="MTr-lk-vIY">
@@ -725,14 +736,14 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQT-gN-RIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1396" y="305"/>
+            <point key="canvasLocation" x="1204" y="785"/>
         </scene>
         <!--WaysVC-->
         <scene sceneID="NQk-Bh-QgQ">
             <objects>
                 <viewController storyboardIdentifier="WaysVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yhZ-d5-6iD" customClass="WaysVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Stb-9b-Pnu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لم تقم بتسجيل الدخول بعد" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDX-gO-Sp3">
@@ -788,7 +799,7 @@
             <objects>
                 <viewController storyboardIdentifier="LogInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vgj-ZO-iiE" customClass="LogInVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Pe-m8-Blq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="05XXXXXXXX" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QE1-aS-67H">
@@ -833,7 +844,7 @@
             <objects>
                 <viewController storyboardIdentifier="AuthenticationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="z6d-Q7-Pmm" customClass="AuthenticationVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1fV-R6-Wjp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="لقد تم ارسال رسالة نصية على جوالك" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q66-nL-v27">
@@ -882,7 +893,7 @@
             <objects>
                 <viewController storyboardIdentifier="ForgotPassword" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3rp-2i-KfM" customClass="ForgotPasswordVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Laq-ez-3VQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-xx-iEG">
@@ -931,7 +942,7 @@
             <objects>
                 <viewController storyboardIdentifier="NewSchoolAccountVC" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9kQ-yV-gh7" customClass="NewSchoolAccountVC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kYt-OG-cn3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laN-Lf-Vj6">
@@ -1037,7 +1048,7 @@
             <objects>
                 <viewController storyboardIdentifier="NewSchoolAccount2VC" id="6jm-Zc-GYg" customClass="NewSchoolAccount2VC" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Ee-k3-NFZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="انشاء حساب جديد للمدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-TT-Pww">
@@ -1172,7 +1183,7 @@
                 <navigationController storyboardIdentifier="loginNavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iEp-vS-NLM" customClass="LoginNavigationController" customModule="Schools" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UdD-t3-WVf">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1191,7 +1202,7 @@
                     <tabBarItem key="tabBarItem" title="الرئيسية" image="house" catalog="system" selectedImage="house.fill" id="jr1-UI-wNO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BcJ-9R-xNd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1201,7 +1212,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxS-34-1Cz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093" y="-579"/>
+            <point key="canvasLocation" x="3195" y="-306"/>
         </scene>
         <!--الملف الشخصي-->
         <scene sceneID="EIO-cz-Lt1">
@@ -1210,7 +1221,7 @@
                     <tabBarItem key="tabBarItem" title="الملف الشخصي" image="person" catalog="system" id="Kou-lN-OKK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YM8-bq-Iaz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
