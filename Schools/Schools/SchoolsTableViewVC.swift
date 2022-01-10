@@ -12,13 +12,14 @@ class SchoolsTableViewVC: UIViewController {
     
     let db = Firestore.firestore()
     
-    var arraySchool : [String] = ["","","","","","","","",""]
+    var arraySchool : [School] = []
     
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        getDataFromFireBase()
         
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
@@ -43,6 +44,52 @@ class SchoolsTableViewVC: UIViewController {
      @objc func dismissKeyboard() {
       view.endEditing(true)
      }
+    
+    
+    func getDataFromFireBase(){
+        
+        db.collection("School").getDocuments { querySnapshot, error in
+            if error == nil {
+                
+                querySnapshot?.documents.forEach({ QueryDocumentSnapshot in
+                    
+                    let schoolName : String = (QueryDocumentSnapshot.get("schoolName") as? String)!
+                    
+                    let schoolType : String = (QueryDocumentSnapshot.get("schoolType") as? String)!
+                    
+                    let schoolStage : String = (QueryDocumentSnapshot.get("schoolStage") as? String)!
+
+                    let schoolCategory : String = (QueryDocumentSnapshot.get("schoolCategory") as? String)!
+                    
+                    let schoolStatus : String =  (QueryDocumentSnapshot.get("schoolStatus") as? String)!
+                    
+                    let schoolCapacity : String =
+                    (QueryDocumentSnapshot.get("schoolCapacity") as! String?)!
+                    
+                    let schoolMaximum : String =
+                    (QueryDocumentSnapshot.get("schoolMaximumNum") as? String)!
+            
+                    let schoolPhone : String = QueryDocumentSnapshot.get("schoolPhone") as! String
+
+                    let schoolLocation : String =  QueryDocumentSnapshot.get("schoolLocation") as! String
+
+                    let schoolEmail : String =  QueryDocumentSnapshot.get("schoolEmail") as! String
+                    
+                    let schoolPassword : String = QueryDocumentSnapshot.get("schoolPassword")as! String
+                    
+                    self.arraySchool.append(School(schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
+                    
+                    self.tableViewOfSchools.reloadData()
+                })
+                
+            }else{
+                
+                print(error!.localizedDescription)
+                
+            }
+        }
+    }
+
     
     
 
