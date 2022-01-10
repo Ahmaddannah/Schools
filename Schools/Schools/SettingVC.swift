@@ -24,16 +24,18 @@ class SettingVC: UIViewController {
     @IBAction func darkLightModeSwitchAction(_ sender: Any) {
         
         if darkLightModeSwitch.isOn == true {
-
-            UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .dark
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .dark }
             }
-        }else{
+        }else {
+            if #available(iOS 10.0, *) {
             UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light
+                window.overrideUserInterfaceStyle = .light }
             }
         }
     }
+
     
     @IBAction func changePasswordButton(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ForgotPassword") as! ForgotPasswordVC

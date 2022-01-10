@@ -35,9 +35,9 @@ class FilterVC: UIViewController {
     
     @IBAction func applyFilterButton(_ sender: Any) {
         
-        var home = SchoolsTableViewVC()
+//        var home = SchoolsTableViewVC()
         
-        home.selectedCat = "ahmad"
+//        home.selectedCat = "ahmad"
         
         navigationController?.popViewController(animated: true)
     }
