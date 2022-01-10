@@ -17,7 +17,7 @@ class SettingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-//        darkLightModeSwitch.isOn = false
+        darkLightModeSwitch.isOn = false
         
     }
     

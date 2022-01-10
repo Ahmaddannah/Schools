@@ -105,9 +105,9 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath)
         
-//        cell.schoolName.text = arraySchool[indexPath.row].schoolName.text
+//        cell.schoolName.text = arraySchool[indexPath.row].schoolName
         
         return cell
         

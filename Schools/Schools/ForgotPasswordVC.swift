@@ -17,12 +17,7 @@ class ForgotPasswordVC: UIViewController {
         hideKeyboardWhenTappedAround()
         
     }
-    
-    @IBAction func callllll(_ sender: Any) {
         
-        
-    }
-    
     @IBAction func resetPassword(_ sender: Any) {
         
         
@@ -40,5 +35,3 @@ class ForgotPasswordVC: UIViewController {
         view.endEditing(true)
     }
 }
-
-

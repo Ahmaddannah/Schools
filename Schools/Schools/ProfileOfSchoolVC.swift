@@ -96,9 +96,9 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolLocationButton(_ sender: Any) {
         
-        let strawberryUrl = URL(string: "https://goo.gl/maps/L86tGtEYpGPccgDw5")
-                 let strawberryRequest = URLRequest(url: strawberryUrl!)
-       
+//        let strawberryUrl = URL(string: "https://goo.gl/maps/L86tGtEYpGPccgDw5")
+//                 let strawberryRequest = URLRequest(url: strawberryUrl!)
+//
 //        var x = MapsVC()
 //        x.map.load(strawberryRequest)
 //
