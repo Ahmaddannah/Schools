@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import nanopb
 
 class NewSchoolAccount2VC: UIViewController {
     
@@ -42,10 +43,18 @@ class NewSchoolAccount2VC: UIViewController {
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {
         
-        check()
-        uploadData()
-        dismiss(animated: false, completion: .none)
-        dismiss(animated: false, completion: .none)
+       
+        
+        if check(){
+            uploadData()
+            dismiss(animated: false, completion: .none)
+            dismiss(animated: false, completion: .none)
+        }else{
+            print("NOOOOO")
+        }
+
+        
+
         
     }
     
@@ -88,37 +97,52 @@ class NewSchoolAccount2VC: UIViewController {
     }
     
     
-    func check(){
+    func check() -> Bool {
         
         if schoolType.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال نوع المدرسة ", isAdd: true )
             
+            return false
+            
         }else if schoolStage.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال مرحلة المدرسة ", isAdd: true )
+            
+            return false
             
         }else if schoolCategory.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال فئة المدرسة ", isAdd: true )
             
+            return false
+            
         }else if schoolCapacity.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال الفئة الاستيعابية للمدرسة ", isAdd: true )
+            
+            return false
             
         }else if schoolStatus.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال حالة التسجيل للمدرسة  ", isAdd: true )
             
+            return false
+            
         }else if schoolLocation.text!.isEmpty {
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال موقع المدرسة ", isAdd: true )
+            
+            return false
             
         }else if schoolMaximumNum.text!.isEmpty{
             
             myCustomAlert(title: "تنبيه", message: "لم تقم بأدخال الحد الاقصى لعدد الطلاب بالفصل  ", isAdd: true )
             
+            return false
+            
         }
+        return true
     }
 
     

@@ -18,11 +18,20 @@ class SchoolsTableViewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         hideKeyboardWhenTappedAround()
-        getDataFromFireBase()
         
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+      
+        arraySchool.removeAll()
+        getDataFromFireBase()
+        tableViewOfSchools.reloadData()
     }
     
 
@@ -105,9 +114,9 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath)
+        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath) as! SchoolsTableViewCell
         
-//        cell.schoolName.text = arraySchool[indexPath.row].schoolName
+        cell.schoolName.text = arraySchool[indexPath.row].schoolName
         
         return cell
         
@@ -116,7 +125,7 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileOfSchoolVC") as? ProfileOfSchoolVC
-        
+        vc?.schoolObject = arraySchool[indexPath.row]
         vc!.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc!, animated: true)
             }

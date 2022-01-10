@@ -26,55 +26,27 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBOutlet weak var schoolMaximumNumberInClass: UILabel!
     
-    
+    var schoolObject : School? = nil
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getDataFromFireBase()
-        
+        getDataFromObjectSchools()
         hideKeyboardWhenTappedAround()
         
     }
     
     
-    
-    func getDataFromFireBase(){
+    func getDataFromObjectSchools(){
         
-        db.collection("School").getDocuments { querySnapshot, error in
-            if error == nil {
-                
-                querySnapshot?.documents.forEach({ QueryDocumentSnapshot in
-                    
-                    self.schoolName.text = QueryDocumentSnapshot.get("schoolName") as? String
-                    
-                    self.schoolType.text = QueryDocumentSnapshot.get("schoolType") as? String
-                    
-                    self.schoolStage.text = QueryDocumentSnapshot.get("schoolStage") as? String
-                    
-                    self.schoolCategory.text = QueryDocumentSnapshot.get("schoolCategory") as? String
-                    
-                    self.schoolAvailability.text = QueryDocumentSnapshot.get("schoolStatus") as? String
-                    
-                    self.schoolCapacity.text = QueryDocumentSnapshot.get("schoolCapacity") as! String?
-                    
-                    self.schoolMaximumNumberInClass.text = QueryDocumentSnapshot.get("schoolMaximumNum") as? String
-            
-//                    self.schoolName.text = QueryDocumentSnapshot.get("schoolPhone") as! String
-//
-//                    self.schoolName.text = QueryDocumentSnapshot.get("schoolLocation") as! String
-//
-//                    self.schoolName.text = QueryDocumentSnapshot.get("schoolEmail") as! String
-
-                })
-                
-            }else{
-                
-                print(error!.localizedDescription)
-                
-            }
-        }
+        schoolName.text = schoolObject!.schoolName
+        schoolType.text = schoolObject!.schoolType
+        schoolStage.text = schoolObject?.schoolStage
+        schoolCategory.text = schoolObject?.schoolCategory
+        schoolAvailability.text = schoolObject?.schoolStatus
+        schoolMaximumNumberInClass.text = schoolObject?.schoolMaximumNum
+        
     }
 
     
@@ -88,7 +60,7 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolPhoneButton(_ sender: Any) {
         
-        if let phoneURL = NSURL(string: ("tel://" + "0532955544")) {
+        if let phoneURL = NSURL(string: ("tel://" + schoolObject!.schoolPhone)) {
                            UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
         }
     }

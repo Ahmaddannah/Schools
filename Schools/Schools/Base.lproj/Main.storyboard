@@ -51,7 +51,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-YT-oqC">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" contentInsetAdjustmentBehavior="always" translatesAutoresizingMaskIntoConstraints="NO" id="a9V-YT-oqC">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحلة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbr-N5-b8o">
@@ -341,10 +341,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Zpi-CJ-cTJ">
-                                <rect key="frame" x="0.0" y="166" width="428" height="677"/>
+                                <rect key="frame" x="0.0" y="179" width="428" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="677" id="6Rx-oP-qiw"/>
+                                    <constraint firstAttribute="width" constant="428" id="Ojt-Sa-fKc"/>
+                                    <constraint firstAttribute="height" constant="664" id="Tf6-jg-xsT"/>
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOfSchool" rowHeight="173" id="aZB-Zf-L90" customClass="SchoolsTableViewCell" customModule="Schools" customModuleProvider="target">
@@ -393,35 +394,38 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث بأسم المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
+                                <rect key="frame" x="154" y="118" width="254" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Spq-Mf-eda"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-PV-kFV">
-                                <rect key="frame" x="15.999999999999996" y="97" width="58.666666666666657" height="31"/>
+                                <rect key="frame" x="19.999999999999996" y="118" width="58.666666666666657" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vRN-7W-7V6"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="تصفية"/>
                                 <connections>
                                     <action selector="filterButton:" destination="TJ8-N7-iCG" eventType="touchUpInside" id="FSO-97-kOc"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث بأسم المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
-                                <rect key="frame" x="82.666666666666657" y="94" width="325.33333333333337" height="36.666666666666657"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="276" id="vuh-2n-cHS"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p47-cj-rN1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="h7i-PV-kFV" firstAttribute="baseline" secondItem="AMB-r6-LGw" secondAttribute="baseline" id="Ed9-Ss-saX"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="NYt-LY-7Mf"/>
-                            <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" constant="16" id="Uc2-TV-dIl"/>
-                            <constraint firstItem="AMB-r6-LGw" firstAttribute="trailing" secondItem="1hQ-9f-NWT" secondAttribute="trailingMargin" id="a2s-U6-cyG"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="centerX" secondItem="1hQ-9f-NWT" secondAttribute="centerX" id="cbm-h1-juh"/>
-                            <constraint firstItem="AMB-r6-LGw" firstAttribute="leading" secondItem="h7i-PV-kFV" secondAttribute="trailing" constant="8" symbolic="YES" id="flT-Xl-d7P"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="kBp-ZP-nbn"/>
-                            <constraint firstItem="AMB-r6-LGw" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="6" id="lNb-c6-Jvx"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="top" secondItem="h7i-PV-kFV" secondAttribute="bottom" constant="38" id="u3N-uc-Fhh"/>
+                            <constraint firstItem="p47-cj-rN1" firstAttribute="trailing" secondItem="AMB-r6-LGw" secondAttribute="trailing" constant="20" id="1Yf-ce-52i"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="trailing" secondItem="p47-cj-rN1" secondAttribute="trailing" id="AWK-0I-gIh"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="FDF-xW-EFt"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="top" secondItem="AMB-r6-LGw" secondAttribute="bottom" constant="27" id="TUU-P9-1fo"/>
+                            <constraint firstItem="AMB-r6-LGw" firstAttribute="leading" secondItem="h7i-PV-kFV" secondAttribute="trailing" constant="75.329999999999998" id="dWj-Zs-TjK"/>
+                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="dXc-7A-Zx8"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="30" id="gl7-4s-htd"/>
+                            <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" constant="20" id="m1Q-3u-ulx"/>
+                            <constraint firstItem="AMB-r6-LGw" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="30" id="zB0-jt-UAd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="الرئيسية" id="zz4-yb-ibT">
@@ -685,8 +689,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفعيل الوضع الليلي " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d52-w5-lKz">
-                                <rect key="frame" x="157.33333333333334" y="220" width="113.33333333333334" height="52"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفعيل الوضع الليلي " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d52-w5-lKz">
+                                <rect key="frame" x="160" y="220" width="248" height="52"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="bho-WU-Jwt"/>
                                 </constraints>
@@ -780,11 +784,11 @@
                             <constraint firstItem="ybO-Ls-vBf" firstAttribute="top" secondItem="Fpq-T6-y7E" secondAttribute="bottom" constant="19" id="1Zg-1g-NWq"/>
                             <constraint firstItem="7Oi-N4-jRv" firstAttribute="top" secondItem="crl-Ei-zxb" secondAttribute="bottom" constant="8" symbolic="YES" id="3Pv-wX-Iwq"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="iGC-vj-9f7" secondAttribute="leading" id="5sm-6M-i0h"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="centerX" secondItem="d52-w5-lKz" secondAttribute="centerX" id="6GS-Pm-a3y"/>
+                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="centerX" secondItem="d52-w5-lKz" secondAttribute="centerX" constant="-70" id="6GS-Pm-a3y"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="GlT-g9-PoQ" secondAttribute="trailing" id="6Hj-Q1-93f"/>
                             <constraint firstItem="E8w-Nq-BND" firstAttribute="top" secondItem="iGC-vj-9f7" secondAttribute="bottom" constant="7" id="8Ou-jn-uIv"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="NSt-sa-jr9" secondAttribute="leading" id="C3j-2t-dSI"/>
-                            <constraint firstItem="d52-w5-lKz" firstAttribute="leading" secondItem="ybO-Ls-vBf" secondAttribute="trailing" constant="87.333333333333371" id="EH9-uy-HtX"/>
+                            <constraint firstItem="d52-w5-lKz" firstAttribute="leading" secondItem="ybO-Ls-vBf" secondAttribute="trailing" constant="90" id="EH9-uy-HtX"/>
                             <constraint firstItem="iGC-vj-9f7" firstAttribute="top" secondItem="7Oi-N4-jRv" secondAttribute="bottom" constant="13" id="FKg-fs-6YG"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="crl-Ei-zxb" secondAttribute="leading" id="FNM-A1-0hi"/>
                             <constraint firstItem="FKd-E4-67L" firstAttribute="top" secondItem="NSt-sa-jr9" secondAttribute="bottom" constant="8" symbolic="YES" id="GEW-x4-5F6"/>

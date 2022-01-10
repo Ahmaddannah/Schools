@@ -81,6 +81,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0A14F95278C339600B565A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0A14F96278C33B100B565A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0A14F97278C33BF00B565A9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E0D8E0952783689B00CC1EDB = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +121,11 @@
 		E0D8E0A02783689B00CC1EDB /* Schools */ = {
 			isa = PBXGroup;
 			children = (
-				E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */,
+				E0A14F95278C339600B565A9 /* Model */,
+				E0A14F96278C33B100B565A9 /* View */,
+				E0A14F97278C33BF00B565A9 /* Controller */,
 				E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */,
+				E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */,
 				E0D8E0A72783689B00CC1EDB /* Main.storyboard */,
 				E0A8CB6D2786E16D00664BE8 /* School.swift */,
 				E0A77F292785E0F800AF9330 /* AuthenticationVC.swift */,

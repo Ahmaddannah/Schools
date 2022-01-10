@@ -45,6 +45,7 @@ extension AuthErrorCode {
 }
 
 public extension Error {
+    
     var localizedDescription: String {
         let error = self as NSError
         if error.domain == AuthErrorDomain {
@@ -55,4 +56,6 @@ public extension Error {
             }
         }
         return error.localizedDescription
-    } }
+    }
+}
+
