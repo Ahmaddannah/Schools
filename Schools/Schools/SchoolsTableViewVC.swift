@@ -16,9 +16,11 @@ class SchoolsTableViewVC: UIViewController {
     
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
+    var selectedCat : String = "ahmad1"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(selectedCat)
         hideKeyboardWhenTappedAround()
         
         tableViewOfSchools.dataSource = self
@@ -27,7 +29,6 @@ class SchoolsTableViewVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
       
         arraySchool.removeAll()
         getDataFromFireBase()

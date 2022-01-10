@@ -24,11 +24,9 @@ class FilterVC: UIViewController {
         
         super.viewDidLoad()
         
-        hideKeyboardWhenTappedAround()
         
         schoolTypeSegment.selectedSegmentIndex = 3
         schoolStageSegment.selectedSegmentIndex = 4
-        
         schoolGenderSegment.selectedSegmentIndex = 1
         
         applyButtonOutlet.layer.cornerRadius = 10
@@ -36,6 +34,10 @@ class FilterVC: UIViewController {
     }
     
     @IBAction func applyFilterButton(_ sender: Any) {
+        
+        var home = SchoolsTableViewVC()
+        
+        home.selectedCat = "ahmad"
         
         navigationController?.popViewController(animated: true)
     }
@@ -47,15 +49,5 @@ class FilterVC: UIViewController {
         
     }
     
-    func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
     
 }//end of class

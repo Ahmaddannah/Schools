@@ -12,6 +12,7 @@ import Firebase
 
 class ProfileOfSchoolVC: UIViewController {
 
+    
     @IBOutlet weak var schoolName: UILabel!
     
     @IBOutlet weak var schoolType: UILabel!
@@ -27,7 +28,10 @@ class ProfileOfSchoolVC: UIViewController {
     @IBOutlet weak var schoolMaximumNumberInClass: UILabel!
     
     var schoolObject : School? = nil
+    
     let db = Firestore.firestore()
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,8 +44,8 @@ class ProfileOfSchoolVC: UIViewController {
     
     func getDataFromObjectSchools(){
         
-        schoolName.text = schoolObject!.schoolName
-        schoolType.text = schoolObject!.schoolType
+        schoolName.text = schoolObject?.schoolName
+        schoolType.text = schoolObject?.schoolType
         schoolStage.text = schoolObject?.schoolStage
         schoolCategory.text = schoolObject?.schoolCategory
         schoolAvailability.text = schoolObject?.schoolStatus
@@ -50,10 +54,7 @@ class ProfileOfSchoolVC: UIViewController {
     }
 
     
-    
-    
     @IBAction func schoolPhotoButton(_ sender: Any) {
-        
         
     }
     
@@ -81,7 +82,7 @@ class ProfileOfSchoolVC: UIViewController {
     
     
     @IBAction func schoolCommentButton(_ sender: Any) {
-//
+        
         
     }
     
