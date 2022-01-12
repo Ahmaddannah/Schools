@@ -7,7 +7,6 @@
 
 import UIKit
 import Firebase
-import nanopb
 
 class NewSchoolAccount2VC: UIViewController {
     
@@ -43,18 +42,18 @@ class NewSchoolAccount2VC: UIViewController {
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {
         
-       
+        
         
         if check(){
+            
             uploadData()
-            dismiss(animated: false, completion: .none)
-            dismiss(animated: false, completion: .none)
-        }else{
-            print("NOOOOO")
+            
+            navigationController?.popViewController(animated: true)
+            
+            navigationController?.popViewController(animated: true)
+            
+            
         }
-
-        
-
         
     }
     
@@ -144,7 +143,7 @@ class NewSchoolAccount2VC: UIViewController {
         }
         return true
     }
-
+    
     
     func myCustomAlert(title :String , message : String , isAdd: Bool) {
         

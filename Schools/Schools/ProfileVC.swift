@@ -7,17 +7,9 @@
 
 import UIKit
 import Firebase
-import SwiftUI
 
-class ProfileVC : UIViewController ,  RefreshDelegate {
-    
-    func refresh(check: Bool) {
-        if check {
-            print("show")
-        }else{
-            print("noooo")
-        }
-    }
+
+class ProfileVC : UIViewController {
     
     let db = Firestore.firestore()
 
@@ -50,16 +42,6 @@ class ProfileVC : UIViewController ,  RefreshDelegate {
         navigationController?.pushViewController(login, animated: true)
     }
     
-    @IBAction func schoolAcount(_ sender: Any) {
-        
-        let toSchool = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccountVC") as! NewSchoolAccountVC
-        
-        navigationController?.pushViewController(toSchool, animated: true)
-        
-    }
-    
-    
-    
     func checkUserSignIn(){
         
         if Auth.auth().currentUser?.uid == nil {
@@ -71,17 +53,43 @@ class ProfileVC : UIViewController ,  RefreshDelegate {
             emailLabel.isHidden = true
             messageForUserNotSignIn.isHidden = false
             
+                                                     
         }else {
+            getDataFromFireBase()
+            
             signInButton.customView?.isHidden = true
             PersonalProfile.isHidden = false
             nameLabel.isHidden = false
             phoneLabel.isHidden = false
             emailLabel.isHidden = false
             messageForUserNotSignIn.isHidden = true
+            
+            
         }
     }
     
     
+    func getDataFromFireBase(){
+        
+        
+        db.collection("Users").getDocuments { querySnapshot, error in
+            if error == nil {
+                
+                querySnapshot?.documents.forEach({ QueryDocumentSnapshot in
+                    
+                    let name : String = (QueryDocumentSnapshot.get("name") as? String)!
+                    let phone : String = (QueryDocumentSnapshot.get("phone") as? String)!
+                    let email : String = (QueryDocumentSnapshot.get("email") as? String)!
+                    
+                    self.nameLabel.text = name
+                    self.phoneLabel.text = phone
+                    self.emailLabel.text = email
+                
+                }
+
+                )}
+        }
+    }
     
     
     

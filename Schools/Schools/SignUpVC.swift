@@ -33,8 +33,14 @@ class SignUpVC: UIViewController {
     }
     
     @IBAction func createButton(_ sender: Any) {
+        
         signUpAction()
+     
+        navigationController?.popViewController(animated: true)
+        
         myCustomAlert(title: "", message: "تم انشاء الحساب", isAdd: true)
+        
+
     }
     
     

@@ -29,11 +29,15 @@ class SettingVC: UIViewController {
     @IBAction func darkLightModeSwitchAction(_ sender: Any) {
         
         if defaults.bool(forKey: "mode") == false {
+            
             if darkLightModeSwitch.isOn == true {
+                
                     UIApplication.shared.windows.forEach { window in
                         window.overrideUserInterfaceStyle = .dark}
             }else {
+                
                 if #available(iOS 10.0, *) {
+                    
                 UIApplication.shared.windows.forEach { window in
                     window.overrideUserInterfaceStyle = .light }
                 }

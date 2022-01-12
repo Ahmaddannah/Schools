@@ -13,9 +13,6 @@ class SignInVC: UIViewController{
     let db = Firestore.firestore()
     var userId = Auth.auth().currentUser?.uid
     
-    var delegate : RefreshDelegate?
-    
-    
     @IBOutlet weak var emailTextField: UITextField!
     
     @IBOutlet weak var passwordTextField: UITextField!
@@ -74,13 +71,10 @@ class SignInVC: UIViewController{
                     
                     if error == nil {
                         
-                        self.delegate?.refresh(check: true)
                self.navigationController?.popViewController(animated: true)
                         
                         
-                        
                     }else{
-                        self.delegate?.refresh(check: false)
                         
                         let alert = UIAlertController(title: "تنبيه", message: error?.localizedDescription, preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))

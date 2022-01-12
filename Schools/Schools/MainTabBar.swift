@@ -29,21 +29,5 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
 //                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! LoginNavigationController
 //
 //                login.modalPresentationStyle = .fullScreen
-//                self.present(login, animated: true, completion: nil)
-//
-//            }else {
-//
-//                print("Already logged in")
-//
-////                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! loginNavigationController
-////
-////                login.modalPresentationStyle = .fullScreen
-////                self.present(login, animated: true, completion: nil)
-//            }
-//
-//        }else {
-//
-//        }
-//
-//    }
+// 
 }
