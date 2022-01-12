@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */; };
 		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
+		E095723A278F45EE00737360 /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0957239278F45EE00737360 /* ProfileNavigation.swift */; };
+		E095723C278F47FB00737360 /* ErrorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095723B278F47FB00737360 /* ErrorExt.swift */; };
 		E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */; };
 		E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F272785A46200AF9330 /* AuthErrorCode.swift */; };
 		E0A77F2C2785F10300AF9330 /* NewSchoolAccount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		E0957239278F45EE00737360 /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
+		E095723B278F47FB00737360 /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
 		E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentOfSchoolVC.swift; sourceTree = "<group>"; };
 		E0A77F272785A46200AF9330 /* AuthErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorCode.swift; sourceTree = "<group>"; };
 		E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolAccount2VC.swift; sourceTree = "<group>"; };
@@ -78,6 +82,9 @@
 		E0A14F95278C339600B565A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E0A8CB6D2786E16D00664BE8 /* School.swift */,
+				E0A77F272785A46200AF9330 /* AuthErrorCode.swift */,
+				E095723B278F47FB00737360 /* ErrorExt.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +92,9 @@
 		E0A14F96278C33B100B565A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0D8E0A72783689B00CC1EDB /* Main.storyboard */,
+				E0D8E0AC2783689D00CC1EDB /* LaunchScreen.storyboard */,
+				E0D8E0AA2783689D00CC1EDB /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +102,21 @@
 		E0A14F97278C33BF00B565A9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E0681E512784A31600DEF94B /* MainTabBar.swift */,
+				E0C81AB227841D1000C532B9 /* SchoolsTableViewVC.swift */,
+				E0C81ABA27841DB300C532B9 /* SchoolsTableViewCell.swift */,
+				E0D6287D27842FD100B31875 /* FilterVC.swift */,
+				E0D6287B27842B9000B31875 /* ProfileOfSchoolVC.swift */,
+				E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */,
+				E0C81AB627841D3000C532B9 /* MapsVC.swift */,
+				E0957239278F45EE00737360 /* ProfileNavigation.swift */,
+				E0C81AB427841D1E00C532B9 /* ProfileVC.swift */,
+				E0C81AB827841D4200C532B9 /* SettingVC.swift */,
+				E0D8E0A52783689B00CC1EDB /* SignInVC.swift */,
+				E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */,
+				E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */,
+				E0C81AB027841CFE00C532B9 /* NewSchoolAccountVC.swift */,
+				E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,25 +145,6 @@
 				E0A14F97278C33BF00B565A9 /* Controller */,
 				E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */,
 				E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */,
-				E0D8E0A72783689B00CC1EDB /* Main.storyboard */,
-				E0A8CB6D2786E16D00664BE8 /* School.swift */,
-				E0A77F272785A46200AF9330 /* AuthErrorCode.swift */,
-				E0681E512784A31600DEF94B /* MainTabBar.swift */,
-				E0C81AB227841D1000C532B9 /* SchoolsTableViewVC.swift */,
-				E0C81ABA27841DB300C532B9 /* SchoolsTableViewCell.swift */,
-				E0D6287B27842B9000B31875 /* ProfileOfSchoolVC.swift */,
-				E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */,
-				E0D6287D27842FD100B31875 /* FilterVC.swift */,
-				E0C81AB627841D3000C532B9 /* MapsVC.swift */,
-				E0C81AB827841D4200C532B9 /* SettingVC.swift */,
-				E0C81AB427841D1E00C532B9 /* ProfileVC.swift */,
-				E0D8E0A52783689B00CC1EDB /* SignInVC.swift */,
-				E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */,
-				E0C81AB027841CFE00C532B9 /* NewSchoolAccountVC.swift */,
-				E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */,
-				E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */,
-				E0D8E0AA2783689D00CC1EDB /* Assets.xcassets */,
-				E0D8E0AC2783689D00CC1EDB /* LaunchScreen.storyboard */,
 				E0D8E0AF2783689D00CC1EDB /* Info.plist */,
 				E0D628722784222000B31875 /* GoogleService-Info.plist */,
 			);
@@ -237,9 +243,11 @@
 				E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */,
 				E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */,
 				E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */,
+				E095723A278F45EE00737360 /* ProfileNavigation.swift in Sources */,
 				E0A77F2C2785F10300AF9330 /* NewSchoolAccount2VC.swift in Sources */,
 				E0C81AB127841CFF00C532B9 /* NewSchoolAccountVC.swift in Sources */,
 				E0D6287C27842B9000B31875 /* ProfileOfSchoolVC.swift in Sources */,
+				E095723C278F47FB00737360 /* ErrorExt.swift in Sources */,
 				E0C81AAF27841CE000C532B9 /* ForgotPasswordVC.swift in Sources */,
 				E0D8E0A42783689B00CC1EDB /* SceneDelegate.swift in Sources */,
 				E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */,

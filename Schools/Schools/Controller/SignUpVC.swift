@@ -72,7 +72,7 @@ class SignUpVC: UIViewController {
         self.db.collection("Users")
             .document(userId).setData(
                 [
-                    "uid" : Auth.auth().currentUser?.uid ,
+                    "uid" : Auth.auth().currentUser!.uid ,
                     "name" : self.nameTextField.text!,
                     "phone" : self.phoneTextField.text!,
                     "email": emailTextField.text!,

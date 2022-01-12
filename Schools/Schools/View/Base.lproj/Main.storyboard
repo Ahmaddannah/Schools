@@ -166,6 +166,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kD-eYY">
                                                         <rect key="frame" x="0.0" y="0.0" width="44.333333333333336" height="30.666666666666668"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system"/>
                                                         <connections>
@@ -204,6 +205,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-oB-4zp">
                                                         <rect key="frame" x="346.33333333333331" y="0.0" width="48" height="30.666666666666668"/>
+                                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" image="envelope.fill" catalog="system"/>
                                                         <connections>
@@ -413,6 +415,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="vRN-7W-7V6"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="تصفية"/>
                                 <connections>
@@ -520,6 +523,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qt-Zj-9YJ">
                                         <rect key="frame" x="0.0" y="0.0" width="103" height="31"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="الغاء"/>
                                         <connections>
@@ -529,6 +533,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBp-na-fVM">
                                         <rect key="frame" x="133" y="0.0" width="103" height="31"/>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="تطبيق"/>
                                         <connections>
@@ -644,11 +649,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الملف الشخصي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjA-45-Mps">
-                                <rect key="frame" x="130" y="193" width="169" height="47"/>
+                                <rect key="frame" x="130" y="143" width="169" height="47"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47" id="HXO-OQ-VrR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -656,9 +661,9 @@
                         <viewLayoutGuide key="safeArea" id="UPK-Fh-4f3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hjA-45-Mps" firstAttribute="top" secondItem="UPK-Fh-4f3" secondAttribute="top" constant="105" id="5j8-Ib-ZIF"/>
+                            <constraint firstItem="hjA-45-Mps" firstAttribute="top" secondItem="UPK-Fh-4f3" secondAttribute="top" constant="55" id="5j8-Ib-ZIF"/>
                             <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="3dH-Tt-kfL" secondAttribute="trailing" constant="77" id="A9o-VE-z6a"/>
-                            <constraint firstItem="ItC-HB-hz8" firstAttribute="top" secondItem="hjA-45-Mps" secondAttribute="bottom" constant="41" id="Ay5-Ra-WBL"/>
+                            <constraint firstItem="ItC-HB-hz8" firstAttribute="top" secondItem="hjA-45-Mps" secondAttribute="bottom" constant="91" id="Ay5-Ra-WBL"/>
                             <constraint firstItem="UPK-Fh-4f3" firstAttribute="trailing" secondItem="UCq-n6-8Ej" secondAttribute="trailing" constant="20" id="FJk-Hn-rRc"/>
                             <constraint firstItem="hjA-45-Mps" firstAttribute="leading" secondItem="UPK-Fh-4f3" secondAttribute="leading" constant="130" id="HEQ-xI-6cW"/>
                             <constraint firstItem="3dH-Tt-kfL" firstAttribute="top" secondItem="ItC-HB-hz8" secondAttribute="bottom" constant="8" symbolic="YES" id="ILk-Bb-CGl"/>
@@ -685,6 +690,7 @@
                                     <action selector="settingButton:" destination="eSP-09-kDu" eventType="touchUpInside" id="9d7-Qf-T7b"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="39I-bc-4mo">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="247-4T-kWG">
@@ -699,6 +705,7 @@
                                     <action selector="signInButton:" destination="eSP-09-kDu" eventType="touchUpInside" id="1s6-XM-GYa"/>
                                 </connections>
                             </button>
+                            <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -725,23 +732,22 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تفعيل الوضع الليلي " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d52-w5-lKz">
                                 <rect key="frame" x="160" y="220" width="248" height="52"/>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="52" id="bho-WU-Jwt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fpq-T6-y7E">
-                                <rect key="frame" x="0.0" y="208" width="428" height="4"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                            </progressView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybO-Ls-vBf">
                                 <rect key="frame" x="21" y="231" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="GJE-aF-PbX"/>
                                     <constraint firstAttribute="width" constant="49" id="umS-Wk-C65"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="onTintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="darkLightModeSwitchAction:" destination="upj-TJ-KPm" eventType="valueChanged" id="QSB-eZ-ys1"/>
                                 </connections>
@@ -754,42 +760,20 @@
                                 <rect key="frame" x="0.0" y="344" width="428" height="4"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                             </progressView>
-                            <progressView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iGC-vj-9f7">
-                                <rect key="frame" x="0.0" y="408" width="428" height="4"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                            </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-1U-XlP">
                                 <rect key="frame" x="119" y="299" width="190" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="N6a-qx-F5H"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="نسيت كلمة المرور"/>
                                 <connections>
                                     <action selector="changePasswordButton:" destination="upj-TJ-KPm" eventType="touchUpInside" id="3qd-aa-cS2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oi-N4-jRv">
-                                <rect key="frame" x="83" y="356" width="262" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="gEt-SP-qog"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="تغيير رقم الجوال "/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8w-Nq-BND">
-                                <rect key="frame" x="142" y="419" width="144" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="hZe-9J-KJs"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="تغيير البريد الالكتروني "/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKd-E4-67L">
-                                <rect key="frame" x="160" y="483" width="108" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="7Iu-5n-yjB"/>
-                                </constraints>
+                                <rect key="frame" x="160" y="356" width="108" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="تسجيل الخروج "/>
@@ -797,13 +781,13 @@
                                     <action selector="signOutButton:" destination="upj-TJ-KPm" eventType="touchUpInside" id="OkO-0y-IQf"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="NSt-sa-jr9">
-                                <rect key="frame" x="0.0" y="471" width="428" height="4"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                            </progressView>
                             <progressView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TuH-wa-LRp">
-                                <rect key="frame" x="5" y="522" width="423" height="4"/>
+                                <rect key="frame" x="0.0" y="395" width="428" height="4"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="3fF-kS-qyM"/>
+                                    <constraint firstAttribute="width" constant="428" id="u0n-pU-giA"/>
+                                </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الاعدادات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLf-A4-QcO">
                                 <rect key="frame" x="143" y="106" width="142" height="53"/>
@@ -814,45 +798,38 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <progressView opaque="NO" alpha="0.10000000149011612" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fpq-T6-y7E">
+                                <rect key="frame" x="0.0" y="214" width="428" height="4"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HG7-2x-po8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ybO-Ls-vBf" firstAttribute="top" secondItem="Fpq-T6-y7E" secondAttribute="bottom" constant="19" id="1Zg-1g-NWq"/>
-                            <constraint firstItem="7Oi-N4-jRv" firstAttribute="top" secondItem="crl-Ei-zxb" secondAttribute="bottom" constant="8" symbolic="YES" id="3Pv-wX-Iwq"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="iGC-vj-9f7" secondAttribute="leading" id="5sm-6M-i0h"/>
+                            <constraint firstItem="ybO-Ls-vBf" firstAttribute="top" secondItem="Fpq-T6-y7E" secondAttribute="bottom" constant="13" id="1Zg-1g-NWq"/>
+                            <constraint firstItem="TuH-wa-LRp" firstAttribute="top" secondItem="FKd-E4-67L" secondAttribute="bottom" constant="8" symbolic="YES" id="4rg-hF-3tv"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="centerX" secondItem="d52-w5-lKz" secondAttribute="centerX" constant="-70" id="6GS-Pm-a3y"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="GlT-g9-PoQ" secondAttribute="trailing" id="6Hj-Q1-93f"/>
-                            <constraint firstItem="E8w-Nq-BND" firstAttribute="top" secondItem="iGC-vj-9f7" secondAttribute="bottom" constant="7" id="8Ou-jn-uIv"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="NSt-sa-jr9" secondAttribute="leading" id="C3j-2t-dSI"/>
+                            <constraint firstItem="FKd-E4-67L" firstAttribute="leading" secondItem="d52-w5-lKz" secondAttribute="leading" id="6oI-V8-egU"/>
                             <constraint firstItem="d52-w5-lKz" firstAttribute="leading" secondItem="ybO-Ls-vBf" secondAttribute="trailing" constant="90" id="EH9-uy-HtX"/>
-                            <constraint firstItem="iGC-vj-9f7" firstAttribute="top" secondItem="7Oi-N4-jRv" secondAttribute="bottom" constant="13" id="FKg-fs-6YG"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="crl-Ei-zxb" secondAttribute="leading" id="FNM-A1-0hi"/>
-                            <constraint firstItem="FKd-E4-67L" firstAttribute="top" secondItem="NSt-sa-jr9" secondAttribute="bottom" constant="8" symbolic="YES" id="GEW-x4-5F6"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="iGC-vj-9f7" secondAttribute="trailing" id="Gtf-5A-lcl"/>
                             <constraint firstItem="HLf-A4-QcO" firstAttribute="top" secondItem="HG7-2x-po8" secondAttribute="top" constant="62" id="Ig8-rG-VwR"/>
-                            <constraint firstItem="TuH-wa-LRp" firstAttribute="top" secondItem="FKd-E4-67L" secondAttribute="bottom" constant="8" symbolic="YES" id="J0p-wE-akY"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="crl-Ei-zxb" secondAttribute="trailing" id="JIq-1Y-46q"/>
                             <constraint firstItem="crl-Ei-zxb" firstAttribute="top" secondItem="7tV-1U-XlP" secondAttribute="bottom" constant="8" symbolic="YES" id="MC8-4h-i6m"/>
-                            <constraint firstItem="d52-w5-lKz" firstAttribute="top" secondItem="Fpq-T6-y7E" secondAttribute="bottom" constant="8" symbolic="YES" id="PhY-lt-nn5"/>
+                            <constraint firstItem="d52-w5-lKz" firstAttribute="top" secondItem="Fpq-T6-y7E" secondAttribute="bottom" constant="2" id="PhY-lt-nn5"/>
                             <constraint firstItem="7tV-1U-XlP" firstAttribute="centerX" secondItem="crl-Ei-zxb" secondAttribute="centerX" id="Q30-WL-hwo"/>
                             <constraint firstItem="7tV-1U-XlP" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" constant="119" id="RaU-II-kpO"/>
+                            <constraint firstItem="FKd-E4-67L" firstAttribute="top" secondItem="crl-Ei-zxb" secondAttribute="bottom" constant="8" symbolic="YES" id="X7J-EV-kFF"/>
                             <constraint firstItem="HLf-A4-QcO" firstAttribute="centerX" secondItem="Fpq-T6-y7E" secondAttribute="centerX" id="Xmp-9y-3cl"/>
-                            <constraint firstItem="7Oi-N4-jRv" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" constant="83" id="a68-Ae-9NR"/>
                             <constraint firstItem="Fpq-T6-y7E" firstAttribute="leading" secondItem="GlT-g9-PoQ" secondAttribute="leading" id="bKa-hi-3Th"/>
                             <constraint firstAttribute="trailing" secondItem="Fpq-T6-y7E" secondAttribute="trailing" id="cak-p4-8nT"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="NSt-sa-jr9" secondAttribute="trailing" id="htE-4h-TYo"/>
-                            <constraint firstItem="NSt-sa-jr9" firstAttribute="top" secondItem="E8w-Nq-BND" secondAttribute="bottom" constant="8" symbolic="YES" id="ipM-z1-uhg"/>
+                            <constraint firstItem="HG7-2x-po8" firstAttribute="trailing" secondItem="TuH-wa-LRp" secondAttribute="trailing" id="dVN-MG-Zkn"/>
                             <constraint firstItem="GlT-g9-PoQ" firstAttribute="top" secondItem="d52-w5-lKz" secondAttribute="bottom" constant="8" symbolic="YES" id="jxc-cZ-yV2"/>
                             <constraint firstItem="7tV-1U-XlP" firstAttribute="top" secondItem="GlT-g9-PoQ" secondAttribute="bottom" constant="15" id="k2n-d4-ZJu"/>
                             <constraint firstItem="HLf-A4-QcO" firstAttribute="centerX" secondItem="MZO-4D-1k5" secondAttribute="centerX" id="m63-pn-gad"/>
-                            <constraint firstItem="NSt-sa-jr9" firstAttribute="centerX" secondItem="FKd-E4-67L" secondAttribute="centerX" id="mRu-H9-4Wi"/>
                             <constraint firstItem="HLf-A4-QcO" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" constant="143" id="meG-nf-rcJ"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="trailing" secondItem="TuH-wa-LRp" secondAttribute="trailing" id="n8y-nK-mQc"/>
-                            <constraint firstItem="E8w-Nq-BND" firstAttribute="centerX" secondItem="iGC-vj-9f7" secondAttribute="centerX" id="nff-Sf-KTR"/>
-                            <constraint firstItem="crl-Ei-zxb" firstAttribute="centerX" secondItem="7Oi-N4-jRv" secondAttribute="centerX" id="ujf-wY-edW"/>
-                            <constraint firstItem="TuH-wa-LRp" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" constant="5" id="un4-ax-MAM"/>
-                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="top" secondItem="HLf-A4-QcO" secondAttribute="bottom" constant="49" id="wLY-yo-4wv"/>
+                            <constraint firstItem="Fpq-T6-y7E" firstAttribute="top" secondItem="HLf-A4-QcO" secondAttribute="bottom" constant="55" id="wLY-yo-4wv"/>
+                            <constraint firstItem="TuH-wa-LRp" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" id="wMF-yj-U6V"/>
                             <constraint firstItem="ybO-Ls-vBf" firstAttribute="leading" secondItem="HG7-2x-po8" secondAttribute="leading" constant="21" id="zM6-db-es7"/>
                         </constraints>
                     </view>
@@ -863,7 +840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uXQ-YZ-0fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4329" y="1190"/>
+            <point key="canvasLocation" x="4328.9719626168226" y="1188.9848812095033"/>
         </scene>
         <!--Main Tab Bar-->
         <scene sceneID="MTr-lk-vIY">
@@ -875,6 +852,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="selectedImageTintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <outlet property="mainTabBar" destination="lbf-6M-kwf" id="x0k-wm-gvO"/>
@@ -941,6 +920,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="DwH-TY-lwM"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="انشاء"/>
                                 <connections>
@@ -1013,6 +993,7 @@
                                     <constraint firstAttribute="height" constant="31" id="ApN-Uj-Gd0"/>
                                     <constraint firstAttribute="width" constant="147" id="zEa-TD-gYG"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="تسجيل الدخول"/>
                                 <connections>
@@ -1034,6 +1015,7 @@
                                     <constraint firstAttribute="width" constant="172" id="b93-fg-KRf"/>
                                     <constraint firstAttribute="height" constant="31" id="cSV-q0-8Gc"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="نسيت كلمة المرور؟"/>
                                 <connections>
@@ -1047,6 +1029,7 @@
                                     <constraint firstAttribute="width" constant="180" id="WRV-dx-HGJ"/>
                                     <constraint firstAttribute="height" constant="31" id="crS-Af-vqb"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="انشاء حساب"/>
                                 <connections>
@@ -1059,6 +1042,7 @@
                                     <constraint firstAttribute="width" constant="180" id="3dL-Ft-pcW"/>
                                     <constraint firstAttribute="height" constant="31" id="lfu-bG-0Ob"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="مسؤول مدرسة"/>
                                 <connections>
@@ -1134,6 +1118,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="JcR-Z5-rp7"/>
                                 </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="استعادة كلمة المرور"/>
                                 <connections>
@@ -1174,6 +1159,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laN-Lf-Vj6">
                                 <rect key="frame" x="133" y="646" width="147" height="31"/>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="التالي"/>
                                 <connections>
@@ -1397,8 +1383,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Tg-I7o">
                                 <rect key="frame" x="140" y="750" width="135" height="31"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="انشاء حساب "/>
+                                <buttonConfiguration key="configuration" style="gray" title="انشاء حساب "/>
                                 <connections>
                                     <action selector="createAccountSchoolButton:" destination="6jm-Zc-GYg" eventType="touchUpInside" id="doA-no-XcK"/>
                                 </connections>
@@ -1516,6 +1503,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YM8-bq-Iaz">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
