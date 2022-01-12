@@ -402,14 +402,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البحث بأسم المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AMB-r6-LGw">
-                                <rect key="frame" x="87" y="118" width="321" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Spq-Mf-eda"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7i-PV-kFV">
                                 <rect key="frame" x="19.999999999999996" y="118" width="58.666666666666657" height="34"/>
                                 <constraints>
@@ -422,25 +414,27 @@
                                     <action selector="filterButton:" destination="TJ8-N7-iCG" eventType="touchUpInside" id="FSO-97-kOc"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Clt-zq-fJZ">
+                                <rect key="frame" x="87" y="113" width="321" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="p47-cj-rN1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="p47-cj-rN1" firstAttribute="trailing" secondItem="AMB-r6-LGw" secondAttribute="trailing" constant="20" id="1Yf-ce-52i"/>
                             <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="trailing" secondItem="p47-cj-rN1" secondAttribute="trailing" id="AWK-0I-gIh"/>
                             <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" id="FDF-xW-EFt"/>
-                            <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="top" secondItem="AMB-r6-LGw" secondAttribute="bottom" constant="27" id="TUU-P9-1fo"/>
-                            <constraint firstItem="AMB-r6-LGw" firstAttribute="leading" secondItem="h7i-PV-kFV" secondAttribute="trailing" constant="8.3333333333333428" id="dWj-Zs-TjK"/>
                             <constraint firstItem="Zpi-CJ-cTJ" firstAttribute="bottom" secondItem="p47-cj-rN1" secondAttribute="bottom" id="dXc-7A-Zx8"/>
                             <constraint firstItem="h7i-PV-kFV" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="30" id="gl7-4s-htd"/>
                             <constraint firstItem="h7i-PV-kFV" firstAttribute="leading" secondItem="p47-cj-rN1" secondAttribute="leading" constant="20" id="m1Q-3u-ulx"/>
-                            <constraint firstItem="AMB-r6-LGw" firstAttribute="top" secondItem="p47-cj-rN1" secondAttribute="top" constant="30" id="zB0-jt-UAd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="الرئيسية" id="zz4-yb-ibT">
                         <barButtonItem key="backBarButtonItem" title="الرئيسية" id="7zp-9F-9z1"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="Clt-zq-fJZ" id="Fwj-U3-7o1"/>
                         <outlet property="tableViewOfSchools" destination="Zpi-CJ-cTJ" id="9GA-eg-5Ar"/>
                     </connections>
                 </viewController>

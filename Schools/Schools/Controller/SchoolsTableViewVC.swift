@@ -8,11 +8,17 @@
 import UIKit
 import Firebase
 
-class SchoolsTableViewVC: UIViewController {
+class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
     
     let db = Firestore.firestore()
     
     var arraySchool : [School] = []
+    var arraySchoolString : [String]?
+    var filteredData: [String]!
+    
+
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
@@ -23,6 +29,8 @@ class SchoolsTableViewVC: UIViewController {
         print(selectedCat)
         hideKeyboardWhenTappedAround()
         
+       
+        searchBar.delegate = self
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
         
@@ -89,8 +97,13 @@ class SchoolsTableViewVC: UIViewController {
                     
                     self.arraySchool.append(School(schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
                     
+//                    self.appendShoolsName()
+
                     self.tableViewOfSchools.reloadData()
                 })
+                
+//                self.appendShoolsName()
+
                 
             }else{
                 
@@ -135,6 +148,39 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
+    
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//
+//        appendShoolsName()
+//        print(searchText)
+//        let filterd = arraySchoolString?.filter({ schoolString in
+//
+//            schoolString.contains(searchText)
+//
+//
+//        })
+//        print("Filtered : " )
+//
+//        if (filterd?.count == 0 ) {
+//            appendShoolsName()
+//        }else{
+//            arraySchoolString = filterd
+//
+//        }
+//        tableViewOfSchools.reloadData()
+//
+//    }
+//
+//
+//
+//    func appendShoolsName(){
+//
+//        arraySchoolString = arraySchool.map { $0.schoolName }
+//        //    tableViewOfSchools.reloadData()
+//        print("Array : " , arraySchoolString)
+//
+//    }
+    
     
 }
 
