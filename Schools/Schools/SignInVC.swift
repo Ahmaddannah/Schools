@@ -41,11 +41,11 @@ class SignInVC: UIViewController{
     
     
     
+    
     @IBAction func signInButton(_ sender: Any){
         
         signIn()
         dismiss(animated: true, completion: .none)
-        
     }
     
     
@@ -56,6 +56,16 @@ class SignInVC: UIViewController{
         navigationController?.pushViewController(toCreate, animated: true)
         
     }
+    
+    
+    @IBAction func schoolAccountButton(_ sender: Any) {
+       
+        let toCreateAccountSchool = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccountVC") as! NewSchoolAccountVC
+        
+        navigationController?.pushViewController(toCreateAccountSchool, animated: true)
+        
+    }
+    
     
     func signIn(){
         

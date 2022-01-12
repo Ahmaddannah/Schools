@@ -10,6 +10,7 @@ import Firebase
 import SwiftUI
 
 class ProfileVC : UIViewController ,  RefreshDelegate {
+    
     func refresh(check: Bool) {
         if check {
             print("show")
@@ -18,6 +19,8 @@ class ProfileVC : UIViewController ,  RefreshDelegate {
         }
     }
     
+    let db = Firestore.firestore()
+
     
     @IBOutlet weak var PersonalProfile: UILabel!
     
@@ -28,8 +31,8 @@ class ProfileVC : UIViewController ,  RefreshDelegate {
     @IBOutlet weak var emailLabel: UILabel!
     
     @IBOutlet weak var messageForUserNotSignIn: UILabel!
-    let db = Firestore.firestore()
-    
+        
+    @IBOutlet weak var signInButton: UIBarButtonItem!
     
     override func viewWillAppear(_ animated: Bool) {
         checkUserSignIn()
@@ -40,17 +43,36 @@ class ProfileVC : UIViewController ,  RefreshDelegate {
         hideKeyboardWhenTappedAround()
     }
     
+    @IBAction func signInButton(_ sender: Any) {
+        
+        let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! SignInVC
+        
+        navigationController?.pushViewController(login, animated: true)
+    }
+    
+    @IBAction func schoolAcount(_ sender: Any) {
+        
+        let toSchool = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccountVC") as! NewSchoolAccountVC
+        
+        navigationController?.pushViewController(toSchool, animated: true)
+        
+    }
+    
+    
+    
     func checkUserSignIn(){
         
         if Auth.auth().currentUser?.uid == nil {
             
+            signInButton.customView?.isHidden = false
             PersonalProfile.isHidden = true
             nameLabel.isHidden = true
             phoneLabel.isHidden = true
             emailLabel.isHidden = true
             messageForUserNotSignIn.isHidden = false
-        }else {
             
+        }else {
+            signInButton.customView?.isHidden = true
             PersonalProfile.isHidden = false
             nameLabel.isHidden = false
             phoneLabel.isHidden = false
