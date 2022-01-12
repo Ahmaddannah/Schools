@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */; };
+		E04CEA9D278F182600B73E1B /* RefreshDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9C278F182600B73E1B /* RefreshDelegate.swift */; };
 		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
 		E0681E562784A8BC00DEF94B /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E552784A8BC00DEF94B /* ProfileNavigation.swift */; };
-		E0681E582784AB0800DEF94B /* LoginNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E572784AB0800DEF94B /* LoginNavigationController.swift */; };
 		E0681E5A278576FB00DEF94B /* WaysVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E59278576FB00DEF94B /* WaysVC.swift */; };
 		E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */; };
 		E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F272785A46200AF9330 /* AuthErrorCode.swift */; };
@@ -31,16 +32,17 @@
 		E0D6287E27842FD100B31875 /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D6287D27842FD100B31875 /* FilterVC.swift */; };
 		E0D8E0A22783689B00CC1EDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */; };
 		E0D8E0A42783689B00CC1EDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */; };
-		E0D8E0A62783689B00CC1EDB /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8E0A52783689B00CC1EDB /* LogInVC.swift */; };
+		E0D8E0A62783689B00CC1EDB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D8E0A52783689B00CC1EDB /* SignInVC.swift */; };
 		E0D8E0A92783689B00CC1EDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D8E0A72783689B00CC1EDB /* Main.storyboard */; };
 		E0D8E0AB2783689D00CC1EDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0D8E0AA2783689D00CC1EDB /* Assets.xcassets */; };
 		E0D8E0AE2783689D00CC1EDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0D8E0AC2783689D00CC1EDB /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E04CEA9C278F182600B73E1B /* RefreshDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshDelegate.swift; sourceTree = "<group>"; };
 		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		E0681E552784A8BC00DEF94B /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
-		E0681E572784AB0800DEF94B /* LoginNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigationController.swift; sourceTree = "<group>"; };
 		E0681E59278576FB00DEF94B /* WaysVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaysVC.swift; sourceTree = "<group>"; };
 		E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentOfSchoolVC.swift; sourceTree = "<group>"; };
 		E0A77F272785A46200AF9330 /* AuthErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorCode.swift; sourceTree = "<group>"; };
@@ -60,7 +62,7 @@
 		E0D8E09E2783689B00CC1EDB /* Schools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Schools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E0D8E0A52783689B00CC1EDB /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		E0D8E0A52783689B00CC1EDB /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		E0D8E0A82783689B00CC1EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0D8E0AA2783689D00CC1EDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0D8E0AD2783689D00CC1EDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,7 +133,6 @@
 				E0A77F292785E0F800AF9330 /* AuthenticationVC.swift */,
 				E0A77F272785A46200AF9330 /* AuthErrorCode.swift */,
 				E0681E59278576FB00DEF94B /* WaysVC.swift */,
-				E0681E572784AB0800DEF94B /* LoginNavigationController.swift */,
 				E0681E552784A8BC00DEF94B /* ProfileNavigation.swift */,
 				E0681E512784A31600DEF94B /* MainTabBar.swift */,
 				E0C81AB227841D1000C532B9 /* SchoolsTableViewVC.swift */,
@@ -142,7 +143,9 @@
 				E0C81AB627841D3000C532B9 /* MapsVC.swift */,
 				E0C81AB827841D4200C532B9 /* SettingVC.swift */,
 				E0C81AB427841D1E00C532B9 /* ProfileVC.swift */,
-				E0D8E0A52783689B00CC1EDB /* LogInVC.swift */,
+				E0D8E0A52783689B00CC1EDB /* SignInVC.swift */,
+				E04CEA9C278F182600B73E1B /* RefreshDelegate.swift */,
+				E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */,
 				E0C81AB027841CFE00C532B9 /* NewSchoolAccountVC.swift */,
 				E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */,
 				E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */,
@@ -240,14 +243,15 @@
 				E0C81ABB27841DB300C532B9 /* SchoolsTableViewCell.swift in Sources */,
 				E0C81AB927841D4200C532B9 /* SettingVC.swift in Sources */,
 				E0681E5A278576FB00DEF94B /* WaysVC.swift in Sources */,
-				E0681E582784AB0800DEF94B /* LoginNavigationController.swift in Sources */,
 				E0A8CB6E2786E16D00664BE8 /* School.swift in Sources */,
+				E04CEA9D278F182600B73E1B /* RefreshDelegate.swift in Sources */,
 				E0C81AB727841D3000C532B9 /* MapsVC.swift in Sources */,
-				E0D8E0A62783689B00CC1EDB /* LogInVC.swift in Sources */,
+				E0D8E0A62783689B00CC1EDB /* SignInVC.swift in Sources */,
 				E0C81AB527841D1E00C532B9 /* ProfileVC.swift in Sources */,
 				E0681E562784A8BC00DEF94B /* ProfileNavigation.swift in Sources */,
 				E0D8E0A22783689B00CC1EDB /* AppDelegate.swift in Sources */,
 				E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */,
+				E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */,
 				E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */,
 				E0A77F2C2785F10300AF9330 /* NewSchoolAccount2VC.swift in Sources */,
 				E0C81AB127841CFF00C532B9 /* NewSchoolAccountVC.swift in Sources */,

@@ -16,7 +16,7 @@ class WaysVC: UIViewController {
     
     @IBAction func toSignInButton(_ sender: Any) {
         
-        let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! LogInVC
+        let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! SignInVC
         
         navigationController?.pushViewController(login, animated: true)
         

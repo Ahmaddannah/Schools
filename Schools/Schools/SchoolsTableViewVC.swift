@@ -29,13 +29,13 @@ class SchoolsTableViewVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-      
+        
         arraySchool.removeAll()
         getDataFromFireBase()
         tableViewOfSchools.reloadData()
     }
     
-
+    
     @IBAction func filterButton(_ sender: Any) {
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "FilterVC") as? FilterVC
@@ -45,15 +45,15 @@ class SchoolsTableViewVC: UIViewController {
     
     
     func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     
     func getDataFromFireBase(){
@@ -68,7 +68,7 @@ class SchoolsTableViewVC: UIViewController {
                     let schoolType : String = (QueryDocumentSnapshot.get("schoolType") as? String)!
                     
                     let schoolStage : String = (QueryDocumentSnapshot.get("schoolStage") as? String)!
-
+                    
                     let schoolCategory : String = (QueryDocumentSnapshot.get("schoolCategory") as? String)!
                     
                     let schoolStatus : String =  (QueryDocumentSnapshot.get("schoolStatus") as? String)!
@@ -78,11 +78,11 @@ class SchoolsTableViewVC: UIViewController {
                     
                     let schoolMaximum : String =
                     (QueryDocumentSnapshot.get("schoolMaximumNum") as? String)!
-            
+                    
                     let schoolPhone : String = QueryDocumentSnapshot.get("schoolPhone") as! String
-
+                    
                     let schoolLocation : String =  QueryDocumentSnapshot.get("schoolLocation") as! String
-
+                    
                     let schoolEmail : String =  QueryDocumentSnapshot.get("schoolEmail") as! String
                     
                     let schoolPassword : String = QueryDocumentSnapshot.get("schoolPassword")as! String
@@ -99,10 +99,10 @@ class SchoolsTableViewVC: UIViewController {
             }
         }
     }
-
     
     
-
+    
+    
     
 }// end of the class
 
@@ -129,7 +129,8 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
         vc?.schoolObject = arraySchool[indexPath.row]
         vc!.modalPresentationStyle = .fullScreen
         self.navigationController?.pushViewController(vc!, animated: true)
-            }
+        
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200

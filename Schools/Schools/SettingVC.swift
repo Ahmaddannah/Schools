@@ -12,6 +12,11 @@ class SettingVC: UIViewController {
     
         let db = Firestore.firestore()
     
+    var userId = Auth.auth().currentUser?.uid
+
+    
+        var defaults = UserDefaults.standard
+
     @IBOutlet weak var darkLightModeSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -23,16 +28,18 @@ class SettingVC: UIViewController {
     
     @IBAction func darkLightModeSwitchAction(_ sender: Any) {
         
-        if darkLightModeSwitch.isOn == true {
-            if #available(iOS 10.0, *) {
+        if defaults.bool(forKey: "mode") == false {
+            if darkLightModeSwitch.isOn == true {
+                    UIApplication.shared.windows.forEach { window in
+                        window.overrideUserInterfaceStyle = .dark}
+            }else {
+                if #available(iOS 10.0, *) {
                 UIApplication.shared.windows.forEach { window in
-                    window.overrideUserInterfaceStyle = .dark }
+                    window.overrideUserInterfaceStyle = .light }
+                }
             }
-        }else {
-            if #available(iOS 10.0, *) {
-            UIApplication.shared.windows.forEach { window in
-                window.overrideUserInterfaceStyle = .light }
-            }
+        }else{
+
         }
     }
 
@@ -43,6 +50,41 @@ class SettingVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
         
     }
+    
+    
+    @IBAction func signOutButton(_ sender: Any) {
+        
+        
+        do {
+            try Auth.auth().signOut()
+            
+            myCustomAlert(title: " ", message: "تم تسجيل الخروج بنجاح ", isAdd: true)
+            
+            navigationController?.popViewController(animated: true)
+            
+        } catch  {
+        }
+
+        
+    }
+    
+    func myCustomAlert(title :String , message : String , isAdd: Bool) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        if isAdd{
+            
+            let action = UIAlertAction(title: "نعم", style: .default) { action in
+                
+            }
+            alert.addAction(action)
+        }
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+
+    
+    
     
     
     func hideKeyboardWhenTappedAround() {
