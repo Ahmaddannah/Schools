@@ -41,7 +41,7 @@ class SignInVC: UIViewController{
     @IBAction func signInButton(_ sender: Any){
         
         signIn()
-        dismiss(animated: true, completion: .none)
+        
     }
     
     

@@ -8,8 +8,6 @@
 import UIKit
 import Firebase
 
-
-
 class ProfileOfSchoolVC: UIViewController {
 
     
@@ -84,7 +82,13 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolCommentButton(_ sender: Any) {
         
-//        CommentOfSchoolVC
+
+        let vcComment =  storyboard?.instantiateViewController(withIdentifier: "CommentOfSchoolVC") as! CommentOfSchoolVC
+        
+        vcComment.modalPresentationStyle = .formSheet
+        
+        present(vcComment, animated: false , completion: .none)
+        
     }
     
     @IBAction func schoolEmail(_ sender: Any) {
