@@ -12,18 +12,12 @@ import Firebase
 class ProfileVC : UIViewController {
     
     let db = Firestore.firestore()
-
     
     @IBOutlet weak var PersonalProfile: UILabel!
-    
     @IBOutlet weak var nameLabel: UILabel!
-    
     @IBOutlet weak var phoneLabel: UILabel!
-    
     @IBOutlet weak var emailLabel: UILabel!
-    
     @IBOutlet weak var messageForUserNotSignIn: UILabel!
-        
     @IBOutlet weak var signInButton: UIBarButtonItem!
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,10 +47,10 @@ class ProfileVC : UIViewController {
             emailLabel.isHidden = true
             messageForUserNotSignIn.isHidden = false
             
-                                                     
-        }else {
-            getDataFromFireBase()
             
+        }else {
+            
+            getDataFromFireBase()
             signInButton.customView?.isHidden = true
             PersonalProfile.isHidden = false
             nameLabel.isHidden = false
@@ -64,13 +58,10 @@ class ProfileVC : UIViewController {
             emailLabel.isHidden = false
             messageForUserNotSignIn.isHidden = true
             
-            
         }
     }
     
-    
     func getDataFromFireBase(){
-        
         
         db.collection("Users").getDocuments { querySnapshot, error in
             if error == nil {
@@ -84,9 +75,9 @@ class ProfileVC : UIViewController {
                     self.nameLabel.text = name
                     self.phoneLabel.text = phone
                     self.emailLabel.text = email
-                
+                    
                 }
-
+                                                 
                 )}
         }
     }
@@ -96,16 +87,16 @@ class ProfileVC : UIViewController {
     @IBAction func settingButton(_ sender: Any) {
         
         if Auth.auth().currentUser?.uid == nil {
-
+            
             myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول للوصول للاعدادات", isAdd: true)
-
+            
         }else {
             
             let vc = storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingVC
             
             self.navigationController?.pushViewController(vc, animated: true)
         }
-
+        
         
     }
     
@@ -124,17 +115,15 @@ class ProfileVC : UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    
-    
     func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }

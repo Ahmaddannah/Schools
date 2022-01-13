@@ -19,21 +19,21 @@ class ForgotPasswordVC: UIViewController {
         hideKeyboardWhenTappedAround()
         
     }
-        
+    
     @IBAction func resetPassword(_ sender: Any) {
         
-            Auth.auth().sendPasswordReset(withEmail: emailTextField.text!) { (error) in
-                if error != nil {
-                    
-                    let alert = UIAlertController(title: "تنبيه", message: error?.localizedDescription, preferredStyle: .alert)
-                                    alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
-                                    self.present(alert, animated: true, completion: nil)
-                } else {
-                    
-                    self.navigationController?.popViewController(animated: true)
-
-                }
+        Auth.auth().sendPasswordReset(withEmail: emailTextField.text!) { (error) in
+            if error != nil {
+                
+                let alert = UIAlertController(title: "تنبيه", message: error?.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                
+                self.navigationController?.popViewController(animated: true)
+                
             }
+        }
         
         
     }

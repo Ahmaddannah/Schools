@@ -11,17 +11,15 @@ import MapKit
 
 class MapsVC: UIViewController {
     
-        let db = Firestore.firestore()
-
+    let db = Firestore.firestore()
+    
     @IBOutlet weak var map: MKMapView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
- 
+        
     }
     
-
-
 }

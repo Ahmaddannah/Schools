@@ -13,13 +13,11 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
     let db = Firestore.firestore()
     
     var arraySchool : [School] = []
-    var arraySchoolString : [String]?
-    var filteredData: [String]!
+//    var arraySchoolString : [String]?
+//    var filteredData: [String]!
     
-
+    
     @IBOutlet weak var searchBar: UISearchBar!
-    
-    
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
     var selectedCat : String = "ahmad1"
@@ -29,7 +27,7 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         print(selectedCat)
         hideKeyboardWhenTappedAround()
         
-       
+        
         searchBar.delegate = self
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
@@ -97,13 +95,13 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
                     
                     self.arraySchool.append(School(schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
                     
-//                    self.appendShoolsName()
-
+                    //                    self.appendShoolsName()
+                    
                     self.tableViewOfSchools.reloadData()
                 })
                 
-//                self.appendShoolsName()
-
+                //                self.appendShoolsName()
+                
                 
             }else{
                 
@@ -113,11 +111,9 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         }
     }
     
-    
-    
-    
-    
 }// end of the class
+
+
 
 extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
     
@@ -149,37 +145,37 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
         return 200
     }
     
-//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-//
-//        appendShoolsName()
-//        print(searchText)
-//        let filterd = arraySchoolString?.filter({ schoolString in
-//
-//            schoolString.contains(searchText)
-//
-//
-//        })
-//        print("Filtered : " )
-//
-//        if (filterd?.count == 0 ) {
-//            appendShoolsName()
-//        }else{
-//            arraySchoolString = filterd
-//
-//        }
-//        tableViewOfSchools.reloadData()
-//
-//    }
-//
-//
-//
-//    func appendShoolsName(){
-//
-//        arraySchoolString = arraySchool.map { $0.schoolName }
-//        //    tableViewOfSchools.reloadData()
-//        print("Array : " , arraySchoolString)
-//
-//    }
+    //    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    //
+    //        appendShoolsName()
+    //        print(searchText)
+    //        let filterd = arraySchoolString?.filter({ schoolString in
+    //
+    //            schoolString.contains(searchText)
+    //
+    //
+    //        })
+    //        print("Filtered : " )
+    //
+    //        if (filterd?.count == 0 ) {
+    //            appendShoolsName()
+    //        }else{
+    //            arraySchoolString = filterd
+    //
+    //        }
+    //        tableViewOfSchools.reloadData()
+    //
+    //    }
+    //
+    //
+    //
+    //    func appendShoolsName(){
+    //
+    //        arraySchoolString = arraySchool.map { $0.schoolName }
+    //        //    tableViewOfSchools.reloadData()
+    //        print("Array : " , arraySchoolString)
+    //
+    //    }
     
     
 }

@@ -13,25 +13,16 @@ class NewSchoolAccount2VC: UIViewController {
     let db = Firestore.firestore()
     
     var nameSchool: String = ""
-    
     var phoneSchool: String = ""
-    
     var emailSchool: String = ""
-    
     var passwordSchool: String = ""
     
     @IBOutlet weak var schoolType: UITextField!
-    
     @IBOutlet weak var schoolStage: UITextField!
-    
     @IBOutlet weak var schoolCategory: UITextField!
-    
     @IBOutlet weak var schoolCapacity: UITextField!
-    
     @IBOutlet weak var schoolStatus: UITextField!
-    
     @IBOutlet weak var schoolLocation: UITextField!
-    
     @IBOutlet weak var schoolMaximumNum: UITextField!
     
     
@@ -42,19 +33,13 @@ class NewSchoolAccount2VC: UIViewController {
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {
         
-        
-        
         if check(){
             
             uploadData()
             
             navigationController?.popViewController(animated: true)
-            
             navigationController?.popViewController(animated: true)
-            
-            
         }
-        
     }
     
     func uploadData(){

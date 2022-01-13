@@ -10,13 +10,10 @@ import Firebase
 
 class SettingVC: UIViewController {
     
-        let db = Firestore.firestore()
-    
+    let db = Firestore.firestore()
     var userId = Auth.auth().currentUser?.uid
-
+    var defaults = UserDefaults.standard
     
-        var defaults = UserDefaults.standard
-
     @IBOutlet weak var darkLightModeSwitch: UISwitch!
     
     override func viewDidLoad() {
@@ -32,21 +29,21 @@ class SettingVC: UIViewController {
             
             if darkLightModeSwitch.isOn == true {
                 
-                    UIApplication.shared.windows.forEach { window in
-                        window.overrideUserInterfaceStyle = .dark}
+                UIApplication.shared.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .dark}
             }else {
                 
                 if #available(iOS 10.0, *) {
                     
-                UIApplication.shared.windows.forEach { window in
-                    window.overrideUserInterfaceStyle = .light }
+                    UIApplication.shared.windows.forEach { window in
+                        window.overrideUserInterfaceStyle = .light }
                 }
             }
         }else{
-
+            
         }
     }
-
+    
     
     @IBAction func changePasswordButton(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "ForgotPassword") as! ForgotPasswordVC
@@ -67,8 +64,8 @@ class SettingVC: UIViewController {
             navigationController?.popViewController(animated: true)
             
         } catch  {
+            print("Error in SignOut")
         }
-
         
     }
     
@@ -86,20 +83,16 @@ class SettingVC: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-
-    
-    
-    
     
     func hideKeyboardWhenTappedAround() {
-       
-      let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-      tap.cancelsTouchesInView = false
-      view.addGestureRecognizer(tap)
-     }
-      
-     @objc func dismissKeyboard() {
-      view.endEditing(true)
-     }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
 }

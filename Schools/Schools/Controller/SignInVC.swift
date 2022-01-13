@@ -38,7 +38,6 @@ class SignInVC: UIViewController{
     
     
     
-    
     @IBAction func signInButton(_ sender: Any){
         
         signIn()
@@ -56,7 +55,7 @@ class SignInVC: UIViewController{
     
     
     @IBAction func schoolAccountButton(_ sender: Any) {
-       
+        
         let toCreateAccountSchool = storyboard?.instantiateViewController(withIdentifier: "NewSchoolAccountVC") as! NewSchoolAccountVC
         
         navigationController?.pushViewController(toCreateAccountSchool, animated: true)
@@ -66,26 +65,26 @@ class SignInVC: UIViewController{
     
     func signIn(){
         
-            if emailTextField.text != "" && passwordTextField.text != "" {
-                Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text! , completion: { user, error in
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text! , completion: { user, error in
+                
+                if error == nil {
                     
-                    if error == nil {
-                        
-               self.navigationController?.popViewController(animated: true)
-                        
-                        
-                    }else{
-                        
-                        let alert = UIAlertController(title: "تنبيه", message: error?.localizedDescription, preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                })
-            } else {
-                let alert = UIAlertController(title: "بيانات ناقصة", message: "الرجاء التأكد من إدخال البريد الإلكتروني و كلمة المرور", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
-                present(alert, animated: true, completion: nil)
-            }
+                    self.navigationController?.popViewController(animated: true)
+                    
+                    
+                }else{
+                    
+                    let alert = UIAlertController(title: "تنبيه", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            })
+        } else {
+            let alert = UIAlertController(title: "بيانات ناقصة", message: "الرجاء التأكد من إدخال البريد الإلكتروني و كلمة المرور", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+        }
     }
     
     

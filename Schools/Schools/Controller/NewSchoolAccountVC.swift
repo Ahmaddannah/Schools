@@ -13,13 +13,9 @@ class NewSchoolAccountVC: UIViewController {
     let db = Firestore.firestore()
     
     @IBOutlet weak var nameSchool: UITextField!
-    
     @IBOutlet weak var phoneSchool: UITextField!
-    
     @IBOutlet weak var emailSchool: UITextField!
-    
     @IBOutlet weak var passwordSchool: UITextField!
-    
     @IBOutlet weak var passwordSchool2: UITextField!
     
     

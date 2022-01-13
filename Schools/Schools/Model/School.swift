@@ -20,5 +20,5 @@ struct School {
     var schoolStage : String
     var schoolStatus : String
     var schoolType : String
-
+    
 }

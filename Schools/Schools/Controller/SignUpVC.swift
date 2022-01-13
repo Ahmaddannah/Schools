@@ -13,14 +13,11 @@ class SignUpVC: UIViewController {
     let db = Firestore.firestore()
     
     var userId = Auth.auth().currentUser?.uid
-
+    
     
     @IBOutlet weak var nameTextField: UITextField!
-    
     @IBOutlet weak var phoneTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
     
     
@@ -29,18 +26,17 @@ class SignUpVC: UIViewController {
         
         passwordTextField.isSecureTextEntry = true
         
-        
     }
     
     @IBAction func createButton(_ sender: Any) {
         
         signUpAction()
-     
+        
         navigationController?.popViewController(animated: true)
         
         myCustomAlert(title: "", message: "تم انشاء الحساب", isAdd: true)
         
-
+        
     }
     
     
@@ -55,14 +51,14 @@ class SignUpVC: UIViewController {
                     
                 } else{
                     let alert = UIAlertController(title: "تنبيه", message: Error?.localizedDescription, preferredStyle: .alert)
-                                    alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
-                                    self.present(alert, animated: true, completion: nil)
+                    alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
         } else {
             let alert = UIAlertController(title: "بيانات ناقصة", message: "الرجاء التأكد من إدخال البريد الإلكتروني و كلمة المرور", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
-                    present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
         }
     }
     
@@ -104,7 +100,7 @@ class SignUpVC: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
     }
-
+    
     
     func hideKeyboardWhenTappedAround(){
         
