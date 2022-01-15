@@ -56,7 +56,7 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolLocationButton(_ sender: Any) {
         
-        var x = storyboard?.instantiateViewController(withIdentifier: "WebMapVC") as! WebMapVC
+        let x = storyboard?.instantiateViewController(withIdentifier: "WebMapVC") as! WebMapVC
         
         x.url = schoolObject!.schoolLocation
         
