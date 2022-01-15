@@ -971,11 +971,11 @@
                                     <action selector="forgotPassword:" destination="vgj-ZO-iiE" eventType="touchUpInside" id="fuM-px-wJF"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="179" translatesAutoresizingMaskIntoConstraints="NO" id="khE-z2-45f">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="khE-z2-45f">
                                 <rect key="frame" x="20" y="667" width="388" height="31"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6N-hw-Tc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="104.66666666666667" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="31"/>
                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="مسؤول مدرسة"/>
@@ -984,7 +984,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sho-zr-638">
-                                        <rect key="frame" x="283.66666666666669" y="0.0" width="104.33333333333331" height="31"/>
+                                        <rect key="frame" x="259" y="0.0" width="129" height="31"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
