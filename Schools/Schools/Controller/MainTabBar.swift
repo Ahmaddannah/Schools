@@ -20,14 +20,4 @@ class MainTabBar: UITabBarController , UITabBarControllerDelegate {
         
     }
     
-    //    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-    //
-    //        if viewController is ProfileNavigation {
-    //
-    //            if Auth.auth().currentUser?.uid == nil {
-    //
-    //                let login = storyboard?.instantiateViewController(withIdentifier: "loginNavigationController") as! LoginNavigationController
-    //
-    //                login.modalPresentationStyle = .fullScreen
-    //
 }

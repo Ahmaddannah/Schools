@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */; };
 		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
+		E08CFC5327933199001F915C /* WebMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CFC5227933199001F915C /* WebMapVC.swift */; };
 		E095723A278F45EE00737360 /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0957239278F45EE00737360 /* ProfileNavigation.swift */; };
 		E095723C278F47FB00737360 /* ErrorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095723B278F47FB00737360 /* ErrorExt.swift */; };
-		E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */; };
 		E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F272785A46200AF9330 /* AuthErrorCode.swift */; };
 		E0A77F2C2785F10300AF9330 /* NewSchoolAccount2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */; };
 		E0A8CB6E2786E16D00664BE8 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A8CB6D2786E16D00664BE8 /* School.swift */; };
@@ -38,9 +38,9 @@
 /* Begin PBXFileReference section */
 		E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		E08CFC5227933199001F915C /* WebMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMapVC.swift; sourceTree = "<group>"; };
 		E0957239278F45EE00737360 /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
 		E095723B278F47FB00737360 /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
-		E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentOfSchoolVC.swift; sourceTree = "<group>"; };
 		E0A77F272785A46200AF9330 /* AuthErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthErrorCode.swift; sourceTree = "<group>"; };
 		E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSchoolAccount2VC.swift; sourceTree = "<group>"; };
 		E0A8CB6D2786E16D00664BE8 /* School.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 				E0C81AB227841D1000C532B9 /* SchoolsTableViewVC.swift */,
 				E0C81ABA27841DB300C532B9 /* SchoolsTableViewCell.swift */,
 				E0D6287B27842B9000B31875 /* ProfileOfSchoolVC.swift */,
-				E0A77F2527858DAE00AF9330 /* CommentOfSchoolVC.swift */,
+				E08CFC5227933199001F915C /* WebMapVC.swift */,
 				E0C81AB627841D3000C532B9 /* MapsVC.swift */,
 				E0957239278F45EE00737360 /* ProfileNavigation.swift */,
 				E0C81AB427841D1E00C532B9 /* ProfileVC.swift */,
@@ -234,11 +234,11 @@
 				E0A8CB6E2786E16D00664BE8 /* School.swift in Sources */,
 				E0C81AB727841D3000C532B9 /* MapsVC.swift in Sources */,
 				E0D8E0A62783689B00CC1EDB /* SignInVC.swift in Sources */,
+				E08CFC5327933199001F915C /* WebMapVC.swift in Sources */,
 				E0C81AB527841D1E00C532B9 /* ProfileVC.swift in Sources */,
 				E0D8E0A22783689B00CC1EDB /* AppDelegate.swift in Sources */,
 				E0A77F282785A46200AF9330 /* AuthErrorCode.swift in Sources */,
 				E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */,
-				E0A77F2627858DAE00AF9330 /* CommentOfSchoolVC.swift in Sources */,
 				E095723A278F45EE00737360 /* ProfileNavigation.swift in Sources */,
 				E0A77F2C2785F10300AF9330 /* NewSchoolAccount2VC.swift in Sources */,
 				E0C81AB127841CFF00C532B9 /* NewSchoolAccountVC.swift in Sources */,

@@ -21,9 +21,7 @@ class SignInVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hideKeyboardWhenTappedAround()
-        emailTextField.keyboardType = .numberPad
-        
+        hideKeyboardWhenTappedAround()        
         passwordTextField.isSecureTextEntry = true
         
     }

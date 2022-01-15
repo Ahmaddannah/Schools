@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import WebKit
 
 class ProfileOfSchoolVC: UIViewController {
 
@@ -60,15 +61,13 @@ class ProfileOfSchoolVC: UIViewController {
     
     @IBAction func schoolLocationButton(_ sender: Any) {
         
-//        let strawberryUrl = URL(string: "https://goo.gl/maps/L86tGtEYpGPccgDw5")
-//                 let strawberryRequest = URLRequest(url: strawberryUrl!)
-//
-//        var x = MapsVC()
-//        x.map.load(strawberryRequest)
-//
-//        locationWeb.load(strawberryRequest)
-
-
+        var x = storyboard?.instantiateViewController(withIdentifier: "WebMapVC") as! WebMapVC
+        
+        x.url = schoolObject!.schoolLocation
+        
+        navigationController?.pushViewController(x, animated: true)
+      
+        
     }
     
     

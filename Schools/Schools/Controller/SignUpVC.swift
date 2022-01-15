@@ -41,6 +41,7 @@ class SignUpVC: UIViewController {
     
     
     func signUpAction(){
+        
         if emailTextField.text != "" && passwordTextField.text != "" {
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { user, Error in
                 
@@ -56,9 +57,13 @@ class SignUpVC: UIViewController {
                 }
             }
         } else {
+            
             let alert = UIAlertController(title: "بيانات ناقصة", message: "الرجاء التأكد من إدخال البريد الإلكتروني و كلمة المرور", preferredStyle: .alert)
+            
             alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
+            
             present(alert, animated: true, completion: nil)
+            
         }
     }
     
