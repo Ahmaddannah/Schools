@@ -375,7 +375,7 @@
                                                                                     <rect key="frame" x="0.0" y="0.0" width="230" height="44.333333333333336"/>
                                                                                     <subviews>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسم المدرسة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQF-7k-ail">
-                                                                                            <rect key="frame" x="0.0" y="11.33333333333333" width="230" height="21.666666666666671"/>
+                                                                                            <rect key="frame" x="10" y="10.999999999999998" width="210" height="22.333333333333329"/>
                                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                                                             <nil key="textColor"/>
                                                                                             <nil key="highlightedColor"/>
@@ -383,10 +383,10 @@
                                                                                     </subviews>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
-                                                                                        <constraint firstAttribute="trailing" secondItem="MQF-7k-ail" secondAttribute="trailing" id="25C-Jf-n16"/>
-                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="leading" secondItem="m31-HE-yzB" secondAttribute="leading" id="8LW-Xp-Pdx"/>
-                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="centerX" secondItem="m31-HE-yzB" secondAttribute="centerX" id="Rzl-Xv-NfW"/>
-                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="centerY" secondItem="m31-HE-yzB" secondAttribute="centerY" id="TqK-BH-DWY"/>
+                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="leading" secondItem="m31-HE-yzB" secondAttribute="leading" constant="10" id="0Yx-bn-s63"/>
+                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="top" secondItem="m31-HE-yzB" secondAttribute="top" constant="11" id="71I-K2-eFI"/>
+                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="centerY" secondItem="m31-HE-yzB" secondAttribute="centerY" id="CaK-Ag-fQC"/>
+                                                                                        <constraint firstItem="MQF-7k-ail" firstAttribute="centerX" secondItem="m31-HE-yzB" secondAttribute="centerX" id="QcW-ik-NMO"/>
                                                                                     </constraints>
                                                                                 </view>
                                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrl-YS-hkK">
@@ -396,7 +396,7 @@
                                                                                             <rect key="frame" x="115" y="10.999999999999998" width="115" height="22.333333333333329"/>
                                                                                             <subviews>
                                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حكومي" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqH-9X-04T">
-                                                                                                    <rect key="frame" x="5" y="5.0000000000000009" width="105" height="12.333333333333336"/>
+                                                                                                    <rect key="frame" x="33.333333333333314" y="5.0000000000000009" width="48.333333333333343" height="12.333333333333336"/>
                                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                                     <nil key="highlightedColor"/>
@@ -408,8 +408,6 @@
                                                                                                 <constraint firstItem="eqH-9X-04T" firstAttribute="centerX" secondItem="FBG-q2-gxe" secondAttribute="centerX" id="C6s-we-6Ph"/>
                                                                                                 <constraint firstItem="eqH-9X-04T" firstAttribute="top" secondItem="FBG-q2-gxe" secondAttribute="top" constant="5" id="D02-he-60r"/>
                                                                                                 <constraint firstItem="eqH-9X-04T" firstAttribute="centerY" secondItem="FBG-q2-gxe" secondAttribute="centerY" id="DCs-xx-eT1"/>
-                                                                                                <constraint firstAttribute="trailing" secondItem="eqH-9X-04T" secondAttribute="trailing" constant="5" id="TNr-6l-nAf"/>
-                                                                                                <constraint firstItem="eqH-9X-04T" firstAttribute="leading" secondItem="FBG-q2-gxe" secondAttribute="leading" constant="5" id="cO0-xL-FWO"/>
                                                                                             </constraints>
                                                                                         </view>
                                                                                     </subviews>
@@ -439,14 +437,13 @@
                                                                                                 <constraint firstItem="KgI-vg-VFe" firstAttribute="centerX" secondItem="ggd-tg-wyz" secondAttribute="centerX" id="9cW-3E-mdP"/>
                                                                                                 <constraint firstItem="KgI-vg-VFe" firstAttribute="top" secondItem="ggd-tg-wyz" secondAttribute="top" constant="5" id="GHn-IO-r0e"/>
                                                                                                 <constraint firstItem="KgI-vg-VFe" firstAttribute="centerY" secondItem="ggd-tg-wyz" secondAttribute="centerY" id="OuV-oI-GkX"/>
-                                                                                                <constraint firstItem="KgI-vg-VFe" firstAttribute="leading" secondItem="ggd-tg-wyz" secondAttribute="leading" constant="5" id="WIE-Em-Dkd"/>
-                                                                                                <constraint firstAttribute="trailing" secondItem="KgI-vg-VFe" secondAttribute="trailing" constant="5" id="euy-dc-prz"/>
                                                                                                 <constraint firstAttribute="bottom" secondItem="KgI-vg-VFe" secondAttribute="bottom" constant="5" id="mNH-kK-uGV"/>
                                                                                             </constraints>
                                                                                         </view>
                                                                                     </subviews>
                                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <constraints>
+                                                                                        <constraint firstItem="ggd-tg-wyz" firstAttribute="leading" secondItem="exa-Mo-0BZ" secondAttribute="leading" constant="61.666666666666629" id="8eD-Ow-w1m"/>
                                                                                         <constraint firstItem="ggd-tg-wyz" firstAttribute="centerY" secondItem="exa-Mo-0BZ" secondAttribute="centerY" id="BsL-jb-eO1"/>
                                                                                         <constraint firstItem="ggd-tg-wyz" firstAttribute="height" secondItem="exa-Mo-0BZ" secondAttribute="height" multiplier="0.629371" id="hDd-hM-Efi"/>
                                                                                         <constraint firstAttribute="trailing" secondItem="ggd-tg-wyz" secondAttribute="trailing" id="mFb-w4-32v"/>
