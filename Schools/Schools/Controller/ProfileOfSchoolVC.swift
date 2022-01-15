@@ -44,11 +44,6 @@ class ProfileOfSchoolVC: UIViewController {
         schoolCapacity.text = schoolObject?.schoolCapacity
         
     }
-
-    
-    @IBAction func schoolPhotoButton(_ sender: Any) {
-        
-    }
     
     
     @IBAction func schoolPhoneButton(_ sender: Any) {
@@ -71,11 +66,6 @@ class ProfileOfSchoolVC: UIViewController {
     }
     
     
-    @IBAction func schoolCommentButton(_ sender: Any) {
-        
-
-    }
-    
     @IBAction func schoolEmail(_ sender: Any) {
         
         if let url = URL(string: "mailto:\(schoolObject?.schoolEmail ?? "")") {
@@ -86,6 +76,7 @@ class ProfileOfSchoolVC: UIViewController {
           }
         }
     }
+    
     
     func hideKeyboardWhenTappedAround() {
        

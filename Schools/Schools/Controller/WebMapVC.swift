@@ -18,8 +18,9 @@ class WebMapVC: UIViewController {
         
         let urlReq = URL(string: url!)
         
-        let strawberryRequest = URLRequest(url: urlReq!)
-        web.load(strawberryRequest)
+        let req = URLRequest(url: urlReq!)
+        web.load(req)
+        
     }
 
 }

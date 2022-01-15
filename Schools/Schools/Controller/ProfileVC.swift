@@ -39,8 +39,7 @@ class ProfileVC : UIViewController {
     func checkUserSignIn(){
         
         if Auth.auth().currentUser?.uid == nil {
-            
-            signInButton.customView?.isHidden = false
+                    
             PersonalProfile.isHidden = true
             nameLabel.isHidden = true
             phoneLabel.isHidden = true
@@ -51,7 +50,6 @@ class ProfileVC : UIViewController {
         }else {
             
             getDataFromFireBase()
-            signInButton.customView?.isHidden = true
             PersonalProfile.isHidden = false
             nameLabel.isHidden = false
             phoneLabel.isHidden = false
