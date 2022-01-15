@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class SignInVC: UIViewController{
+class SignInVC: UIViewController {
     
     let db = Firestore.firestore()
     var userId = Auth.auth().currentUser?.uid

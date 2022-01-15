@@ -12,24 +12,16 @@ class ProfileOfSchoolVC: UIViewController {
 
     
     @IBOutlet weak var schoolName: UILabel!
-    
     @IBOutlet weak var schoolType: UILabel!
-    
     @IBOutlet weak var schoolStage: UILabel!
-    
     @IBOutlet weak var schoolCategory: UILabel!
-    
     @IBOutlet weak var schoolCapacity: UILabel!
-    
     @IBOutlet weak var schoolAvailability: UILabel!
-    
     @IBOutlet weak var schoolMaximumNumberInClass: UILabel!
     
     var schoolObject : School? = nil
     
     let db = Firestore.firestore()
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,12 +75,6 @@ class ProfileOfSchoolVC: UIViewController {
     @IBAction func schoolCommentButton(_ sender: Any) {
         
 
-        let vcComment =  storyboard?.instantiateViewController(withIdentifier: "CommentOfSchoolVC") as! CommentOfSchoolVC
-        
-        vcComment.modalPresentationStyle = .formSheet
-        
-        present(vcComment, animated: false , completion: .none)
-        
     }
     
     @IBAction func schoolEmail(_ sender: Any) {

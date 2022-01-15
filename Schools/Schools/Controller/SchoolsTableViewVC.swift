@@ -13,8 +13,8 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
     let db = Firestore.firestore()
     
     var arraySchool : [School] = []
-//    var arraySchoolString : [String]?
-//    var filteredData: [String]!
+    //    var arraySchoolString : [String]?
+    //    var filteredData: [String]!
     
     
     @IBOutlet weak var searchBar: UISearchBar!
@@ -23,10 +23,10 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
     var selectedCat : String = "ahmad1"
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         print(selectedCat)
         hideKeyboardWhenTappedAround()
-        
         
         searchBar.delegate = self
         tableViewOfSchools.dataSource = self
@@ -39,14 +39,6 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         arraySchool.removeAll()
         getDataFromFireBase()
         tableViewOfSchools.reloadData()
-    }
-    
-    
-    @IBAction func filterButton(_ sender: Any) {
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "FilterVC") as? FilterVC
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     
@@ -127,6 +119,11 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
         let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath) as! SchoolsTableViewCell
         
         cell.schoolName.text = arraySchool[indexPath.row].schoolName
+        cell.schoolTypeLabel.text = arraySchool[indexPath.row].schoolType
+        cell.schoolStageLabel.text =  arraySchool[indexPath.row].schoolStage
+        
+        cell.schoolTypeView.backgroundColor = #colorLiteral(red: 0, green: 0.485999465, blue: 0.4348026514, alpha: 1)
+        cell.schoolStageView.backgroundColor = #colorLiteral(red: 0.2662078142, green: 0.6913960576, blue: 0.7334350944, alpha: 1)
         
         return cell
         
