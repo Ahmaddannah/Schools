@@ -31,9 +31,17 @@ class ProfileVC : UIViewController {
     
     @IBAction func signInButton(_ sender: Any) {
         
+        if Auth.auth().currentUser?.uid == nil {
+            
         let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! SignInVC
         
         navigationController?.pushViewController(login, animated: true)
+            
+        } else {
+            
+            myCustomAlert(title: "تنبيه", message: "لقد سجلت دخولك بالفعل", isAdd: true)
+            
+        }
     }
     
     func checkUserSignIn(){

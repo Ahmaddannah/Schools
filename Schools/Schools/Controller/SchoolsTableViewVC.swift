@@ -83,12 +83,8 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
                     
                     self.arraySchool.append(School(schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
                     
-                    //                    self.appendShoolsName()
-                    
                     self.tableViewOfSchools.reloadData()
                 })
-                
-                //                self.appendShoolsName()
                 
                 
             }else{
