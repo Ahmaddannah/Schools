@@ -181,33 +181,33 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-gG-mhn">
                                                 <rect key="frame" x="100" y="770.66666666666663" width="228" height="30.666666666666629"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kD-eYY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30.666666666666668"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="385-Na-GQb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="45" height="30.666666666666668"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="phone.fill" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
                                                         <connections>
-                                                            <action selector="schoolPhoneButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="M5n-gW-y5h"/>
+                                                            <action selector="schoolLocationButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="PXE-Qu-sgD"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVr-oB-4zp">
-                                                        <rect key="frame" x="103" y="0.0" width="48" height="30.666666666666668"/>
+                                                        <rect key="frame" x="77" y="0.0" width="48" height="30.666666666666668"/>
                                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="envelope.fill" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="envelope" catalog="system"/>
                                                         <connections>
                                                             <action selector="schoolEmail:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="xyy-1P-YXU"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="385-Na-GQb">
-                                                        <rect key="frame" x="183" y="0.0" width="45" height="30.666666666666668"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsC-kD-eYY">
+                                                        <rect key="frame" x="157" y="0.0" width="71" height="30.666666666666668"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="location.fill" catalog="system"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="phone" catalog="system"/>
                                                         <connections>
-                                                            <action selector="schoolLocationButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="PXE-Qu-sgD"/>
+                                                            <action selector="schoolPhoneButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="M5n-gW-y5h"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -1446,14 +1446,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <image name="location" catalog="system" width="128" height="118"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
-        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
         <image name="schoolPhoto" width="650" height="618"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
