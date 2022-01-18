@@ -16,6 +16,7 @@ class NewSchoolAccount2VC: UIViewController {
     var phoneSchool: String = ""
     var emailSchool: String = ""
     var passwordSchool: String = ""
+    var uid : UUID = UUID()
     
     @IBOutlet weak var schoolType: UITextField!
     @IBOutlet weak var schoolStage: UITextField!
@@ -46,6 +47,7 @@ class NewSchoolAccount2VC: UIViewController {
         
         db.collection("School").addDocument(data: [
             
+            "id" : uid.uuidString , 
             "schoolName" : nameSchool ,
             "schoolEmail" : emailSchool ,
             "schoolPhone" : phoneSchool ,
@@ -64,7 +66,9 @@ class NewSchoolAccount2VC: UIViewController {
                 self.myCustomAlert(title: "تنبيه", message: "تم اضافة المدرسة بنجاح", isAdd: true )
                 
             }else {
-                self.myCustomAlert(title: "تنبيه", message: "حصلت مشكلة ما الرجاء المحاولة مره اخرى", isAdd: true )            }
+                self.myCustomAlert(title: "تنبيه", message: "حصلت مشكلة ما الرجاء المحاولة مره اخرى", isAdd: true )
+                
+            }
         }
     }
     

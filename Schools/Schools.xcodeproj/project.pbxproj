@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */; };
 		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
+		E068ED992796F34700D8269C /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068ED982796F34700D8269C /* CommentVC.swift */; };
+		E068ED9B2796F46300D8269C /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068ED9A2796F46300D8269C /* CommentTableViewCell.swift */; };
+		E068ED9D27972E3B00D8269C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068ED9C27972E3B00D8269C /* Comment.swift */; };
 		E08CFC5327933199001F915C /* WebMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CFC5227933199001F915C /* WebMapVC.swift */; };
 		E095723A278F45EE00737360 /* ProfileNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0957239278F45EE00737360 /* ProfileNavigation.swift */; };
 		E095723C278F47FB00737360 /* ErrorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E095723B278F47FB00737360 /* ErrorExt.swift */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		E068ED982796F34700D8269C /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
+		E068ED9A2796F46300D8269C /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		E068ED9C27972E3B00D8269C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		E08CFC5227933199001F915C /* WebMapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebMapVC.swift; sourceTree = "<group>"; };
 		E0957239278F45EE00737360 /* ProfileNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigation.swift; sourceTree = "<group>"; };
 		E095723B278F47FB00737360 /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
@@ -81,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				E0A8CB6D2786E16D00664BE8 /* School.swift */,
+				E068ED9C27972E3B00D8269C /* Comment.swift */,
 				E0A77F272785A46200AF9330 /* AuthErrorCode.swift */,
 				E095723B278F47FB00737360 /* ErrorExt.swift */,
 			);
@@ -104,6 +111,8 @@
 				E0C81AB227841D1000C532B9 /* SchoolsTableViewVC.swift */,
 				E0C81ABA27841DB300C532B9 /* SchoolsTableViewCell.swift */,
 				E0D6287B27842B9000B31875 /* ProfileOfSchoolVC.swift */,
+				E068ED982796F34700D8269C /* CommentVC.swift */,
+				E068ED9A2796F46300D8269C /* CommentTableViewCell.swift */,
 				E08CFC5227933199001F915C /* WebMapVC.swift */,
 				E0C81AB627841D3000C532B9 /* MapsVC.swift */,
 				E0957239278F45EE00737360 /* ProfileNavigation.swift */,
@@ -232,6 +241,8 @@
 				E0C81ABB27841DB300C532B9 /* SchoolsTableViewCell.swift in Sources */,
 				E0C81AB927841D4200C532B9 /* SettingVC.swift in Sources */,
 				E0A8CB6E2786E16D00664BE8 /* School.swift in Sources */,
+				E068ED9B2796F46300D8269C /* CommentTableViewCell.swift in Sources */,
+				E068ED992796F34700D8269C /* CommentVC.swift in Sources */,
 				E0C81AB727841D3000C532B9 /* MapsVC.swift in Sources */,
 				E0D8E0A62783689B00CC1EDB /* SignInVC.swift in Sources */,
 				E08CFC5327933199001F915C /* WebMapVC.swift in Sources */,
@@ -245,6 +256,7 @@
 				E0D6287C27842B9000B31875 /* ProfileOfSchoolVC.swift in Sources */,
 				E095723C278F47FB00737360 /* ErrorExt.swift in Sources */,
 				E0C81AAF27841CE000C532B9 /* ForgotPasswordVC.swift in Sources */,
+				E068ED9D27972E3B00D8269C /* Comment.swift in Sources */,
 				E0D8E0A42783689B00CC1EDB /* SceneDelegate.swift in Sources */,
 				E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */,
 			);

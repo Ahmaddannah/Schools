@@ -81,7 +81,9 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
                     
                     let schoolPassword : String = QueryDocumentSnapshot.get("schoolPassword")as! String
                     
-                    self.arraySchool.append(School(schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
+                    let id : String = QueryDocumentSnapshot.get("id") as! String
+                    
+                    self.arraySchool.append(School(id: id , schoolName: schoolName, schoolPhone: schoolPhone, schoolEmail: schoolEmail, schoolCapacity: schoolCapacity, schoolCategory: schoolCategory, schoolLocation: schoolLocation, schoolMaximumNum: schoolMaximum, schoolPassword: schoolPassword, schoolStage: schoolStage, schoolStatus: schoolStatus, schoolType: schoolType))
                     
                     self.tableViewOfSchools.reloadData()
                 })

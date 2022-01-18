@@ -10,6 +10,7 @@ import Firebase
 
 struct School {
     
+    var id : String
     var schoolName : String
     var schoolPhone : String
     var schoolEmail : String

@@ -27,6 +27,8 @@ class ProfileOfSchoolVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.backButtonTitle = "الرجوع"
+        
         getDataFromObjectSchools()
         hideKeyboardWhenTappedAround()
         
@@ -44,6 +46,18 @@ class ProfileOfSchoolVC: UIViewController {
         schoolCapacity.text = schoolObject?.schoolCapacity
         
     }
+    
+    @IBAction func schoolChat(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ChatVC") as! CommentVC
+       
+        vc.takeID = schoolObject!.id
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+
     
     
     @IBAction func schoolPhoneButton(_ sender: Any) {
