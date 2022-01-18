@@ -30,6 +30,9 @@ class NewSchoolAccount2VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        
+        schoolCapacity.keyboardType = .numberPad
+        schoolMaximumNum.keyboardType = .numberPad
     }
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {

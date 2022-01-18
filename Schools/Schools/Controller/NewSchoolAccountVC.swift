@@ -26,6 +26,7 @@ class NewSchoolAccountVC: UIViewController {
         
         hideKeyboardWhenTappedAround()
         
+        phoneSchool.keyboardType = .numberPad
         passwordSchool.isSecureTextEntry = true
         passwordSchool2.isSecureTextEntry = true
         

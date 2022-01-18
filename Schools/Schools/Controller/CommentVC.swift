@@ -14,8 +14,6 @@ class CommentVC: UIViewController {
     
     var arrComment : [Comment] = []
     
-    var schoolObject : School? = nil
-    
     var takeID : String? = nil
     
     @IBOutlet weak var tableView: UITableView!
@@ -27,6 +25,8 @@ class CommentVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.reloadData()
         
         listener()
         
@@ -41,23 +41,20 @@ class CommentVC: UIViewController {
             
             sendMessage()
             commentTextField.text = nil
-            
+            tableView.reloadData()
         }else{
             
             myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول لأضافة تعليق", isAdd: true)
-            
         }
-        
-        
     }
-    
 }
 
 extension CommentVC {
     
     func listener(){
         
-        db.collection("Message").whereField("id", isEqualTo: takeID) .addSnapshotListener { documentSnapshot, error in
+                                                 // order(by:"time").
+        db.collection("Message").whereField("id", isEqualTo: takeID).addSnapshotListener { documentSnapshot , error in
             
             guard documentSnapshot != nil else {
                 print("Error fetching document: \(error!)")
@@ -86,8 +83,9 @@ extension CommentVC {
         
         db.collection("Message").document().setData([
             
+            "id" : takeID ,
             "content" : commentTextField.text! ,
-            "id" : takeID
+            "time" :  Timestamp()
         ])
         
         tableView.reloadData()
@@ -138,6 +136,10 @@ extension CommentVC : UITableViewDelegate , UITableViewDataSource {
         cell.massageLabel.text = arrComment[indexPath.row].message
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
     
 }
