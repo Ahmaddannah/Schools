@@ -55,15 +55,14 @@ class SettingVC: UIViewController {
     
     @IBAction func signOutButton(_ sender: Any) {
         
+        navigationController?.popViewController(animated: false)
         
         do {
             try Auth.auth().signOut()
             
             myCustomAlert(title: " ", message: "تم تسجيل الخروج بنجاح ", isAdd: true)
             
-            navigationController?.popViewController(animated: true)
-            
-        } catch  {
+        } catch {
             print("Error in SignOut")
         }
         
