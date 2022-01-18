@@ -10,5 +10,5 @@ import Foundation
 struct Comment {
                                
     var message : String
-//    var id : String
+
 }

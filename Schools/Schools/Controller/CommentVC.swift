@@ -37,14 +37,14 @@ class CommentVC: UIViewController {
     
     @IBAction func sendCommentButton(_ sender: Any) {
         
-        if Auth.auth().currentUser?.uid == nil {
+        if Auth.auth().currentUser?.uid != nil {
             
             sendMessage()
             commentTextField.text = nil
             
         }else{
             
-            myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول لأضافة تعليق", isAdd: false)
+            myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول لأضافة تعليق", isAdd: true)
             
         }
         
