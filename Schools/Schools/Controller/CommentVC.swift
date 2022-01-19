@@ -15,18 +15,25 @@ class CommentVC: UIViewController {
     var takeID : String? = nil
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataLabel: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
         listener()
         hideKeyboardWhenTappedAround()
         
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        isEmpty()
     }
     
     
@@ -67,7 +74,7 @@ extension CommentVC {
                 self.arrComment.append(Comment(message: message))
                 
             }
-            
+            self.isEmpty()
             self.tableView.reloadData()
         }
     }
@@ -81,8 +88,9 @@ extension CommentVC {
             "content" : commentTextField.text! ,
             "time" :  Timestamp()
         ])
-        
+        isEmpty()
         tableView.reloadData()
+        
     }
     
     
@@ -110,6 +118,22 @@ extension CommentVC {
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    
+    func isEmpty(){
+       
+        if arrComment.isEmpty == false {
+            
+            noDataLabel.isHidden = false
+            tableView.reloadData()
+            
+        }else {
+            
+            noDataLabel.isHidden = true
+            tableView.reloadData()
+        }
+        
     }
     
 }

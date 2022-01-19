@@ -19,12 +19,14 @@ class ProfileOfSchoolVC: UIViewController {
     @IBOutlet weak var schoolAvailability: UILabel!
     @IBOutlet weak var schoolMaximumNumberInClass: UILabel!
     
+    @IBOutlet weak var viewforData: UIView!
+    
     var schoolObject : School? = nil
     let db = Firestore.firestore()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewforData.layer.cornerRadius = 15
         navigationItem.backButtonTitle = "الرجوع"
         getDataFromObjectSchools()
         hideKeyboardWhenTappedAround()
