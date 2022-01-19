@@ -19,14 +19,19 @@ class ProfileVC : UIViewController {
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var messageForUserNotSignIn: UILabel!
     @IBOutlet weak var signInButton: UIBarButtonItem!
+    @IBOutlet weak var viewOfProfile: UIView!
+    @IBOutlet weak var secondView: UIView!
+    
     
     override func viewWillAppear(_ animated: Bool) {
         checkUserSignIn()
     }
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+        
+        viewOfProfile.clipsToBounds = true
+        viewOfProfile.layer.cornerRadius = 15
         hideKeyboardWhenTappedAround()
         
     }
@@ -70,21 +75,23 @@ extension ProfileVC {
         
         if Auth.auth().currentUser?.uid == nil {
             
-            PersonalProfile.isHidden = true
-            nameLabel.isHidden = true
-            phoneLabel.isHidden = true
-            emailLabel.isHidden = true
+            //            PersonalProfile.isHidden = true
+            //            nameLabel.isHidden = true
+            //            phoneLabel.isHidden = true
+            //            emailLabel.isHidden = true
             messageForUserNotSignIn.isHidden = false
-            
-            
+            secondView.isHidden = false
+            //
         }else {
-            
+            //
             getDataFromFireBase()
-            PersonalProfile.isHidden = false
-            nameLabel.isHidden = false
-            phoneLabel.isHidden = false
-            emailLabel.isHidden = false
+            //            PersonalProfile.isHidden = false
+            //            nameLabel.isHidden = false
+            //            phoneLabel.isHidden = false
+            //            emailLabel.isHidden = false
+            secondView.isHidden = true
             messageForUserNotSignIn.isHidden = true
+            
         }
     }
     

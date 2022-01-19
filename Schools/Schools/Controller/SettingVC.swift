@@ -30,7 +30,7 @@ class SettingVC: UIViewController {
                 
                 UIApplication.shared.windows.forEach { window in
                     window.overrideUserInterfaceStyle = .dark}
-            }else {
+            } else {
                 
                 if #available(iOS 10.0, *) {
                     
