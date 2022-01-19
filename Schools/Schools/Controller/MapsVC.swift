@@ -15,11 +15,9 @@ class MapsVC: UIViewController {
     
     @IBOutlet weak var map: MKMapView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
     }
-    
 }

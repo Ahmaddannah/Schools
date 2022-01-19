@@ -34,10 +34,12 @@ class ForgotPasswordVC: UIViewController {
                 
             }
         }
-        
-        
     }
-    
+
+}// end of the class
+
+
+extension ForgotPasswordVC {
     
     func hideKeyboardWhenTappedAround() {
         
@@ -50,3 +52,4 @@ class ForgotPasswordVC: UIViewController {
         view.endEditing(true)
     }
 }
+

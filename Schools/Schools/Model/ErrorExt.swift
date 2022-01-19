@@ -12,10 +12,15 @@ import Firebase
 public extension Error {
     
     var localizedDescription: String {
+        
         let error = self as NSError
+        
         if error.domain == AuthErrorDomain {
+            
             if let code = AuthErrorCode(rawValue: error.code) {
+                
                 if let errorString = code.description {
+                    
                     return errorString
                 }
             }

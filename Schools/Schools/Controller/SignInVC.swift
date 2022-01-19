@@ -14,14 +14,12 @@ class SignInVC: UIViewController {
     var userId = Auth.auth().currentUser?.uid
     
     @IBOutlet weak var emailTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        hideKeyboardWhenTappedAround()        
+        hideKeyboardWhenTappedAround()
         passwordTextField.isSecureTextEntry = true
         
     }
@@ -33,7 +31,6 @@ class SignInVC: UIViewController {
         navigationController?.pushViewController(toForgot, animated: true)
         
     }
-    
     
     
     @IBAction func signInButton(_ sender: Any){
@@ -59,6 +56,9 @@ class SignInVC: UIViewController {
         navigationController?.pushViewController(toCreateAccountSchool, animated: true)
         
     }
+}
+
+extension SignInVC {
     
     
     func signIn(){
@@ -98,4 +98,5 @@ class SignInVC: UIViewController {
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
+    
 }

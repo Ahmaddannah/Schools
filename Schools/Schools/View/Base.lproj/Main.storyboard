@@ -194,14 +194,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Tx2-D1-vdd">
                                 <rect key="frame" x="72" y="693" width="270" height="30.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-Ex-57I">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfc-l8-ay3">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="30.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="phone" catalog="system"/>
                                         <connections>
-                                            <action selector="schoolLocationButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="uo7-ol-H7G"/>
+                                            <action selector="schoolPhoneButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="5aW-q1-hQq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="527-fD-xf9">
@@ -213,23 +213,23 @@
                                             <action selector="schoolEmail:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="mWL-eY-1yJ"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dx-Ex-57I">
+                                        <rect key="frame" x="153.5" y="0.0" width="45" height="30.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="location" catalog="system"/>
+                                        <connections>
+                                            <action selector="schoolLocationButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="uo7-ol-H7G"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvC-EY-kS0">
-                                        <rect key="frame" x="153.5" y="0.0" width="41.5" height="30.5"/>
+                                        <rect key="frame" x="228.5" y="0.0" width="41.5" height="30.5"/>
                                         <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="bubble.right" catalog="system"/>
                                         <connections>
                                             <action selector="schoolChat:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="WRW-eM-c0Q"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="753" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfc-l8-ay3">
-                                        <rect key="frame" x="225" y="0.0" width="45" height="30.5"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="phone" catalog="system"/>
-                                        <connections>
-                                            <action selector="schoolPhoneButton:" destination="Qaj-7E-cxk" eventType="touchUpInside" id="5aW-q1-hQq"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1343,6 +1343,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="انشاء حساب جديد للمدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-TT-Pww">
+                                <rect key="frame" x="20" y="123" width="281" height="56"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-8z-vgU">
                                 <rect key="frame" x="15" y="231" width="384" height="34"/>
                                 <subviews>
@@ -1379,7 +1385,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحلة المدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-1i-piZ">
                                         <rect key="frame" x="272" y="0.0" width="112" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="T7c-Ir-KTE"/>
                                             <constraint firstAttribute="width" constant="112" id="XTH-j4-OAY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1489,16 +1494,6 @@
                                     <constraint firstAttribute="width" constant="384" id="fOY-1z-QSf"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syn-Tg-I7o">
-                                <rect key="frame" x="140" y="720" width="121" height="31"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="انشاء حساب "/>
-                                <connections>
-                                    <action selector="createAccountSchoolButton:" destination="6jm-Zc-GYg" eventType="touchUpInside" id="doA-no-XcK"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="FmE-ju-eTP">
                                 <rect key="frame" x="15" y="623" width="384" height="34"/>
                                 <subviews>
@@ -1523,12 +1518,19 @@
                                     <constraint firstAttribute="height" constant="34" id="fVF-Ys-OaU"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="انشاء حساب جديد للمدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxH-TT-Pww">
-                                <rect key="frame" x="20" y="123" width="281" height="56"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp6-HP-L1r">
+                                <rect key="frame" x="140" y="721" width="134" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="7qT-3a-eZJ"/>
+                                    <constraint firstAttribute="height" constant="31" id="w1i-8g-l6k"/>
+                                </constraints>
+                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="انشاء حساب"/>
+                                <connections>
+                                    <action selector="createAccountSchoolButton:" destination="6jm-Zc-GYg" eventType="touchUpInside" id="NdD-5f-PAz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0tR-gD-YWz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1546,25 +1548,23 @@
                             <constraint firstItem="qMT-sC-aQy" firstAttribute="top" secondItem="OyZ-UC-bam" secondAttribute="bottom" constant="30" id="Q1k-aT-XaR"/>
                             <constraint firstItem="dL7-8z-vgU" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="QOn-bE-Ky5"/>
                             <constraint firstItem="OyZ-UC-bam" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="Qbm-1g-Hhv"/>
-                            <constraint firstItem="syn-Tg-I7o" firstAttribute="top" secondItem="FmE-ju-eTP" secondAttribute="bottom" constant="58" id="SYW-x0-wzj"/>
-                            <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="syn-Tg-I7o" secondAttribute="trailing" constant="153" id="T9b-wR-26c"/>
+                            <constraint firstItem="Dp6-HP-L1r" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="140" id="SQn-sJ-dLK"/>
                             <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="dL7-8z-vgU" secondAttribute="trailing" constant="15" id="XHy-0R-sav"/>
                             <constraint firstItem="tHe-2i-52Y" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="Xfv-7Z-JT4"/>
                             <constraint firstItem="Wxb-Il-Jnl" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="YBa-4k-J8b"/>
                             <constraint firstItem="qMT-sC-aQy" firstAttribute="centerY" secondItem="1Ee-k3-NFZ" secondAttribute="centerY" id="ZBC-mk-9P4"/>
+                            <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="Dp6-HP-L1r" secondAttribute="trailing" constant="140" id="bXi-b1-WgK"/>
                             <constraint firstItem="dL7-8z-vgU" firstAttribute="top" secondItem="uxH-TT-Pww" secondAttribute="bottom" constant="73" id="bk8-L7-Z13"/>
                             <constraint firstItem="FmE-ju-eTP" firstAttribute="top" secondItem="Wxb-Il-Jnl" secondAttribute="bottom" constant="30" id="dJr-9A-lCV"/>
                             <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="qMT-sC-aQy" secondAttribute="trailing" constant="15" id="f2c-A5-dbR"/>
-                            <constraint firstItem="tHe-2i-52Y" firstAttribute="top" secondItem="dL7-8z-vgU" secondAttribute="bottom" constant="30" id="fQA-Pa-1xX"/>
                             <constraint firstItem="OyZ-UC-bam" firstAttribute="top" secondItem="tHe-2i-52Y" secondAttribute="bottom" constant="26" id="fVR-oD-Rmf"/>
                             <constraint firstItem="HEs-8U-Kll" firstAttribute="top" secondItem="qMT-sC-aQy" secondAttribute="bottom" constant="30" id="hhd-2A-dDb"/>
+                            <constraint firstItem="Dp6-HP-L1r" firstAttribute="top" secondItem="FmE-ju-eTP" secondAttribute="bottom" constant="64" id="iND-8t-5Jb"/>
                             <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="Wxb-Il-Jnl" secondAttribute="trailing" constant="15" id="ieA-Uc-WIW"/>
                             <constraint firstItem="qMT-sC-aQy" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="mo5-Aa-uUv"/>
-                            <constraint firstItem="syn-Tg-I7o" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="140" id="p91-SU-PND"/>
                             <constraint firstItem="tHe-2i-52Y" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="p9N-dj-ww5"/>
                             <constraint firstItem="HEs-8U-Kll" firstAttribute="leading" secondItem="0tR-gD-YWz" secondAttribute="leading" constant="15" id="poG-8L-Qaz"/>
                             <constraint firstItem="0tR-gD-YWz" firstAttribute="trailing" secondItem="tHe-2i-52Y" secondAttribute="trailing" constant="15" id="qtJ-IS-V0c"/>
-                            <constraint firstItem="dL7-8z-vgU" firstAttribute="top" secondItem="uxH-TT-Pww" secondAttribute="bottom" constant="70" id="sgs-Zg-hai"/>
                             <constraint firstItem="dL7-8z-vgU" firstAttribute="centerX" secondItem="uxH-TT-Pww" secondAttribute="centerX" id="uvh-X4-K3H"/>
                             <constraint firstItem="FmE-ju-eTP" firstAttribute="top" secondItem="Wxb-Il-Jnl" secondAttribute="bottom" constant="30" id="yjg-C2-AX6"/>
                             <constraint firstItem="tHe-2i-52Y" firstAttribute="top" secondItem="dL7-8z-vgU" secondAttribute="bottom" constant="36" id="zb7-IB-y3m"/>

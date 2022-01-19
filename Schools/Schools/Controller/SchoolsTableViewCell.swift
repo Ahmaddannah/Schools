@@ -11,8 +11,7 @@ import Firebase
 class SchoolsTableViewCell: UITableViewCell {
     
     let db = Firestore.firestore()
-
-
+    
     @IBOutlet weak var schoolCellView: UIView!
     @IBOutlet weak var schoolImage: UIImageView!
     @IBOutlet weak var schoolName: UILabel!

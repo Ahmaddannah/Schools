@@ -22,13 +22,11 @@ class NewSchoolAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.backButtonTitle = "الرجوع"
-        
-        hideKeyboardWhenTappedAround()
-        
         phoneSchool.keyboardType = .numberPad
         passwordSchool.isSecureTextEntry = true
         passwordSchool2.isSecureTextEntry = true
+        navigationItem.backButtonTitle = "الرجوع"
+        hideKeyboardWhenTappedAround()
         
     }
     
@@ -46,6 +44,12 @@ class NewSchoolAccountVC: UIViewController {
         navigationController?.pushViewController(nextVC, animated: true)
         
     }
+    
+}// end of the class
+
+
+
+extension NewSchoolAccountVC {
     
     func Check(){
         

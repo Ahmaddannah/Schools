@@ -29,10 +29,11 @@ class NewSchoolAccount2VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
         
         schoolCapacity.keyboardType = .numberPad
         schoolMaximumNum.keyboardType = .numberPad
+        hideKeyboardWhenTappedAround()
+        
     }
     
     @IBAction func createAccountSchoolButton(_ sender: Any) {
@@ -40,17 +41,22 @@ class NewSchoolAccount2VC: UIViewController {
         if check(){
             
             uploadData()
-            
             navigationController?.popViewController(animated: true)
             navigationController?.popViewController(animated: true)
         }
     }
     
+}// end of the class
+
+
+
+extension NewSchoolAccount2VC {
+    
     func uploadData(){
         
         db.collection("School").addDocument(data: [
             
-            "id" : uid.uuidString , 
+            "id" : uid.uuidString ,
             "schoolName" : nameSchool ,
             "schoolEmail" : emailSchool ,
             "schoolPhone" : phoneSchool ,
@@ -152,5 +158,5 @@ class NewSchoolAccount2VC: UIViewController {
         self.present(alert, animated: true, completion: nil)
         
     }
+    
 }
-

@@ -8,14 +8,12 @@
 import UIKit
 import Firebase
 
-class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
+class SchoolsTableViewVC : UIViewController {
     
     let db = Firestore.firestore()
     
     var arraySchool : [School] = []
     
-    
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableViewOfSchools: UITableView!
     
     
@@ -24,7 +22,6 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         
-//        searchBar.delegate = self
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
         
@@ -37,6 +34,54 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         tableViewOfSchools.reloadData()
     }
     
+    
+}// end of the class
+
+
+
+extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return arraySchool.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath) as! SchoolsTableViewCell
+        
+        cell.schoolName.text = arraySchool[indexPath.row].schoolName
+        cell.schoolTypeLabel.text = arraySchool[indexPath.row].schoolType
+        cell.schoolStageLabel.text =  arraySchool[indexPath.row].schoolStage
+        
+        cell.schoolTypeView.backgroundColor = #colorLiteral(red: 0, green: 0.485999465, blue: 0.4348026514, alpha: 1)
+        cell.schoolStageView.backgroundColor = #colorLiteral(red: 0.2662078142, green: 0.6913960576, blue: 0.7334350944, alpha: 1)
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileOfSchoolVC") as? ProfileOfSchoolVC
+        vc?.schoolObject = arraySchool[indexPath.row]
+        vc!.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+}//end of the extension for the class (( TableView ))
+
+
+
+
+
+
+extension SchoolsTableViewVC {
     
     func hideKeyboardWhenTappedAround() {
         
@@ -97,47 +142,4 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         }
     }
     
-}// end of the class
-
-
-
-extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return arraySchool.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableViewOfSchools.dequeueReusableCell(withIdentifier: "cellOfSchool", for: indexPath) as! SchoolsTableViewCell
-        
-        cell.schoolName.text = arraySchool[indexPath.row].schoolName
-        cell.schoolTypeLabel.text = arraySchool[indexPath.row].schoolType
-        cell.schoolStageLabel.text =  arraySchool[indexPath.row].schoolStage
-        
-        cell.schoolTypeView.backgroundColor = #colorLiteral(red: 0, green: 0.485999465, blue: 0.4348026514, alpha: 1)
-        cell.schoolStageView.backgroundColor = #colorLiteral(red: 0.2662078142, green: 0.6913960576, blue: 0.7334350944, alpha: 1)
-        
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileOfSchoolVC") as? ProfileOfSchoolVC
-        vc?.schoolObject = arraySchool[indexPath.row]
-        vc!.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(vc!, animated: true)
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
-    }
-    
-
-    
-    
 }
-

@@ -11,9 +11,7 @@ import Firebase
 class SignUpVC: UIViewController {
     
     let db = Firestore.firestore()
-    
     var userId = Auth.auth().currentUser?.uid
-    
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
@@ -25,7 +23,6 @@ class SignUpVC: UIViewController {
         super.viewDidLoad()
         
         phoneTextField.keyboardType = .numberPad
-        
         passwordTextField.isSecureTextEntry = true
         
     }
@@ -40,6 +37,11 @@ class SignUpVC: UIViewController {
         
         
     }
+    
+}
+
+
+extension SignUpVC {
     
     
     func signUpAction(){

@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import Firebase
 
 struct Comment {
-                               
+    
     var message : String
-
+    
 }

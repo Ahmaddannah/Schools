@@ -19,8 +19,7 @@ class SettingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
-        darkLightModeSwitch.isOn = false
-        
+        navigationItem.backButtonTitle = "الاعدادات"
     }
     
     @IBAction func darkLightModeSwitchAction(_ sender: Any) {
@@ -67,6 +66,11 @@ class SettingVC: UIViewController {
         }
         
     }
+    
+}
+
+
+extension SettingVC {
     
     func myCustomAlert(title :String , message : String , isAdd: Bool) {
         

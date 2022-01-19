@@ -149,8 +149,8 @@
 				E0A14F95278C339600B565A9 /* Model */,
 				E0A14F96278C33B100B565A9 /* View */,
 				E0A14F97278C33BF00B565A9 /* Controller */,
-				E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */,
 				E0D8E0A12783689B00CC1EDB /* AppDelegate.swift */,
+				E0D8E0A32783689B00CC1EDB /* SceneDelegate.swift */,
 				E0D8E0AF2783689D00CC1EDB /* Info.plist */,
 				E0D628722784222000B31875 /* GoogleService-Info.plist */,
 			);

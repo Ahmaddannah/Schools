@@ -25,29 +25,51 @@ class ProfileVC : UIViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        
     }
     
     @IBAction func signInButton(_ sender: Any) {
         
         if Auth.auth().currentUser?.uid == nil {
             
-        let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! SignInVC
-        
-        navigationController?.pushViewController(login, animated: true)
+            let login = storyboard?.instantiateViewController(withIdentifier: "LogInVC") as! SignInVC
+            navigationController?.pushViewController(login, animated: true)
             
         } else {
             
             myCustomAlert(title: "تنبيه", message: "لقد سجلت دخولك بالفعل", isAdd: true)
-            
         }
     }
+    
+    
+    @IBAction func settingButton(_ sender: Any) {
+        
+        if Auth.auth().currentUser?.uid == nil {
+            
+            myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول للوصول للاعدادات", isAdd: true)
+            
+        }else {
+            
+            let vc = storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingVC
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        
+    }
+    
+}// end of the class
+
+
+extension ProfileVC {
     
     func checkUserSignIn(){
         
         if Auth.auth().currentUser?.uid == nil {
-                    
+            
             PersonalProfile.isHidden = true
             nameLabel.isHidden = true
             phoneLabel.isHidden = true
@@ -63,9 +85,9 @@ class ProfileVC : UIViewController {
             phoneLabel.isHidden = false
             emailLabel.isHidden = false
             messageForUserNotSignIn.isHidden = true
-            
         }
     }
+    
     
     func getDataFromFireBase(){
         
@@ -86,24 +108,6 @@ class ProfileVC : UIViewController {
                                                  
                 )}
         }
-    }
-    
-    
-    
-    @IBAction func settingButton(_ sender: Any) {
-        
-        if Auth.auth().currentUser?.uid == nil {
-            
-            myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول للوصول للاعدادات", isAdd: true)
-            
-        }else {
-            
-            let vc = storyboard?.instantiateViewController(withIdentifier: "SettingVC") as! SettingVC
-            
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
-        
-        
     }
     
     func myCustomAlert(title :String , message : String , isAdd: Bool) {

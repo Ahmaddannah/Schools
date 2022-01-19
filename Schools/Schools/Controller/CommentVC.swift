@@ -11,9 +11,7 @@ import Firebase
 class CommentVC: UIViewController {
     
     let db = Firestore.firestore()
-    
     var arrComment : [Comment] = []
-    
     var takeID : String? = nil
     
     @IBOutlet weak var tableView: UITableView!
@@ -25,11 +23,8 @@ class CommentVC: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.reloadData()
-        
         listener()
-        
         hideKeyboardWhenTappedAround()
         
     }
@@ -42,6 +37,7 @@ class CommentVC: UIViewController {
             sendMessage()
             commentTextField.text = nil
             tableView.reloadData()
+            
         }else{
             
             myCustomAlert(title: "تنبيه", message: "قم بتسجيل الدخول لأضافة تعليق", isAdd: true)
@@ -53,14 +49,13 @@ extension CommentVC {
     
     func listener(){
         
-                                                 // order(by:"time").
+        // order(by:"time").
         db.collection("Message").whereField("id", isEqualTo: takeID).addSnapshotListener { documentSnapshot , error in
             
             guard documentSnapshot != nil else {
                 print("Error fetching document: \(error!)")
                 return
             }
-            
             
             self.arrComment.removeAll()
             
@@ -79,7 +74,6 @@ extension CommentVC {
     
     
     func sendMessage(){
-        
         
         db.collection("Message").document().setData([
             
