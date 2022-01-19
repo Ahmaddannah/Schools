@@ -24,7 +24,7 @@ class SchoolsTableViewVC: UIViewController , UISearchBarDelegate {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
         
-        searchBar.delegate = self
+//        searchBar.delegate = self
         tableViewOfSchools.dataSource = self
         tableViewOfSchools.delegate = self
         

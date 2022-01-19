@@ -24,6 +24,8 @@ class SignUpVC: UIViewController {
     override func viewDidLoad(){
         super.viewDidLoad()
         
+        phoneTextField.keyboardType = .numberPad
+        
         passwordTextField.isSecureTextEntry = true
         
     }
