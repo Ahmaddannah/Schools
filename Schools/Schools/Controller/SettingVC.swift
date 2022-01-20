@@ -13,11 +13,13 @@ class SettingVC: UIViewController {
     let db = Firestore.firestore()
     var userId = Auth.auth().currentUser?.uid
     var defaults = UserDefaults.standard
+    var mode : Bool = false
     
     @IBOutlet weak var darkLightModeSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         hideKeyboardWhenTappedAround()
         navigationItem.backButtonTitle = "الاعدادات"
     }

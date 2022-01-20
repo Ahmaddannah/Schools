@@ -1014,7 +1014,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vLO-NY-IXZ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="frv-u9-zFd" firstAttribute="leading" secondItem="vLO-NY-IXZ" secondAttribute="leading" constant="144" id="goP-Q4-Uj1"/>
                             <constraint firstItem="frv-u9-zFd" firstAttribute="top" secondItem="vLO-NY-IXZ" secondAttribute="top" constant="60" id="hVz-r1-hxB"/>
