@@ -24,6 +24,7 @@ class SignUpVC: UIViewController {
         
         phoneTextField.keyboardType = .numberPad
         passwordTextField.isSecureTextEntry = true
+        hideKeyboardWhenTappedAround()
         
     }
     
