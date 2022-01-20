@@ -30,12 +30,7 @@ class SignUpVC: UIViewController {
     @IBAction func createButton(_ sender: Any) {
         
         signUpAction()
-        
-        navigationController?.popViewController(animated: true)
-        
-        myCustomAlert(title: "", message: "تم انشاء الحساب", isAdd: true)
-        
-        
+
     }
     
 }
@@ -47,19 +42,28 @@ extension SignUpVC {
     func signUpAction(){
         
         if emailTextField.text != "" && passwordTextField.text != "" {
+            
             Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { user, Error in
                 
-                if Error == nil {
-                    
-                    self.addUser(userId: (user?.user.uid)!)
-                    
-                    
-                } else{
+                if Error != nil {
+
                     let alert = UIAlertController(title: "تنبيه", message: Error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "حسناً", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+                    
+                    
+                } else {
+                    
+                    self.addUser(userId: (user?.user.uid)!)
+                    self.myCustomAlert(title: "", message: "تم انشاء الحساب", isAdd: true)
+                    self.navigationController?.popViewController(animated: false)
+                    self.navigationController?.popViewController(animated: true)
+
+
                 }
             }
+            
+            
         } else {
             
             let alert = UIAlertController(title: "بيانات ناقصة", message: "الرجاء التأكد من إدخال البريد الإلكتروني و كلمة المرور", preferredStyle: .alert)

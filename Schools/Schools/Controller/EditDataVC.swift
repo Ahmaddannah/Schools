@@ -69,10 +69,10 @@ extension EditDataVC {
                 for document in result!.documents{
                     
                     db.collection("Users").document(document.documentID).setData(newData , merge: true)
-                    
-                    myCustomAlert(title: "حسنا", message: "تم تغيير البيانات بنجاح", isAdd: true )
-
                 }
+                
+                myCustomAlert(title: "حسنا", message: "تم تغيير البيانات بنجاح", isAdd: true )
+
             }else {
                 print(error!.localizedDescription , "Error Edit Data")
             }
