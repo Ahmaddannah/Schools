@@ -18,7 +18,7 @@ class EditDataVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hideKeyboardWhenTappedAround()
     }
     
     @IBAction func doneButton(_ sender: Any) {
