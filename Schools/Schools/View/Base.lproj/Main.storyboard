@@ -1777,7 +1777,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="Xh5-mo-Evu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
