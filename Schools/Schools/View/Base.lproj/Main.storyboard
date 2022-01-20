@@ -57,7 +57,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ابتدائي / متوسط / ثانوي " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeE-AH-GAe">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="224" id="TMK-4L-KNI"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="TMK-4L-KNI"/>
                                                     <constraint firstAttribute="height" constant="20.5" id="oui-Se-Lrd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -67,7 +67,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="مرحلة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbE-vd-Fnv">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="pMB-bi-Q2n"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="pMB-bi-Q2n"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -82,7 +82,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.5" id="SN7-2k-g4I"/>
-                                                    <constraint firstAttribute="width" constant="224" id="cR8-Sy-YIA"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="cR8-Sy-YIA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -91,7 +91,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="نوع المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kL6-7J-ZXL">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="lph-f3-Akw"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="lph-f3-Akw"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -106,7 +106,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.5" id="Se2-tz-7lK"/>
-                                                    <constraint firstAttribute="width" constant="224" id="tYK-nL-tx0"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="tYK-nL-tx0"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,7 +115,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="فئة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ve2-yI-NTV">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="h5V-3e-obC"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="h5V-3e-obC"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -130,7 +130,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.5" id="2mj-ts-ugh"/>
-                                                    <constraint firstAttribute="width" constant="224" id="tLH-pd-2lI"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="tLH-pd-2lI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -139,7 +139,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعة الاستيعابية " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elg-Ul-i5C">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="kHW-RB-Elb"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="kHW-RB-Elb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -154,7 +154,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20.5" id="IPn-yQ-eba"/>
-                                                    <constraint firstAttribute="width" constant="224" id="xnH-tg-pLL"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="xnH-tg-pLL"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -163,7 +163,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حالة التسجيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcg-BX-KCw">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="JP2-AZ-Y7I"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="JP2-AZ-Y7I"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -177,7 +177,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="٤٠ طالب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRp-Dq-KGu">
                                                 <rect key="frame" x="0.0" y="0.0" width="224" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="224" id="IsW-o1-YmM"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="IsW-o1-YmM"/>
                                                     <constraint firstAttribute="height" constant="20.5" id="W0J-3x-M75"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -187,7 +187,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحد الاقصى لطلاب " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieV-qK-r5V">
                                                 <rect key="frame" x="224" y="0.0" width="150" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="150" id="eHB-df-Nxf"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="eHB-df-Nxf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -199,7 +199,7 @@
                                         <rect key="frame" x="75" y="25" width="224" height="53"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="53" id="Usl-7M-JqF"/>
-                                            <constraint firstAttribute="width" constant="224" id="nDr-EW-dUL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="nDr-EW-dUL"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -213,7 +213,7 @@
                                     <constraint firstAttribute="trailing" secondItem="2Ep-Lv-1uz" secondAttribute="trailing" id="C9a-rD-9cn"/>
                                     <constraint firstItem="eZo-Xi-TEe" firstAttribute="leading" secondItem="bes-tz-A1A" secondAttribute="leading" id="GYF-nw-BxH"/>
                                     <constraint firstAttribute="trailing" secondItem="UGt-Z4-AO9" secondAttribute="trailing" id="IDY-eZ-VEX"/>
-                                    <constraint firstItem="Ad4-Cb-glP" firstAttribute="leading" secondItem="bes-tz-A1A" secondAttribute="leading" constant="75" id="IUh-Qg-3WF"/>
+                                    <constraint firstItem="Ad4-Cb-glP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bes-tz-A1A" secondAttribute="leading" constant="20" symbolic="YES" id="IUh-Qg-3WF"/>
                                     <constraint firstItem="eZo-Xi-TEe" firstAttribute="leading" secondItem="2Ep-Lv-1uz" secondAttribute="leading" id="OTK-0F-rg9"/>
                                     <constraint firstAttribute="width" constant="374" id="PZC-JD-tM5"/>
                                     <constraint firstItem="UGt-Z4-AO9" firstAttribute="top" secondItem="tHj-us-srL" secondAttribute="bottom" constant="50" id="Sl2-19-fZs"/>
@@ -364,28 +364,6 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اكتب تعليقك هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWX-J2-WCN">
-                                <rect key="frame" x="10" y="756" width="321" height="34"/>
-                                <color key="backgroundColor" name="Color-1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="3Qd-gs-jXQ"/>
-                                    <constraint firstAttribute="width" constant="321" id="W7H-EQ-hbs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-YZ-xHh">
-                                <rect key="frame" x="334" y="756" width="77" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="PrE-b4-nHh"/>
-                                </constraints>
-                                <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="ارسال"/>
-                                <connections>
-                                    <action selector="sendCommentButton:" destination="aP7-SC-sKF" eventType="touchUpInside" id="HI6-rb-Efe"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التعليقات" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMA-6M-kW9">
                                 <rect key="frame" x="113" y="44" width="189" height="42"/>
                                 <constraints>
@@ -395,23 +373,54 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9fx-Jj-z6E">
+                                <rect key="frame" x="0.0" y="756" width="414" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اكتب تعليقك هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWX-J2-WCN">
+                                        <rect key="frame" x="0.0" y="0.0" width="329" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="eY2-NV-AIa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2W-YZ-xHh">
+                                        <rect key="frame" x="334" y="0.0" width="80" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="1" constant="80" id="1MY-O1-IIk"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="ارسال"/>
+                                        <connections>
+                                            <action selector="sendCommentButton:" destination="aP7-SC-sKF" eventType="touchUpInside" id="HI6-rb-Efe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1v1-7E-mZm"/>
+                                    <constraint firstItem="BWX-J2-WCN" firstAttribute="leading" secondItem="9fx-Jj-z6E" secondAttribute="leading" id="7AN-OD-PXG"/>
+                                    <constraint firstItem="n2W-YZ-xHh" firstAttribute="leading" secondItem="BWX-J2-WCN" secondAttribute="trailing" constant="5" id="BI8-JD-mws"/>
+                                    <constraint firstAttribute="width" constant="414" id="CpI-8Y-2nz"/>
+                                    <constraint firstAttribute="bottom" secondItem="BWX-J2-WCN" secondAttribute="bottom" id="gO9-j0-AXx"/>
+                                    <constraint firstItem="BWX-J2-WCN" firstAttribute="top" secondItem="9fx-Jj-z6E" secondAttribute="top" id="w3d-lk-Mzv"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bxB-MO-BGV"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
                             <constraint firstItem="bxB-MO-BGV" firstAttribute="trailing" secondItem="GMA-6M-kW9" secondAttribute="trailing" constant="112" id="0UY-ro-jml"/>
                             <constraint firstItem="GMA-6M-kW9" firstAttribute="top" secondItem="bxB-MO-BGV" secondAttribute="top" id="1Lk-lo-gRV"/>
-                            <constraint firstItem="bxB-MO-BGV" firstAttribute="bottom" secondItem="BWX-J2-WCN" secondAttribute="bottom" constant="72" id="3Sg-LJ-O9c"/>
                             <constraint firstItem="eWf-Cr-WBk" firstAttribute="top" secondItem="GMA-6M-kW9" secondAttribute="bottom" constant="34" id="3cC-8n-56V"/>
-                            <constraint firstItem="n2W-YZ-xHh" firstAttribute="leading" secondItem="BWX-J2-WCN" secondAttribute="trailing" constant="3" id="7Wu-ae-3jV"/>
+                            <constraint firstItem="bxB-MO-BGV" firstAttribute="bottom" secondItem="9fx-Jj-z6E" secondAttribute="bottom" constant="72" id="5Cx-3Y-gQw"/>
                             <constraint firstItem="GMA-6M-kW9" firstAttribute="leading" secondItem="bxB-MO-BGV" secondAttribute="leading" constant="113" id="9nO-3n-Eat"/>
                             <constraint firstItem="eWf-Cr-WBk" firstAttribute="leading" secondItem="bxB-MO-BGV" secondAttribute="leading" id="DhM-0M-Lte"/>
-                            <constraint firstItem="BWX-J2-WCN" firstAttribute="leading" secondItem="bxB-MO-BGV" secondAttribute="leading" constant="10" id="M3u-d4-uG4"/>
-                            <constraint firstItem="bxB-MO-BGV" firstAttribute="bottom" secondItem="n2W-YZ-xHh" secondAttribute="bottom" constant="72" id="duS-hs-oMi"/>
-                            <constraint firstItem="BWX-J2-WCN" firstAttribute="top" secondItem="eWf-Cr-WBk" secondAttribute="bottom" constant="8" symbolic="YES" id="fbB-HB-MTA"/>
-                            <constraint firstItem="bxB-MO-BGV" firstAttribute="trailing" secondItem="n2W-YZ-xHh" secondAttribute="trailing" constant="3" id="lyl-Qn-pV1"/>
+                            <constraint firstItem="9fx-Jj-z6E" firstAttribute="top" secondItem="eWf-Cr-WBk" secondAttribute="bottom" constant="8" symbolic="YES" id="FYy-T6-wgw"/>
+                            <constraint firstItem="9fx-Jj-z6E" firstAttribute="trailing" secondItem="bxB-MO-BGV" secondAttribute="trailing" id="YuT-kK-PpV"/>
+                            <constraint firstItem="9fx-Jj-z6E" firstAttribute="leading" secondItem="bxB-MO-BGV" secondAttribute="leading" id="ZTy-32-sxS"/>
                             <constraint firstItem="eWf-Cr-WBk" firstAttribute="trailing" secondItem="bxB-MO-BGV" secondAttribute="trailing" id="qjx-A4-Weq"/>
-                            <constraint firstItem="n2W-YZ-xHh" firstAttribute="top" secondItem="eWf-Cr-WBk" secondAttribute="bottom" constant="8" symbolic="YES" id="yuI-a6-4ef"/>
                         </constraints>
                     </view>
                     <connections>
@@ -661,7 +670,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="TWn-xV-a09"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="TWn-xV-a09"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -671,7 +680,7 @@
                                                 <rect key="frame" x="0.0" y="115" width="240" height="20.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="6MV-Zu-Mef"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="6MV-Zu-Mef"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -681,7 +690,7 @@
                                                 <rect key="frame" x="0.0" y="229.5" width="240" height="20.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="240" id="gQs-Hb-xwI"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="gQs-Hb-xwI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -710,7 +719,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البريد الاكتروني" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGt-1F-OLD">
                                                 <rect key="frame" x="0.0" y="229.5" width="100" height="20.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="BbW-vv-Yt3"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="BbW-vv-Yt3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -909,7 +918,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtE-Qp-jhG">
                                 <rect key="frame" x="121" y="368" width="174" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="174" id="BLM-kQ-SKS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="BLM-kQ-SKS"/>
                                     <constraint firstAttribute="height" constant="31" id="sDi-F6-AUo"/>
                                 </constraints>
                                 <color key="tintColor" red="0.20784313730000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -987,30 +996,39 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التعديل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frv-u9-zFd">
                                 <rect key="frame" x="144" y="104" width="127" height="53"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="127" id="e0O-YQ-ubh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="127" id="e0O-YQ-ubh"/>
                                     <constraint firstAttribute="height" constant="53" id="zCB-TG-Chr"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الجديد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pr9-sy-gkc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم الجديد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pr9-sy-gkc">
                                 <rect key="frame" x="78" y="291" width="259" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Color-1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="LBg-y0-Dvt"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="259" id="duL-Rj-cuZ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال الجديد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsy-yd-AKe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال الجديد" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsy-yd-AKe">
                                 <rect key="frame" x="78" y="371" width="259" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="Color-1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="259" id="4qe-gV-qSR"/>
+                                    <constraint firstAttribute="height" constant="34" id="msG-vT-WzT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-pZ-LRy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7t-pZ-LRy">
                                 <rect key="frame" x="141" y="519" width="133" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="133" id="4Y3-dO-TZQ"/>
+                                    <constraint firstAttribute="height" constant="31" id="WVS-ER-RUZ"/>
+                                </constraints>
                                 <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="تطبيق التغيير "/>
@@ -1022,9 +1040,18 @@
                         <viewLayoutGuide key="safeArea" id="vLO-NY-IXZ"/>
                         <color key="backgroundColor" name="Color"/>
                         <constraints>
+                            <constraint firstItem="vLO-NY-IXZ" firstAttribute="trailing" secondItem="pr9-sy-gkc" secondAttribute="trailing" constant="77" id="HWC-bZ-EI5"/>
+                            <constraint firstItem="Y7t-pZ-LRy" firstAttribute="leading" secondItem="vLO-NY-IXZ" secondAttribute="leading" constant="141" id="JJw-SC-lDS"/>
+                            <constraint firstItem="pr9-sy-gkc" firstAttribute="top" secondItem="frv-u9-zFd" secondAttribute="bottom" constant="134" id="QGk-hx-jbv"/>
+                            <constraint firstItem="Gsy-yd-AKe" firstAttribute="leading" secondItem="vLO-NY-IXZ" secondAttribute="leading" constant="78" id="aGF-P8-3je"/>
+                            <constraint firstItem="Y7t-pZ-LRy" firstAttribute="top" secondItem="Gsy-yd-AKe" secondAttribute="bottom" constant="114" id="b1m-n7-4Bx"/>
+                            <constraint firstItem="vLO-NY-IXZ" firstAttribute="trailing" secondItem="Y7t-pZ-LRy" secondAttribute="trailing" constant="140" id="cfy-WK-p3j"/>
+                            <constraint firstItem="Gsy-yd-AKe" firstAttribute="top" secondItem="pr9-sy-gkc" secondAttribute="bottom" constant="46" id="ct5-oU-CAb"/>
                             <constraint firstItem="frv-u9-zFd" firstAttribute="leading" secondItem="vLO-NY-IXZ" secondAttribute="leading" constant="144" id="goP-Q4-Uj1"/>
                             <constraint firstItem="frv-u9-zFd" firstAttribute="top" secondItem="vLO-NY-IXZ" secondAttribute="top" constant="60" id="hVz-r1-hxB"/>
                             <constraint firstItem="vLO-NY-IXZ" firstAttribute="trailing" secondItem="frv-u9-zFd" secondAttribute="trailing" constant="143" id="wZ4-8k-s5f"/>
+                            <constraint firstItem="pr9-sy-gkc" firstAttribute="leading" secondItem="vLO-NY-IXZ" secondAttribute="leading" constant="78" id="zAG-KD-RCv"/>
+                            <constraint firstItem="vLO-NY-IXZ" firstAttribute="trailing" secondItem="Gsy-yd-AKe" secondAttribute="trailing" constant="77" id="znE-Yk-lah"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1373,7 +1400,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
                                         <color key="backgroundColor" name="Color-1"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="7oF-gN-sTr"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="7oF-gN-sTr"/>
                                             <constraint firstAttribute="height" constant="34" id="chn-Zg-EXf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1383,7 +1410,7 @@
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Gf3-5F-SY5"/>
-                                            <constraint firstAttribute="width" constant="112" id="Ugq-oN-IF6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="Ugq-oN-IF6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1409,7 +1436,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="رقم المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lg-LW-Iea">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="L7u-0F-aKJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="L7u-0F-aKJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1433,7 +1460,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="البريد الالكتدوني" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1I-VC-OWN">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="RYE-fb-suJ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="RYE-fb-suJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1457,7 +1484,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كلمة المرور" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9d-A4-TRV">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="7GT-t1-Tuz"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="7GT-t1-Tuz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1480,7 +1507,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تآكيد كلمة المرور" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-NZ-WVB">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="Qha-jR-AJb"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="Qha-jR-AJb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1567,7 +1594,7 @@
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="r9U-bY-lZr"/>
-                                            <constraint firstAttribute="width" constant="112" id="xkJ-cw-qtH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="xkJ-cw-qtH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1592,7 +1619,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="مرحلة المدرسة " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-1i-piZ">
                                         <rect key="frame" x="272" y="0.0" width="112" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="XTH-j4-OAY"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="XTH-j4-OAY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1617,7 +1644,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="فئة المدرسة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ja1-gw-czg">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="3Of-zQ-5y0"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="3Of-zQ-5y0"/>
                                             <constraint firstAttribute="height" constant="34" id="aTD-fH-clv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1643,7 +1670,7 @@
                                         <rect key="frame" x="271" y="0.0" width="113" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="6KL-d3-s6x"/>
-                                            <constraint firstAttribute="width" constant="113" id="P9O-H5-9tn"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="P9O-H5-9tn"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1667,7 +1694,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="حالة التسجيل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8R-uR-Kap">
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="112" id="DvP-Wa-P3H"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="DvP-Wa-P3H"/>
                                             <constraint firstAttribute="height" constant="34" id="bVA-rE-NXp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1693,7 +1720,7 @@
                                         <rect key="frame" x="272" y="0.0" width="112" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="RpL-ND-6vS"/>
-                                            <constraint firstAttribute="width" constant="112" id="z9Y-9Q-9DH"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="z9Y-9Q-9DH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1717,7 +1744,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الحد الاقصى لعدد الطلاب بالفصل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkk-V7-nZQ">
                                         <rect key="frame" x="164" y="0.0" width="220" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="220" id="9GY-hK-jgA"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="9GY-hK-jgA"/>
                                             <constraint firstAttribute="height" constant="34" id="MUm-Vg-Xc2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1733,7 +1760,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dp6-HP-L1r">
                                 <rect key="frame" x="140" y="721" width="134" height="31"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="7qT-3a-eZJ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="7qT-3a-eZJ"/>
                                     <constraint firstAttribute="height" constant="31" id="w1i-8g-l6k"/>
                                 </constraints>
                                 <color key="tintColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1747,7 +1774,7 @@
                                 <rect key="frame" x="67" y="98" width="281" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="PHw-fJ-J72"/>
-                                    <constraint firstAttribute="width" constant="281" id="Xh5-mo-Evu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="281" id="Xh5-mo-Evu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
