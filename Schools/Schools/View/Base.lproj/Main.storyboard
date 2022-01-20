@@ -358,8 +358,9 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWX-J2-WCN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="اكتب تعليقك هنا" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BWX-J2-WCN">
                                 <rect key="frame" x="10" y="756" width="321" height="34"/>
+                                <color key="backgroundColor" name="Color-1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="3Qd-gs-jXQ"/>
                                     <constraint firstAttribute="width" constant="321" id="W7H-EQ-hbs"/>
@@ -554,7 +555,7 @@
                                                                                                     <nil key="highlightedColor"/>
                                                                                                 </label>
                                                                                             </subviews>
-                                                                                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                                                                                            <color key="backgroundColor" red="0.1411764771" green="0.15686275059999999" blue="0.40392160420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                             <constraints>
                                                                                                 <constraint firstItem="KgI-vg-VFe" firstAttribute="centerX" secondItem="ggd-tg-wyz" secondAttribute="centerX" id="9cW-3E-mdP"/>
                                                                                                 <constraint firstItem="KgI-vg-VFe" firstAttribute="top" secondItem="ggd-tg-wyz" secondAttribute="top" constant="5" id="GHn-IO-r0e"/>
@@ -723,7 +724,7 @@
                                                 <color key="textColor" red="0.20784312490000001" green="0.47843140360000003" blue="0.4352940917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Bubbles-Customer" translatesAutoresizingMaskIntoConstraints="NO" id="ONe-Uc-yqx">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-CuteColor-Family" translatesAutoresizingMaskIntoConstraints="NO" id="ONe-Uc-yqx">
                                                 <rect key="frame" x="0.0" y="32" width="200" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="120" id="2es-Fk-SWX"/>
@@ -999,21 +1000,25 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="الاسم" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nf1-Lw-Kuq">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="رقم الجوال" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fYY-wl-veb">
                                         <rect key="frame" x="0.0" y="64" width="300" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-Ec-TZI">
                                         <rect key="frame" x="0.0" y="128" width="300" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-2r-Ne7">
                                         <rect key="frame" x="0.0" y="192" width="300" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1078,6 +1083,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الالكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QE1-aS-67H">
                                 <rect key="frame" x="78" y="350" width="259" height="34"/>
+                                <color key="backgroundColor" name="Color-1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="hCl-VU-GYO"/>
                                 </constraints>
@@ -1107,6 +1113,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="كلمة المرور" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sd2-RQ-S7b">
                                 <rect key="frame" x="78" y="409" width="259" height="34"/>
+                                <color key="backgroundColor" name="Color-1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="8lX-Gv-tV0"/>
                                 </constraints>
@@ -1198,6 +1205,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="البريد الاكتروني" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vw-xx-iEG">
                                 <rect key="frame" x="88" y="336" width="239" height="34"/>
+                                <color key="backgroundColor" name="Color-1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Orw-Jv-XQM"/>
                                 </constraints>
@@ -1271,6 +1279,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="مدرسة الرياض" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEn-bF-UsT">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="240" id="7oF-gN-sTr"/>
                                             <constraint firstAttribute="height" constant="34" id="chn-Zg-EXf"/>
@@ -1301,6 +1310,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0532955544" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bd0-Qb-gI5">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1324,6 +1334,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="example@example.com" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TdQ-rO-anq">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1347,6 +1358,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIC-u6-Oh4">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1369,6 +1381,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fIj-q6-17q">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1454,6 +1467,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="حكومي /  اهلي" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qjt-f3-fpF">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1479,6 +1493,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ابتدائي / متوسط / ثانوي" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXD-5N-uKH">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1503,6 +1518,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="بنين / بنات" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JdT-QR-6H8">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1527,6 +1543,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1000 طالب في المدرسة" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DIc-AR-nBA">
                                         <rect key="frame" x="0.0" y="0.0" width="239" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1551,6 +1568,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="متاح او غير متاح " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="usY-Iq-pyl">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1575,6 +1593,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="www.googlemap.com" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7l-Fp-w0B">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1599,6 +1618,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="25" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="thx-Is-oHO">
                                         <rect key="frame" x="0.0" y="0.0" width="132" height="34"/>
+                                        <color key="backgroundColor" name="Color-1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -1754,14 +1774,17 @@
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="icons8-Bubbles-Customer" width="50" height="50"/>
+        <image name="icons8-CuteColor-Family" width="100" height="100"/>
         <image name="location" catalog="system" width="128" height="118"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="phone" catalog="system" width="128" height="115"/>
         <image name="schoolPhoto" width="650" height="618"/>
         <namedColor name="Color">
-            <color red="0.9882352941176471" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.98823529409999999" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Color-1">
+            <color red="0.7839999795" green="0.82700002189999999" blue="0.83499997849999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -55,8 +55,8 @@ extension SchoolsTableViewVC : UITableViewDataSource , UITableViewDelegate {
         cell.schoolStageLabel.text =  arraySchool[indexPath.row].schoolStage
         
         cell.schoolTypeView.backgroundColor = #colorLiteral(red: 0, green: 0.485999465, blue: 0.4348026514, alpha: 1)
-        cell.schoolStageView.backgroundColor = #colorLiteral(red: 0.2662078142, green: 0.6913960576, blue: 0.7334350944, alpha: 1)
-        
+        cell.schoolStageView.backgroundColor = #colorLiteral(red: 0.1373816729, green: 0.1574980319, blue: 0.4194945097, alpha: 1)
+
         return cell
         
     }
