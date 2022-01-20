@@ -45,6 +45,7 @@ class SettingVC: UIViewController {
     
     
     @IBAction func changePasswordButton(_ sender: Any) {
+        
         let vc = storyboard?.instantiateViewController(withIdentifier: "ForgotPassword") as! ForgotPasswordVC
         
         self.navigationController?.pushViewController(vc, animated: true)
@@ -62,7 +63,8 @@ class SettingVC: UIViewController {
             myCustomAlert(title: " ", message: "تم تسجيل الخروج بنجاح ", isAdd: true)
             
         } catch {
-            print("Error in SignOut")
+            myCustomAlert(title: "تنبيه", message: "حصلت مشكلة بتسجيل الخروج", isAdd: true)
+
         }
         
     }

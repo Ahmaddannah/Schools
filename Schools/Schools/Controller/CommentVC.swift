@@ -160,4 +160,36 @@ extension CommentVC : UITableViewDelegate , UITableViewDataSource {
         return 100
     }
     
+   
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+                       let userid = Auth.auth().currentUser!.uid
+
+                       if (editingStyle == .delete) {
+
+                           db.collection("Message").document("\(userid)-\(arrComment[indexPath.row].message)").delete() { err in
+                               
+                               
+                               if let err = err {
+                                   
+                                   print("Error removing document: \(err)")
+                                   
+                               } else {
+                                   
+                                   let alert = UIAlertController(title: "", message: "تم حذف التعليق ", preferredStyle: .alert)
+                                   
+                                   let action = UIAlertAction(title: "موافق", style: .default ,handler: { action in
+
+                                       self.arrComment.remove(at: indexPath.row)
+                                       self.tableView.reloadData()
+                                   })
+                                   alert.addAction(action)
+                                   self.present(alert, animated: true)
+                                   print("Document successfully removed!")
+                               }
+                           }
+                       }
+
+           }
+    
 }
