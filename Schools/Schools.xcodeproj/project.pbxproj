@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00B04132799BB3B002ED57D /* EditDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B04122799BB3B002ED57D /* EditDataVC.swift */; };
 		E04CEA9B278DFBFB00B73E1B /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */; };
 		E0681E522784A31600DEF94B /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0681E512784A31600DEF94B /* MainTabBar.swift */; };
 		E068ED992796F34700D8269C /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E068ED982796F34700D8269C /* CommentVC.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E00B04122799BB3B002ED57D /* EditDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataVC.swift; sourceTree = "<group>"; };
 		E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		E0681E512784A31600DEF94B /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		E068ED982796F34700D8269C /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				E0C81AB827841D4200C532B9 /* SettingVC.swift */,
 				E0D8E0A52783689B00CC1EDB /* SignInVC.swift */,
 				E04CEA9A278DFBFB00B73E1B /* SignUpVC.swift */,
+				E00B04122799BB3B002ED57D /* EditDataVC.swift */,
 				E0C81AAE27841CE000C532B9 /* ForgotPasswordVC.swift */,
 				E0C81AB027841CFE00C532B9 /* NewSchoolAccountVC.swift */,
 				E0A77F2B2785F10300AF9330 /* NewSchoolAccount2VC.swift */,
@@ -255,6 +258,7 @@
 				E0C81ABB27841DB300C532B9 /* SchoolsTableViewCell.swift in Sources */,
 				E0C81AB927841D4200C532B9 /* SettingVC.swift in Sources */,
 				E0A8CB6E2786E16D00664BE8 /* School.swift in Sources */,
+				E00B04132799BB3B002ED57D /* EditDataVC.swift in Sources */,
 				E068ED9B2796F46300D8269C /* CommentTableViewCell.swift in Sources */,
 				E068ED992796F34700D8269C /* CommentVC.swift in Sources */,
 				E0C81AB727841D3000C532B9 /* MapsVC.swift in Sources */,

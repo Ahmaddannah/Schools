@@ -53,6 +53,14 @@ class SettingVC: UIViewController {
     }
     
     
+    @IBAction func editDataButton(_ sender: Any) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "EditDataVC") as! EditDataVC
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     @IBAction func signOutButton(_ sender: Any) {
         
         navigationController?.popViewController(animated: false)

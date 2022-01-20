@@ -21,7 +21,7 @@ class CommentVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
@@ -57,7 +57,7 @@ extension CommentVC {
     func listener(){
         
         // order(by:"time").
-        db.collection("Message").whereField("id", isEqualTo: takeID).addSnapshotListener { documentSnapshot , error in
+        db.collection("Message").whereField("id", isEqualTo: takeID!).addSnapshotListener { documentSnapshot , error in
             
             guard documentSnapshot != nil else {
                 print("Error fetching document: \(error!)")
@@ -84,7 +84,7 @@ extension CommentVC {
         
         db.collection("Message").document().setData([
             
-            "id" : takeID ,
+            "id" : takeID! ,
             "content" : commentTextField.text! ,
             "time" :  Timestamp()
         ])
@@ -122,7 +122,7 @@ extension CommentVC {
     
     
     func isEmpty(){
-       
+        
         if arrComment.isEmpty == false {
             
             noDataLabel.isHidden = false
@@ -160,36 +160,31 @@ extension CommentVC : UITableViewDelegate , UITableViewDataSource {
         return 100
     }
     
-   
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
-                       let userid = Auth.auth().currentUser!.uid
-
-                       if (editingStyle == .delete) {
-
-                           db.collection("Message").document("\(userid)-\(arrComment[indexPath.row].message)").delete() { err in
-                               
-                               
-                               if let err = err {
-                                   
-                                   print("Error removing document: \(err)")
-                                   
-                               } else {
-                                   
-                                   let alert = UIAlertController(title: "", message: "تم حذف التعليق ", preferredStyle: .alert)
-                                   
-                                   let action = UIAlertAction(title: "موافق", style: .default ,handler: { action in
-
-                                       self.arrComment.remove(at: indexPath.row)
-                                       self.tableView.reloadData()
-                                   })
-                                   alert.addAction(action)
-                                   self.present(alert, animated: true)
-                                   print("Document successfully removed!")
-                               }
-                           }
-                       }
-
-           }
-    
+        if (editingStyle == .delete) {
+            
+            db.collection("Message").document((arrComment[indexPath.row].message)).delete() { err in
+                
+                if let err = err {
+                    
+                    print("Error removing document: \(err.localizedDescription)")
+                    
+                } else {
+                    
+                    let alert = UIAlertController(title: "", message: "تم حذف التعليق ", preferredStyle: .alert)
+                    
+                    let action = UIAlertAction(title: "موافق", style: .default ,handler: { action in
+                        
+                        self.arrComment.remove(at: indexPath.row)
+                        self.tableView.reloadData()
+                    })
+                    alert.addAction(action)
+                    self.present(alert, animated: true)
+                    print("Document successfully removed!")
+                }
+            }
+        }
+    }
 }
